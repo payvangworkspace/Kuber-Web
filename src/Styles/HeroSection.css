@@ -1,0 +1,151 @@
+/* Hero Section */
+.hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    padding: 4rem 6%;
+    min-height: 100vh;
+    color: white;
+    background: linear-gradient(
+            120deg,
+            rgba(10, 47, 92, 0.6) 0%,
+            rgba(10, 19, 30, 0.6) 100%
+        ),
+        url("/bg.jpg"); /* your hero image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.solution-btn{
+  /* border:2px solid orange; */
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  width: 60%;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 47, 92, 0.5);
+    z-index: 0;
+}
+
+.hero-content,
+.hero-visual {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 600px;
+}
+
+.hero-title {
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.hero-title span {
+    color: #4fb2ff;
+}
+
+.hero-subtitle {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #d1e4ff;
+}
+
+.hero-button {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.8rem 1.8rem;
+    background: #4fb2ff;
+    color: #0a2f5c;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.hero-button:hover {
+    background: #36a2f0;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(79, 178, 255, 0.3);
+    color: white;
+}
+
+.hero-visual {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.visual-wrapper {
+    position: relative;
+    max-width: 500px;
+}
+
+.hero-main-image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+/* Image Animations */
+.hero-main-image.float-in {
+    animation: slideInRight 1.2s ease-out forwards, float 3s ease-in-out infinite 1.2s;
+    opacity: 0;
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(120px) scale(0.95);
+        opacity: 0;
+    }
+    60% {
+        transform: translateX(-10px) scale(1.02);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0) scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+/* Responsive Hero Section */
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 3rem 5%;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-main-image {
+        margin-top: 2rem;
+    }
+}
