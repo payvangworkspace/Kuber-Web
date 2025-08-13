@@ -13,9 +13,9 @@ function App() {
   return (
     <>
 
-<BrowserRouter>
+<BrowserRouter basename='/Kuber-Web'>
 <Routes>
-<Route path='' element={<Home/>} />
+<Route path='/' element={<Home/>} />
 
 
 
