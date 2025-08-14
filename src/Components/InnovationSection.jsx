@@ -61,7 +61,7 @@ const InnovationSection = () => {
             data-aos-delay={idx * 150}
           >
             <img
-              src={`${card.img}`}
+              src={`${import.meta.env.BASE_URL}${card.img}`}
               alt={card.subtitle}
               className="innovation-card-image"
             />
