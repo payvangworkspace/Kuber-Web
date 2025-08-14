@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, forwardRef } from "react";
 import "../Styles/Navbar.css";
+import { useNavigate } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = forwardRef((props, ref) => {
   const [isOpen, setIsOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(null);
 
@@ -9,11 +10,20 @@ const Navbar = () => {
     setDropdownOpen(dropdownOpen === menu ? null : menu);
   };
 
+  const navigate = useNavigate();
+
+  function redirectSignIn() {
+    navigate("/login");
+  }
+  function redirectHome(){
+    navigate("/")
+  }
+
   return (
-    <header className="navbar">
+    <header className="navbar" id="navbar" ref={ref} style={props.customStyle}>
       <div className="nav-container">
         {/* Logo */}
-        <div className="logo">Kuber Pays</div>
+        <div className="logo" onClick={redirectHome} style={{cursor:"pointer"}}>Kuber Pays</div>
 
         {/* Links */}
         <nav className={`nav-links ${isOpen ? "open" : ""}`}>
@@ -92,7 +102,9 @@ const Navbar = () => {
 
         {/* Buttons */}
         <div className="nav-actions">
-          <button className="btn btn-outline">Sign In</button>
+          <button className="btn btn-outline" onClick={redirectSignIn}>
+            Sign In
+          </button>
           <button className="btn btn-primary">Get Started</button>
         </div>
 
@@ -108,6 +120,6 @@ const Navbar = () => {
       </div>
     </header>
   );
-};
+});
 
 export default Navbar;
