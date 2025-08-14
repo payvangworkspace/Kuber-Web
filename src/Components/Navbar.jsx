@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, forwardRef } from "react";
 import "../Styles/Navbar.css";
+import { useNavigate } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = forwardRef((props, ref) => {
   const [isOpen, setIsOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(null);
 
@@ -9,30 +10,39 @@ const Navbar = () => {
     setDropdownOpen(dropdownOpen === menu ? null : menu);
   };
 
+  const navigate = useNavigate();
+
+  function redirectSignIn() {
+    navigate("/login");
+  }
+  function redirectHome(){
+    navigate("/")
+  }
+
   return (
-    <header className="navbar">
+    <header className="navbar" id="navbar" ref={ref} style={props.customStyle}>
       <div className="nav-container">
         {/* Logo */}
-        <div className="logo">
-          {/* <img src="./logo2.png" alt="KuberPays Logo" className="logo-img" /> */}
-          Kuber Pays
-        </div>
+        <div className="logo" onClick={redirectHome} style={{cursor:"pointer"}}>Kuber Pays</div>
 
         {/* Links */}
         <nav className={`nav-links ${isOpen ? "open" : ""}`}>
-          {/* <a href="#">Home</a> */}
-
-          
-
           {/* Products Dropdown */}
           <div
             className="dropdown"
             onMouseEnter={() => setDropdownOpen("products")}
             onMouseLeave={() => setDropdownOpen(null)}
-            onClick={() => toggleDropdown("products")}
           >
-            <a href="#">Products ▾</a>
-            <div className={`dropdown-menu ${dropdownOpen === "products" ? "show" : ""}`}>
+            <a href="#" onClick={() => toggleDropdown("products")}>
+              Products ▾
+            </a>
+            <div
+              className={`dropdown-menu ${
+                dropdownOpen === "products" ? "show" : ""
+              }`}
+              onMouseEnter={() => setDropdownOpen("products")}
+              onMouseLeave={() => setDropdownOpen(null)}
+            >
               <a href="#">Payment Gateway</a>
               <a href="#">Invoices</a>
               <a href="#">Virtual Account</a>
@@ -40,18 +50,22 @@ const Navbar = () => {
             </div>
           </div>
 
-          {/* About Dropdown */}
-        
-
           {/* Solutions Dropdown */}
           <div
             className="dropdown"
             onMouseEnter={() => setDropdownOpen("solutions")}
             onMouseLeave={() => setDropdownOpen(null)}
-            onClick={() => toggleDropdown("solutions")}
           >
-            <a href="#">Solutions ▾</a>
-            <div className={`dropdown-menu ${dropdownOpen === "solutions" ? "show" : ""}`}>
+            <a href="#" onClick={() => toggleDropdown("solutions")}>
+              Solutions ▾
+            </a>
+            <div
+              className={`dropdown-menu ${
+                dropdownOpen === "solutions" ? "show" : ""
+              }`}
+              onMouseEnter={() => setDropdownOpen("solutions")}
+              onMouseLeave={() => setDropdownOpen(null)}
+            >
               <a href="#">Solutions & Features</a>
               <a href="#">Pricing</a>
               <a href="#">FAQ's</a>
@@ -59,30 +73,42 @@ const Navbar = () => {
               <a href="#">Privacy Policy</a>
             </div>
           </div>
-  <div
+
+          {/* Company Dropdown */}
+          <div
             className="dropdown"
-            onMouseEnter={() => setDropdownOpen("about")}
+            onMouseEnter={() => setDropdownOpen("company")}
             onMouseLeave={() => setDropdownOpen(null)}
-            onClick={() => toggleDropdown("about")}
           >
-            <a href="#">Company ▾</a>
-            <div className={`dropdown-menu ${dropdownOpen === "about" ? "show" : ""}`}>
+            <a href="#" onClick={() => toggleDropdown("company")}>
+              Company ▾
+            </a>
+            <div
+              className={`dropdown-menu ${
+                dropdownOpen === "company" ? "show" : ""
+              }`}
+              onMouseEnter={() => setDropdownOpen("company")}
+              onMouseLeave={() => setDropdownOpen(null)}
+            >
               <a href="#">Company Overview</a>
               <a href="#">Our Team</a>
               <a href="#">Careers</a>
             </div>
           </div>
+
           <a href="#">Developers</a>
           <a href="#">Contact</a>
         </nav>
 
         {/* Buttons */}
         <div className="nav-actions">
-          <button className="btn btn-outline">Sign In</button>
+          <button className="btn btn-outline" onClick={redirectSignIn}>
+            Sign In
+          </button>
           <button className="btn btn-primary">Get Started</button>
         </div>
 
-        {/* Mobile Menu Toggle */}
+        {/* Hamburger Menu */}
         <div
           className={`hamburger ${isOpen ? "active" : ""}`}
           onClick={() => setIsOpen(!isOpen)}
@@ -94,6 +120,6 @@ const Navbar = () => {
       </div>
     </header>
   );
-};
+});
 
 export default Navbar;

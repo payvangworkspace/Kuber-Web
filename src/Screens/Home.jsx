@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Navbar from '../Components/Navbar';
 import HeroSection from '../Components/HeroSection';
 import InnovationSection from '../Components/InnovationSection';
@@ -7,14 +7,21 @@ import InfoCards from '../Components/InfoCards';
 import BusinessStats from '../Components/BusinessStats';
 import IndustriesSection from '../Components/IndustriesSection';
 import ClientUnderstanding from '../Components/ClientUnderstanding';
-import "../Styles/Loader.css"; // We'll create this CSS
+import "../Styles/Loader.css";
 
 export const Home = () => {
   const [loading, setLoading] = useState(true);
+  const navbarRef = useRef(null);
 
   useEffect(() => {
     document.title = "Home | KuberPays";
-    const timer = setTimeout(() => setLoading(false), 1000); // 1 sec loader
+
+    if (navbarRef.current) {
+      navbarRef.current.style.width = "100vw";
+      console.log("Hellow")
+    }
+
+    const timer = setTimeout(() => setLoading(false), 1000);
     return () => clearTimeout(timer);
   }, []);
 
@@ -29,14 +36,14 @@ export const Home = () => {
 
   return (
     <>
-      <Navbar/>
-      <HeroSection/>
-      <InnovationSection/>
-      <BusinessSolutions/>
-      <InfoCards/>
-      <BusinessStats/>
-      <ClientUnderstanding/>
-      <IndustriesSection/>
+      <Navbar ref={navbarRef} />
+      <HeroSection />
+      <InnovationSection />
+      <BusinessSolutions />
+      <InfoCards />
+      <BusinessStats />
+      <ClientUnderstanding />
+      <IndustriesSection />
     </>
   );
 };
