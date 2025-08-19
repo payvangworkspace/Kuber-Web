@@ -1,16 +1,16 @@
 import React from "react";
 import Navbar from "./Navbar";
-import VirtualAccountContent from "./VirtualAccountContent";
+import Footer from "./Footer";
+import WhiteLabelContent from "./WhiteLabelContent";
 import BusinessStats from "./BusinessStats";
 import ClientUnderstanding from "./ClientUnderstanding";
 import IndustriesSection from "./IndustriesSection";
-import Footer from "./Footer";
 
-const VirtualAccountSection = () => {
+const WhiteLabelSection = () => {
   return (
     <>
       <Navbar />
-      <VirtualAccountContent />
+      <WhiteLabelContent />
       <BusinessStats />
       <ClientUnderstanding />
       <IndustriesSection />
@@ -19,4 +19,4 @@ const VirtualAccountSection = () => {
   );
 };
 
-export default VirtualAccountSection;
+export default WhiteLabelSection;
