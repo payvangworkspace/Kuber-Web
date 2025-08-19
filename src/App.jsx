@@ -10,6 +10,7 @@ import AcceptingPaymentSection from './Components/AcceptingPaymentSection'
 import InvoiceSection from './Components/InvoiceSection'
 import VirtualAccountSection from './Components/VirtualAccountSection'
 import WhiteLabelSection from './Components/WhiteLabelSection'
+import SignUp from './Screens/SignUp'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -21,6 +22,7 @@ function App() {
 <Routes>
 <Route path='/' element={<Home/>} />
 <Route path='/login' element={<SignIn/>} />
+<Route path='/signup' element={<SignUp/>}/>
 <Route path="/payment-gateway" element={<AcceptingPaymentSection />} />
 <Route path="/invoice" element={<InvoiceSection />} />
 <Route path="/virtual-account" element={<VirtualAccountSection/>}/>
