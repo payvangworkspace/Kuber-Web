@@ -26,13 +26,13 @@ const VirtualAccountContent = () => {
         <p>
           They also provide the ability to{" "}
           <strong>reconcile payments in real time</strong>.{" "}
-          <strong>Kiva Pays</strong> offers on-demand Virtual Accounts to its
+          <strong>Kuber Pays</strong> offers on-demand Virtual Accounts to its
           corporate clients for seamless transactions.
         </p>
 
         {/* Inline image */}
         <div className="virtual-account-image">
-          <img src="/about-us.jpg" alt="Virtual Account Process" />
+          <img src="./about-us.jpg" alt="Virtual Account Process" />
         </div>
 
         {/* Benefits List */}
@@ -65,7 +65,7 @@ const VirtualAccountContent = () => {
 
       {/* Main Illustration */}
       <div className="virtual-account-image full-width">
-        <img src="/Virtual-Account.jpg" alt="VAM Dashboard" />
+        <img src="./Virtual-Accounts.jpg" alt="VAM Dashboard" />
       </div>
 
       {/* Signup Button */}

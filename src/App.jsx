@@ -8,6 +8,8 @@ import { Home } from './Screens/Home'
 import { SignIn } from './Screens/SignIn'
 import AcceptingPaymentSection from './Components/AcceptingPaymentSection'
 import InvoiceSection from './Components/InvoiceSection'
+import VirtualAccountSection from './Components/VirtualAccountSection'
+import WhiteLabelSection from './Components/WhiteLabelSection'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -21,6 +23,9 @@ function App() {
 <Route path='/login' element={<SignIn/>} />
 <Route path="/payment-gateway" element={<AcceptingPaymentSection />} />
 <Route path="/invoice" element={<InvoiceSection />} />
+<Route path="/virtual-account" element={<VirtualAccountSection/>}/>
+<Route path="/whitelabel" element={<WhiteLabelSection />} />
+
 </Routes>
 
 
