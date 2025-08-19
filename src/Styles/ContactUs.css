@@ -1,0 +1,32 @@
+.contact-input {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+}
+
+.contact-input input,
+.contact-input textarea {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 0.95rem;
+  resize: none;
+}
+
+.contact-input svg {
+  flex-shrink: 0;
+  font-size: 1.2rem;
+  color: #00dfd8;
+}
+
+.contact-input:focus-within {
+  border-color: #00dfd8;
+  box-shadow: 0 0 12px rgba(0, 223, 216, 0.4);
+}

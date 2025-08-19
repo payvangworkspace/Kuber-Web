@@ -6,10 +6,13 @@ import InnovationSection from './Components/InnovationSection'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { Home } from './Screens/Home'
 import { SignIn } from './Screens/SignIn'
-import AcceptingPaymentSection from './Components/AcceptingPaymentSection'
-import InvoiceSection from './Components/InvoiceSection'
+import { Contact } from './Screens/Contact'
+import Company from './Screens/Company'
+
+import AcceptingPaymentSection from './Screens/AcceptingPaymentSection'
+import InvoiceSection from './Screens/InvoiceSection'
 import VirtualAccountSection from './Components/VirtualAccountSection'
-import WhiteLabelSection from './Components/WhiteLabelSection'
+import WhiteLabelSection from './Screens/WhiteLabelSection'
 import SignUp from './Screens/SignUp'
 
 function App() {
@@ -22,7 +25,6 @@ function App() {
 <Routes>
 <Route path='/' element={<Home/>} />
 <Route path='/login' element={<SignIn/>} />
-<Route path='/signup' element={<SignUp/>}/>
 <Route path="/payment-gateway" element={<AcceptingPaymentSection />} />
 <Route path="/invoice" element={<InvoiceSection />} />
 <Route path="/virtual-account" element={<VirtualAccountSection/>}/>
