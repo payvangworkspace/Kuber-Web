@@ -1,0 +1,80 @@
+.virtual-account-section {
+  padding: 60px 10%;
+  background: #f8f9fa;
+  text-align: center;
+}
+
+.virtual-account-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+}
+
+.virtual-account-content {
+  max-width: 950px;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #444;
+}
+
+.virtual-account-content p {
+  margin-bottom: 16px;
+}
+
+.virtual-account-image {
+  margin: 25px auto;
+  text-align: center;
+}
+
+.virtual-account-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.virtual-account-image.full-width img {
+  width: 100%;
+  margin-top: 30px;
+  border-radius: 12px;
+}
+
+.benefits-title {
+  font-size: 1.4rem;
+  margin: 20px 0 10px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.virtual-account-benefits {
+  list-style: disc;
+  margin: 20px 0 20px 25px;
+  padding: 0;
+  color: #333;
+}
+
+.virtual-account-benefits li {
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.signup-container {
+  margin-top: 30px;
+}
+
+.signup-button {
+  display: inline-block;
+  background: #0077ff;
+  color: white;
+  padding: 12px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.signup-button:hover {
+  background: #005fcc;
+}

@@ -7,6 +7,7 @@ import InfoCards from '../Components/InfoCards';
 import BusinessStats from '../Components/BusinessStats';
 import IndustriesSection from '../Components/IndustriesSection';
 import ClientUnderstanding from '../Components/ClientUnderstanding';
+import Footer from '../Components/Footer';
 import "../Styles/Loader.css";
 
 export const Home = () => {
@@ -44,6 +45,7 @@ export const Home = () => {
       <BusinessStats />
       <ClientUnderstanding />
       <IndustriesSection />
+      <Footer />
     </>
   );
 };
