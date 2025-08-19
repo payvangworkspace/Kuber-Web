@@ -1,6 +1,6 @@
 import React, { useState, forwardRef } from "react";
 import "../Styles/Navbar.css";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Navbar = forwardRef((props, ref) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -90,14 +90,14 @@ const Navbar = forwardRef((props, ref) => {
               onMouseEnter={() => setDropdownOpen("company")}
               onMouseLeave={() => setDropdownOpen(null)}
             >
-              <a href="#">Company Overview</a>
-              <a href="#">Our Team</a>
-              <a href="#">Careers</a>
+              <Link to="/company">Company Overview</Link>
+              <Link to="/team">Our Team</Link>
+              <Link to="/career">Careers</Link>
             </div>
           </div>
 
           <a href="#">Developers</a>
-          <a href="#">Contact</a>
+          <Link to="/contact">Contact</Link>
         </nav>
 
         {/* Buttons */}

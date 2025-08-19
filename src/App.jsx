@@ -6,6 +6,8 @@ import InnovationSection from './Components/InnovationSection'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { Home } from './Screens/Home'
 import { SignIn } from './Screens/SignIn'
+import { Contact } from './Screens/Contact'
+import Company from './Screens/Company'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,7 +19,8 @@ function App() {
 <Routes>
 <Route path='/' element={<Home/>} />
 <Route path='/login' element={<SignIn/>} />
-
+<Route path='/contact' element={<Contact/>} />
+<Route path="/company" element={<Company/>} />
 
 </Routes>
 
