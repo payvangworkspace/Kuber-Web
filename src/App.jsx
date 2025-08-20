@@ -13,6 +13,9 @@ import AcceptingPaymentSection from './Screens/AcceptingPaymentSection'
 import InvoiceSection from './Screens/InvoiceSection'
 import VirtualAccountSection from './Components/VirtualAccountSection'
 import WhiteLabelSection from './Screens/WhiteLabelSection'
+import IntegrationSection from './Components/IntegrationSection'
+import { Developer } from './Screens/Developer'
+
 
 
 function App() {
@@ -33,6 +36,7 @@ function App() {
 <Route path="/invoice" element={<InvoiceSection />} />
 <Route path="/virtual-account" element={<VirtualAccountSection/>}/>
 <Route path="/whitelabel" element={<WhiteLabelSection />} />
+<Route path="/developer" element={<Developer />} />
 
 </Routes>
 

@@ -96,7 +96,7 @@ const Navbar = forwardRef((props, ref) => {
             </div>
           </div>
 
-          <a href="#">Developers</a>
+          <Link to="/developer">Developers</Link>
           <Link to="/contact">Contact</Link>
         </nav>
 
