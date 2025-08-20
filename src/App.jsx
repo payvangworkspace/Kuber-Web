@@ -15,6 +15,7 @@ import FAQs from './Screens/FAQs'
 import PrivacyPolicySection from './Screens/PrivacyPolicySection'
 
 
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -31,6 +32,7 @@ function App() {
 <Route path="/pricing" element={<Pricing/>} />
 <Route path="/faqs" element={<FAQs/>} />
 <Route path="/privacy-policy" element={<PrivacyPolicySection/>} />
+<Route path="/terms-and-condition" element={<PrivacyPolicySection/>} />
 </Routes>
 
 
