@@ -43,10 +43,10 @@ const Navbar = forwardRef((props, ref) => {
               onMouseEnter={() => setDropdownOpen("products")}
               onMouseLeave={() => setDropdownOpen(null)}
             >
-              <a href="#">Payment Gateway</a>
-              <a href="#">Invoices</a>
-              <a href="#">Virtual Account</a>
-              <a href="#">White Label Solutions</a>
+              <a onClick={() => navigate("/payment-gateway")}>Payment Gateway</a>
+              <a onClick={() => navigate("/invoice")}>Invoice</a>
+              <a onClick={()=> navigate("/virtual-account")}>Virtual Account</a>
+              <a onClick={()=> navigate("/whitelabel")}>White Label Solutions</a>
             </div>
           </div>
 
@@ -96,7 +96,7 @@ const Navbar = forwardRef((props, ref) => {
             </div>
           </div>
 
-          <a href="#">Developers</a>
+          <Link to="/developer">Developers</Link>
           <Link to="/contact">Contact</Link>
         </nav>
 
@@ -105,7 +105,7 @@ const Navbar = forwardRef((props, ref) => {
           <button className="btn btn-outline" onClick={redirectSignIn}>
             Sign In
           </button>
-          <button className="btn btn-primary">Get Started</button>
+          <button className="btn btn-primary" onClick={() => navigate("/signup")}>Get Started</button>
         </div>
 
         {/* Hamburger Menu */}
