@@ -84,6 +84,7 @@
   flex: 1;
   min-width: 280px;
   text-align: center;
+    animation: slideInRight 1.2s ease-out forwards, float 3s ease-in-out infinite 1.2s;
 }
 
 .whitelabel-image img {
