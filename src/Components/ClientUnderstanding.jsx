@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 const ClientUnderstanding = () => {
   const navigate = useNavigate();
 
+
   const redirectToAbout = () => {
     navigate("/about");
   };
@@ -11,6 +12,7 @@ const ClientUnderstanding = () => {
   return (
     <section className="client-section">
       <div className="client-container">
+        
         <div className="client-text">
           <div className="client-text-parent">
             <h2 className="client-title">Understanding Our Clients</h2>

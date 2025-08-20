@@ -1,0 +1,95 @@
+.whitelabel-section {
+  padding: 60px 20px;
+  background: #f9fafb;
+}
+
+.whitelabel-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.whitelabel-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.whitelabel-text .title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1a237e;
+  margin-bottom: 20px;
+}
+
+.whitelabel-text p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.whitelabel-text h2 {
+  font-size: 1.8rem;
+  color: #1a237e;
+  margin: 25px 0 15px;
+}
+
+.whitelabel-text h3 {
+  font-size: 1.5rem;
+  color: #3949ab;
+  margin: 20px 0 10px;
+}
+
+.benefits-list {
+  margin: 15px 0;
+  padding-left: 20px;
+}
+
+.benefits-list li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  font-size: 1.05rem;
+}
+
+.cta-text {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #444;
+}
+
+.signup-container {
+  margin-top: 25px;
+}
+
+.signup-button {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #1a237e;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.signup-button:hover {
+  background-color: #3949ab;
+}
+
+.whitelabel-image {
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
+    animation: slideInRight 1.2s ease-out forwards, float 3s ease-in-out infinite 1.2s;
+}
+
+.whitelabel-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
