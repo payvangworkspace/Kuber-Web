@@ -1,0 +1,161 @@
+/* -------------------- SECTION CONTAINER -------------------- */
+.business-section {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* Teal-Blue Luxury Gradient */
+  padding: 6rem 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+ 
+/* -------------------- LAYOUT -------------------- */
+.business-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  gap: 4rem;
+}
+ 
+/* -------------------- LEFT CONTENT -------------------- */
+.business-content {
+  flex: 1;
+  text-align: left;
+  animation: fadeInLeft 1.2s ease;
+}
+ 
+.business-title {
+  font-size: 3rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #56ccf2, #2f80ed); /* Cyan to Blue */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1.2rem;
+}
+ 
+.business-description {
+  font-size: 1.4rem;
+  color: #e0e0e0;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+ 
+.business-description .highlight {
+  font-weight: bold;
+  color: #ffd166; /* Golden Highlight */
+}
+ 
+/* Features */
+.business-features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+ 
+.feature-item {
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+  color: #cfe2ff;
+  transition: transform 0.4s ease-in-out;
+}
+ 
+.feature-item:hover {
+  transform: translateX(10px);
+}
+ 
+.feature-icon {
+  color: #ffd166; /* Golden Icon */
+  font-size: 1.4rem;
+}
+ 
+/* -------------------- BUTTON -------------------- */
+.business-btn {
+  background: linear-gradient(135deg, #6a11cb, #2575fc); /* Purple to Blue */
+  color: white;
+  padding: 16px 36px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  margin-top: 1.2rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+ 
+.business-btn:hover {
+  background: linear-gradient(135deg, #892cdc, #2575fc);
+  transform: scale(1.08);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+ 
+.button-icon {
+  font-size: 1.3rem;
+}
+ 
+/* -------------------- RIGHT IMAGE -------------------- */
+.business-image-container {
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1); /* Glassmorphism */
+  backdrop-filter: blur(12px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+  transition: transform 1s ease-in-out;
+}
+ 
+.business-image-container:hover {
+  transform: scale(1.12) rotate(3deg);
+}
+ 
+.business-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+ 
+/* -------------------- RESPONSIVE -------------------- */
+@media (max-width: 992px) {
+  .business-container {
+    flex-direction: column;
+    text-align: center;
+  }
+ 
+  .business-content {
+    text-align: center;
+  }
+ 
+  .feature-item {
+    justify-content: center;
+  }
+ 
+  .business-image-container {
+    width: 280px;
+    height: 280px;
+  }
+}
+ 
+/* -------------------- ANIMATIONS -------------------- */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+ 

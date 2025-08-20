@@ -35,16 +35,20 @@ import Company from './Screens/Company'
 // // import IntegrationSection from './Components/IntegrationSection'
 // // import { Developer } from './Screens/Developer'
 
-// // =======
+// <<<<<<< stage
+
+// =======
+// // // =======
+// // // >>>>>>> master
+
+// // import VirtualAccountSection from './Components/VirtualAccountSection'
 // // >>>>>>> master
 
-// import VirtualAccountSection from './Components/VirtualAccountSection'
+// import WhiteLabelSection from './Screens/WhiteLabelSection'
+// import SignUp from './Screens/SignUp'
+ 
+ 
 // >>>>>>> master
-
-import WhiteLabelSection from './Screens/WhiteLabelSection'
-import SignUp from './Screens/SignUp'
- 
- 
 function App() {
 
   const [count, setCount] = useState(0)
@@ -59,19 +63,30 @@ function App() {
 <Route path= '/signUp' element={<SignUp/>} />
 <Route path='/contact' element={<Contact/>} />
 <Route path="/company" element={<Company/>} />
-// <<<<<<< feature
+// <<<<<<< stage
 // <Route path="/solution-and-features" element={<SolutionAndFeatures/>} />
 // <Route path="/pricing" element={<Pricing/>} />
 // <Route path="/faqs" element={<FAQs/>} />
 // <Route path="/privacy-policy" element={<PrivacyPolicySection/>} />
+// <Route path="/terms-and-condition" element={<PrivacyPolicySection/>} />
+// </Routes>
+
+
 // =======
+// // <<<<<<< feature
+// // <Route path="/solution-and-features" element={<SolutionAndFeatures/>} />
+// // <Route path="/pricing" element={<Pricing/>} />
+// // <Route path="/faqs" element={<FAQs/>} />
+// // <Route path="/privacy-policy" element={<PrivacyPolicySection/>} />
+// // =======
  
-// <Route path="/payment-gateway" element={<AcceptingPaymentSection />} />
-// <Route path="/invoice" element={<InvoiceSection />} />
-// <Route path="/virtual-account" element={<VirtualAccountSection/>}/>
-// <Route path="/whitelabel" element={<WhiteLabelSection />} />
-// // <<<<<<< Mandeep
-// // <Route path="/developer" element={<Developer />} />
+// // <Route path="/payment-gateway" element={<AcceptingPaymentSection />} />
+// // <Route path="/invoice" element={<InvoiceSection />} />
+// // <Route path="/virtual-account" element={<VirtualAccountSection/>}/>
+// // <Route path="/whitelabel" element={<WhiteLabelSection />} />
+// // // <<<<<<< Mandeep
+// // // <Route path="/developer" element={<Developer />} />
+// >>>>>>> master
 
 // // =======
  
