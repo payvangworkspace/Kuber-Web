@@ -105,7 +105,7 @@ const Navbar = forwardRef((props, ref) => {
           <button className="btn btn-outline" onClick={redirectSignIn}>
             Sign In
           </button>
-          <button className="btn btn-primary">Get Started</button>
+          <button className="btn btn-primary" onClick={() => navigate("/signup")}>Get Started</button>
         </div>
 
         {/* Hamburger Menu */}

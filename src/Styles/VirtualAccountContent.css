@@ -24,13 +24,17 @@
   margin-bottom: 16px;
 }
 
-.virtual-account-image {
-  margin: 25px auto;
+.virtual-account-images {
+  /* margin: 25px auto; */
   text-align: center;
+  width: 30vw;
+  float: right;
+  margin-left: auto;
+  margin-right:0;
+  animation: slideInRight 1.2s ease-out forwards, float 3s ease-in-out infinite 1.2s;
 }
 
-.virtual-account-image img {
-  max-width: 100%;
+.virtual-account-images img {
   height: auto;
   border-radius: 10px;
 }

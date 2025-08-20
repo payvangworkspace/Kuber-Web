@@ -31,7 +31,7 @@ const VirtualAccountContent = () => {
         </p>
 
         {/* Inline image */}
-        <div className="virtual-account-image">
+        <div className="virtual-account-images">
           <img src="./about-us.jpg" alt="Virtual Account Process" />
         </div>
 
