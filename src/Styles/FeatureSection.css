@@ -1,0 +1,240 @@
+.feature-section {
+  padding: 5rem 10%;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: white;
+  text-align: center;
+  height: 90vh;
+}
+
+.feature-header h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #38bdf8;
+  margin-bottom: 0.8rem;
+}
+
+.feature-header h2 span {
+  color: whitesmoke
+}
+
+.feature-header p {
+  font-size: 1.1rem;
+  color: #cbd5e1;
+  margin-bottom: 3rem;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.feature-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 1.2rem;
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+  animation: fadeUp 0.8s ease forwards;
+  opacity: 0;
+}
+
+.feature-card:hover {
+  transform: translateY(-12px) scale(1.05);
+  background: rgba(56, 189, 248, 0.1);
+  box-shadow: 0 10px 25px rgba(56, 189, 248, 0.3);
+}
+
+.feature-icon {
+  font-size: 2.8rem;
+  color: #38bdf8;
+  margin-bottom: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.feature-card:hover .feature-icon {
+  color: #efefef;
+}
+
+.feature-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+  color: #f1f5f9;
+}
+
+.feature-card p {
+  font-size: 1rem;
+  color: #cbd5e1;
+  line-height: 1.5;
+}
+
+/* Animations */
+@keyframes fadeUp {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.icon-p{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-section {
+  padding: 5rem 4%;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: white;
+  text-align: center;
+  overflow: hidden;
+  width: 99vw;
+}
+
+.feature-header h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #38bdf8;
+  margin-bottom: 0.8rem;
+}
+
+.feature-header h2 span {
+  color: #facc15;
+}
+
+.feature-header p {
+  font-size: 1.1rem;
+  color: #cbd5e1;
+  margin-bottom: 3rem;
+}
+
+.feature-slider {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* Firefox */
+  /* border: 2px solid orange; */
+}
+
+.feature-slider::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+.feature-card {
+  min-width: 260px;
+  max-width: 280px;
+  flex-shrink: 0;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 1.2rem;
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+  animation: fadeUp 0.8s ease forwards;
+  opacity: 0;
+}
+
+.feature-card:hover {
+  transform: translateY(-12px) scale(1.05);
+  background: rgba(56, 189, 248, 0.1);
+  box-shadow: 0 10px 25px rgba(56, 189, 248, 0.3);
+}
+
+.feature-icon {
+  font-size: 2.8rem;
+  color: #38bdf8;
+  margin-bottom: 1.2rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.feature-card:hover .feature-icon {
+  color: #facc15;
+  transform: rotate(8deg) scale(1.2);
+}
+
+.feature-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+  color: #f1f5f9;
+}
+
+.feature-card p {
+  font-size: 0.95rem;
+  color: #cbd5e1;
+  line-height: 1.5;
+}
+
+/* Animations */
+@keyframes fadeUp {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.icon-p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature-slider-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.scroll-btn {
+  /* position: absolute;
+  top: 50%; */
+  transform: translateY(-50%);
+  background: rgba(56, 189, 248, 0.15);
+  border: none;
+  border-radius: 50%;
+  padding: 0.8rem;
+  cursor: pointer;
+  z-index: 2;
+  transition: background 0.3s ease, transform 0.3s ease;
+  color: #38bdf8;
+  font-size: 1.5rem;
+  backdrop-filter: blur(6px);
+}
+
+.scroll-btn:hover {
+  background: rgba(56, 189, 248, 0.4);
+  transform: translateY(-50%) scale(1.1);
+  color: #fff;
+}
+
+.scroll-btn.left {
+  /* left: -2rem; */
+}
+
+.scroll-btn.right {
+  /* right: -2rem; */
+}
+
+.button-placer{
+  margin-top: 40px;
+  /* border: 2px solid red; */
+  padding: 10px 0px;
+  display: flex;
+  justify-content: center;
+
+}
+.left-right{
+  /* margin-top: 10px; */
+  /* border: 2px solid white; */
+  width: 8vw;
+  display: flex;
+  justify-content: space-between;
+}

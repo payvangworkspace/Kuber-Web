@@ -17,20 +17,29 @@ import { SignIn } from './Screens/SignIn'
 import { Contact } from './Screens/Contact'
 
 import Company from './Screens/Company'
- 
-import AcceptingPaymentSection from './Screens/AcceptingPaymentSection'
+// <<<<<<< feature
+// import SolutionAndFeatures from './Screens/SolutionAndFeatures'
 
-import InvoiceSection from './Screens/InvoiceSection'
-// <<<<<<< Mandeep
-// import VirtualAccountSection from './Components/VirtualAccountSection'
-// import WhiteLabelSection from './Screens/WhiteLabelSection'
-// import IntegrationSection from './Components/IntegrationSection'
-// import { Developer } from './Screens/Developer'
+// import Pricing from './Screens/Pricing'
+// import FAQs from './Screens/FAQs'
+// import PrivacyPolicySection from './Screens/PrivacyPolicySection'
 
 // =======
-// >>>>>>> master
+ 
+// import AcceptingPaymentSection from './Screens/AcceptingPaymentSection'
 
-import VirtualAccountSection from './Components/VirtualAccountSection'
+// import InvoiceSection from './Screens/InvoiceSection'
+// // <<<<<<< Mandeep
+// // import VirtualAccountSection from './Components/VirtualAccountSection'
+// // import WhiteLabelSection from './Screens/WhiteLabelSection'
+// // import IntegrationSection from './Components/IntegrationSection'
+// // import { Developer } from './Screens/Developer'
+
+// // =======
+// // >>>>>>> master
+
+// import VirtualAccountSection from './Components/VirtualAccountSection'
+// >>>>>>> master
 
 import WhiteLabelSection from './Screens/WhiteLabelSection'
 import SignUp from './Screens/SignUp'
@@ -50,16 +59,23 @@ function App() {
 <Route path= '/signUp' element={<SignUp/>} />
 <Route path='/contact' element={<Contact/>} />
 <Route path="/company" element={<Company/>} />
- 
-<Route path="/payment-gateway" element={<AcceptingPaymentSection />} />
-<Route path="/invoice" element={<InvoiceSection />} />
-<Route path="/virtual-account" element={<VirtualAccountSection/>}/>
-<Route path="/whitelabel" element={<WhiteLabelSection />} />
-// <<<<<<< Mandeep
-// <Route path="/developer" element={<Developer />} />
-
+// <<<<<<< feature
+// <Route path="/solution-and-features" element={<SolutionAndFeatures/>} />
+// <Route path="/pricing" element={<Pricing/>} />
+// <Route path="/faqs" element={<FAQs/>} />
+// <Route path="/privacy-policy" element={<PrivacyPolicySection/>} />
 // =======
  
+// <Route path="/payment-gateway" element={<AcceptingPaymentSection />} />
+// <Route path="/invoice" element={<InvoiceSection />} />
+// <Route path="/virtual-account" element={<VirtualAccountSection/>}/>
+// <Route path="/whitelabel" element={<WhiteLabelSection />} />
+// // <<<<<<< Mandeep
+// // <Route path="/developer" element={<Developer />} />
+
+// // =======
+ 
+// // >>>>>>> master
 // >>>>>>> master
 </Routes>
  

@@ -5,13 +5,13 @@
   "homepage": "https://payvangworkspace.github.io/Kuber-Web",
   "type": "module",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
-  },
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist -b gh-pages -r https://github.com/payvangworkspace/Kuber-Web.git",
+  "dev": "vite",
+  "build": "vite build",
+  "lint": "eslint .",
+  "preview": "vite preview"
+},
   "dependencies": {
     "@tailwindcss/vite": "^4.1.11",
     "aos": "^2.3.4",

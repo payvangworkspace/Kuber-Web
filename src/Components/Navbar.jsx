@@ -66,11 +66,11 @@ const Navbar = forwardRef((props, ref) => {
               onMouseEnter={() => setDropdownOpen("solutions")}
               onMouseLeave={() => setDropdownOpen(null)}
             >
-              <a href="#">Solutions & Features</a>
-              <a href="#">Pricing</a>
-              <a href="#">FAQ's</a>
-              <a href="#">Terms & Conditions</a>
-              <a href="#">Privacy Policy</a>
+              <Link to="/solution-and-features">Solutions & Features</Link>
+              <Link to="/pricing">Pricing</Link>
+              <Link to="/faqs">FAQ's</Link>
+              <Link to="#">Terms & Conditions</Link>
+              <Link to="/privacy-policy">Privacy Policy</Link>
             </div>
           </div>
 
@@ -91,8 +91,8 @@ const Navbar = forwardRef((props, ref) => {
               onMouseLeave={() => setDropdownOpen(null)}
             >
               <Link to="/company">Company Overview</Link>
-              <Link to="/team">Our Team</Link>
-              <Link to="/career">Careers</Link>
+  
+              {/* <Link to="/career">Careers</Link> */}
             </div>
           </div>
 

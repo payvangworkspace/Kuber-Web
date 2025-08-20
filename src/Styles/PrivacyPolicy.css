@@ -1,0 +1,69 @@
+/* Full background like login screen */
+.privacy-container {
+  min-height: 100vh;
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #143b59, #1e2a47, #0f2027);
+  background-size: 400% 400%;
+  animation: gradientMove 12s ease infinite;
+  padding: 2rem;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Card with glassmorphism */
+.privacy-card {
+  margin-top: 30px;
+  max-width: 900px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 2.5rem;
+  color: #f5f7fa;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  /* overflow-y: auto; */
+  /* max-height: 85vh; */
+}
+
+/* Title */
+.privacy-title {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+/* Content */
+.privacy-content {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #e1e6ef;
+}
+
+.privacy-content h2 {
+  font-size: 1.3rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #6cc1ff;
+  font-weight: 600;
+}
+
+.privacy-content p {
+  margin-bottom: 1rem;
+}
+
+.last-note {
+  margin-top: 2rem;
+  font-weight: 600;
+  color: #ffd166;
+  text-align: center;
+}
