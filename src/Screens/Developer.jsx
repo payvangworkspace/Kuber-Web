@@ -2,12 +2,14 @@ import React from 'react'
 import Navbar from '../Components/Navbar'
 import IntegrationSection from '../Components/IntegrationSection'
 import Footer from '../Components/Footer'
+import BusinessCreateAccount from '../Components/BusinessCreateAccount'
 
 export const Developer = () => {
   return (
     <div>
    <Navbar/>
    <IntegrationSection/>
+   <BusinessCreateAccount/>
    <Footer/>
 
     </div>

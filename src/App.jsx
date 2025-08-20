@@ -17,38 +17,22 @@ import { SignIn } from './Screens/SignIn'
 import { Contact } from './Screens/Contact'
 
 import Company from './Screens/Company'
-// <<<<<<< feature
-// import SolutionAndFeatures from './Screens/SolutionAndFeatures'
+import SolutionAndFeatures from './Screens/SolutionAndFeatures'
 
-// import Pricing from './Screens/Pricing'
-// import FAQs from './Screens/FAQs'
-// import PrivacyPolicySection from './Screens/PrivacyPolicySection'
+import Pricing from './Screens/Pricing'
+import FAQs from './Screens/FAQs'
+import PrivacyPolicySection from './Screens/PrivacyPolicySection'
 
-// =======
- 
-// import AcceptingPaymentSection from './Screens/AcceptingPaymentSection'
+import AcceptingPaymentSection from './Screens/AcceptingPaymentSection'
 
-// import InvoiceSection from './Screens/InvoiceSection'
-// // <<<<<<< Mandeep
-// // import VirtualAccountSection from './Components/VirtualAccountSection'
-// // import WhiteLabelSection from './Screens/WhiteLabelSection'
-// // import IntegrationSection from './Components/IntegrationSection'
-// // import { Developer } from './Screens/Developer'
+import InvoiceSection from './Screens/InvoiceSection'
+ import VirtualAccountSection from './Components/VirtualAccountSection'
+import WhiteLabelSection from './Screens/WhiteLabelSection'
+import IntegrationSection from './Components/IntegrationSection'
+import { Developer } from './Screens/Developer'
+import SignUp from './Screens/SignUp'
+import {TermsandConditions} from './Screens/TermsandConditions'
 
-// <<<<<<< stage
-
-// =======
-// // // =======
-// // // >>>>>>> master
-
-// // import VirtualAccountSection from './Components/VirtualAccountSection'
-// // >>>>>>> master
-
-// import WhiteLabelSection from './Screens/WhiteLabelSection'
-// import SignUp from './Screens/SignUp'
- 
- 
-// >>>>>>> master
 function App() {
 
   const [count, setCount] = useState(0)
@@ -63,35 +47,19 @@ function App() {
 <Route path= '/signUp' element={<SignUp/>} />
 <Route path='/contact' element={<Contact/>} />
 <Route path="/company" element={<Company/>} />
-// <<<<<<< stage
-// <Route path="/solution-and-features" element={<SolutionAndFeatures/>} />
-// <Route path="/pricing" element={<Pricing/>} />
-// <Route path="/faqs" element={<FAQs/>} />
-// <Route path="/privacy-policy" element={<PrivacyPolicySection/>} />
-// <Route path="/terms-and-condition" element={<PrivacyPolicySection/>} />
-// </Routes>
 
+<Route path="/solution-and-features" element={<SolutionAndFeatures/>} />
+<Route path="/pricing" element={<Pricing/>} />
+<Route path="/faqs" element={<FAQs/>} />
+<Route path="/privacy-policy" element={<PrivacyPolicySection/>} />
+<Route path="/terms-and-condition" element={<TermsandConditions/>} />
+<Route path="/faqs" element={<FAQs/>} />
+<Route path="/payment-gateway" element={<AcceptingPaymentSection />} />
+<Route path="/invoice" element={<InvoiceSection />} />
+<Route path="/virtual-account" element={<VirtualAccountSection/>}/>
+<Route path="/whitelabel" element={<WhiteLabelSection />} />
+ <Route path="/developer" element={<Developer />} />
 
-// =======
-// // <<<<<<< feature
-// // <Route path="/solution-and-features" element={<SolutionAndFeatures/>} />
-// // <Route path="/pricing" element={<Pricing/>} />
-// // <Route path="/faqs" element={<FAQs/>} />
-// // <Route path="/privacy-policy" element={<PrivacyPolicySection/>} />
-// // =======
- 
-// // <Route path="/payment-gateway" element={<AcceptingPaymentSection />} />
-// // <Route path="/invoice" element={<InvoiceSection />} />
-// // <Route path="/virtual-account" element={<VirtualAccountSection/>}/>
-// // <Route path="/whitelabel" element={<WhiteLabelSection />} />
-// // // <<<<<<< Mandeep
-// // // <Route path="/developer" element={<Developer />} />
-// >>>>>>> master
-
-// // =======
- 
-// // >>>>>>> master
-// >>>>>>> master
 </Routes>
  
  

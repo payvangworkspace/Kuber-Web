@@ -43,10 +43,16 @@ const Navbar = forwardRef((props, ref) => {
               onMouseEnter={() => setDropdownOpen("products")}
               onMouseLeave={() => setDropdownOpen(null)}
             >
-              <a onClick={() => navigate("/payment-gateway")}>Payment Gateway</a>
+              {/* <a onClick={() => navigate("/payment-gateway")}>Payment Gateway</a>
               <a onClick={() => navigate("/invoice")}>Invoice</a>
               <a onClick={()=> navigate("/virtual-account")}>Virtual Account</a>
-              <a onClick={()=> navigate("/whitelabel")}>White Label Solutions</a>
+              <a onClick={()=> navigate("/whitelabel")}>White Label Solutions</a> */}
+                  
+                  <Link to="/payment-gateway">Payment Gateway</Link>
+              <Link to="/invoice">Invoice</Link>
+              <Link to="/virtual-account">Virtual Account</Link>
+              <Link to="/whitelabel">White Label Solutions</Link>
+          
             </div>
           </div>
 

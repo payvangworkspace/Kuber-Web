@@ -3,6 +3,7 @@ import Navbar from '../Components/Navbar';
 import FeaturesSection from '../Components/FeaturesSection';
 import Footer from '../Components/Footer';
 import "../Styles/Loader.css";
+import BusinessCreateAccount from '../Components/BusinessCreateAccount';
 
 const SolutionAndFeatures = () => {
   const [loading, setLoading] = useState(true);
@@ -27,6 +28,7 @@ const SolutionAndFeatures = () => {
     <>
       <Navbar />
       <FeaturesSection />
+      <BusinessCreateAccount/>
       <Footer />
     </>
   );
