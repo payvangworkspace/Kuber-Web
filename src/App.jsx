@@ -21,6 +21,14 @@ import Company from './Screens/Company'
 import AcceptingPaymentSection from './Screens/AcceptingPaymentSection'
 
 import InvoiceSection from './Screens/InvoiceSection'
+// <<<<<<< Mandeep
+// import VirtualAccountSection from './Components/VirtualAccountSection'
+// import WhiteLabelSection from './Screens/WhiteLabelSection'
+// import IntegrationSection from './Components/IntegrationSection'
+// import { Developer } from './Screens/Developer'
+
+// =======
+// >>>>>>> master
 
 import VirtualAccountSection from './Components/VirtualAccountSection'
 
@@ -47,7 +55,12 @@ function App() {
 <Route path="/invoice" element={<InvoiceSection />} />
 <Route path="/virtual-account" element={<VirtualAccountSection/>}/>
 <Route path="/whitelabel" element={<WhiteLabelSection />} />
+// <<<<<<< Mandeep
+// <Route path="/developer" element={<Developer />} />
+
+// =======
  
+// >>>>>>> master
 </Routes>
  
  

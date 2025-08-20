@@ -1,0 +1,141 @@
+/* Background with gradient theme */
+.integration-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 20px;
+  background: linear-gradient(135deg, #0f4c81, #1c1c1c);
+}
+
+/* Card with glassmorphism */
+.integration-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 50px;
+  border-radius: 25px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  width: 85%;
+  backdrop-filter: blur(12px);
+}
+
+/* Left Content */
+.integration-content {
+  width: 50%;
+  text-align: left;
+}
+
+.title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #0f4c81;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.highlight {
+  color: #1e90ff;
+  font-weight: 600;
+}
+
+.sub-heading {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #0f4c81;
+  margin: 20px 0 10px;
+}
+
+.integration-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #222;
+  font-size: 1.05rem;
+  margin-bottom: 25px;
+  line-height: 1.7;
+}
+
+.final-note {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #444;
+  margin-top: 15px;
+}
+
+/* Right Side - Technology Icons */
+.technology-icons {
+  width: 45%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  /* border: 2px solid red; */
+  margin-top: 50px;
+}
+
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  padding: 20px;
+  background: linear-gradient(135deg, #1e90ff33, #0f4c811a);
+  border: 1px solid rgba(30, 144, 255, 0.2);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tech-item:hover {
+  background: linear-gradient(135deg, #1e90ff55, #0f4c8140);
+  transform: translateY(-6px);
+  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+  font-size: 2.8rem;
+  margin-bottom: 8px;
+  color: #0f4c81;
+}
+
+.tech-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0f4c81;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .integration-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .integration-content, 
+  .technology-icons {
+    width: 100%;
+  }
+
+  .technology-icons {
+    margin-top: 30px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .technology-icons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
