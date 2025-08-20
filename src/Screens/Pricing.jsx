@@ -1,15 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from '../Components/Navbar';
-import "../Styles/SignIn.css";
-import Sign from '../Components/Sign';
 import Footer from '../Components/Footer';
+import PricingSection from '../Components/PricingSection';
 import "../Styles/Loader.css";
 
-export const SignIn = () => {
+export default function Pricing() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    document.title = "Sign In | KuberPays";
+    document.title = "Pricing | KuberPays";
 
     const timer = setTimeout(() => setLoading(false), 1000);
     return () => clearTimeout(timer);
@@ -25,10 +24,10 @@ export const SignIn = () => {
   }
 
   return (
-    <div className="sign-outer">
+    <>
       <Navbar />
-      <Sign />
+      <PricingSection />
       <Footer />
-    </div>
+    </>
   );
-};
+}
