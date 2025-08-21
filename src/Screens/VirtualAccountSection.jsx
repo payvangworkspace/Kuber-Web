@@ -1,15 +1,17 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "../Components/Navbar";
-import IntegrationSection from "../Components/IntegrationSection";
+import VirtualAccountContent from "../Components/VirtualAccountContent";
+import BusinessStats from "../Components/BusinessStats";
+import ClientUnderstanding from "../Components/ClientUnderstanding";
+import IndustriesSection from "../Components/IndustriesSection";
 import Footer from "../Components/Footer";
-import BusinessCreateAccount from "../Components/BusinessCreateAccount";
 import "../Styles/Loader.css";
 
-export const Developer = () => {
+const VirtualAccountSection = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    document.title = "Developer | KuberPays";
+    document.title = "Virtual Account | KuberPays";
 
     const timer = setTimeout(() => setLoading(false), 1000);
     return () => clearTimeout(timer);
@@ -27,9 +29,13 @@ export const Developer = () => {
   return (
     <>
       <Navbar />
-      <IntegrationSection />
-      <BusinessCreateAccount />
+      <VirtualAccountContent />
+      <BusinessStats />
+      <ClientUnderstanding />
+      <IndustriesSection />
       <Footer />
     </>
   );
 };
+
+export default VirtualAccountSection;

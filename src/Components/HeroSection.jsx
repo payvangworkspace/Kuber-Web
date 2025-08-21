@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../Styles/HeroSection.css";
 // import CNImage from "../assets/CN.png"; // adjust path if needed
 
@@ -14,7 +15,7 @@ const HeroSection = () => {
           businesses of all sizes count on.
         </p>
         <div className="solution-btn">
-        <a href="/solutions" className="hero-button">Explore solutions</a>
+        <Link to="/contact" className="hero-button">Explore solutions</Link>
         </div>
       </div>
 

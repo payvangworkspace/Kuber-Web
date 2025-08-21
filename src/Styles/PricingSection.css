@@ -45,6 +45,7 @@
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+
 }
 
 .pricing-subtitle {
@@ -90,7 +91,7 @@
   position: absolute;
   top: 6px;
   bottom: 6px;
-  width: calc(50% - 6px);
+  width: calc(36% - 6px);
   border-radius: 10px;
   background: linear-gradient(90deg, #00dfd8, #007cf0);
   transition: transform 0.35s cubic-bezier(.2,.8,.2,1);
@@ -99,10 +100,11 @@
 
 .toggle-glider.monthly {
   transform: translateX(0%);
+
 }
 
 .toggle-glider.yearly {
-  transform: translateX(100%);
+  transform: translateX(109%);
 }
 
 .save-pill {

@@ -5,7 +5,7 @@
   gap: 3rem;
   padding: 5rem 6%;
   background: linear-gradient(120deg, rgba(10, 47, 92, 0.95), rgba(16, 62, 115, 0.95)),
-              url("/bg-pattern.jpg") center/cover;
+              url("./bg-3.jpg") center/cover;
   color: white;
   min-height: 80vh;
   position: relative;

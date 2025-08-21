@@ -11,7 +11,8 @@ const Footer = () => {
         <div className="footer-left">
           <img
             className="footer-logo"
-            src="./logo2.png"  // Public folder image
+            src={`${import.meta.env.BASE_URL}/logo2.png`}
+              // Public folder image
             alt="Kuberpays Logo"
           />
           <div className="footer-info">

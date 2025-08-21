@@ -21,7 +21,8 @@ const features = [
 
 const BusinessSolutions = () => {
   return (
-    <section className="business-section">
+    <section className="business-section" style={{background:`linear-gradient(120deg, rgba(10, 47, 92, 0.95), rgba(16, 62, 115, 0.95)),
+              url("./bg-3.jpg") center/cover;`}}>
       {/* Text content */}
       <motion.div
         className="business-content"

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import "../Styles/Sign.css";
-// import logo from "../assets/logo.png"; // Update to your actual logo path
 
 const Sign = () => {
   const [username, setUsername] = useState("");
@@ -20,17 +19,22 @@ const Sign = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
+        {/* Logo */}
         <motion.div
           className="signin-logo"
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.5 }}
         >
-            <div className="logo-container">
-          <img src={"./logo2.png"} alt="Website Logo" className="main-logo" />
+          <div className="logo-container">
+            <img src={"./logo2.png"} alt="Website Logo" className="main-logo" />
           </div>
         </motion.div>
+
+        {/* Title */}
         <h2 className="signin-title">Welcome Back</h2>
+
+        {/* Form */}
         <form onSubmit={handleSubmit}>
           <motion.input
             type="text"
@@ -57,6 +61,15 @@ const Sign = () => {
             Sign In
           </motion.button>
         </form>
+
+        {/* Footer Links */}
+        <div className="signin-footer">
+          <a href="/forgot-password" className="footer-link">Forgot Password?</a>
+          <p>
+            Don’t have an account?{" "}
+            <a href="/register" className="footer-link">Register</a>
+          </p>
+        </div>
       </motion.div>
     </div>
   );

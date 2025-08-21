@@ -1,5 +1,6 @@
 import React from "react";
 import "../Styles/InvoicingContent.css";
+import { Workflow, Users } from "lucide-react"; // Professional icons
 
 const InvoicingContent = () => {
   return (
@@ -11,32 +12,43 @@ const InvoicingContent = () => {
             GST Invoicing Software for All Businesses
           </h1>
           <p className="invoicing-intro">
-            <strong>Kuber Pays</strong> provides simple and powerful invoicing software that 
-            helps you create professional invoices, automate payment reminders, 
-            and get paid faster online. Send and manage invoices from anywhere, anytime.
+            <strong>Kuber Pays</strong> provides powerful invoicing software that
+            helps you create professional invoices, automate payment reminders,
+            and get paid faster online. Manage everything from anywhere, anytime.
           </p>
 
           <div className="invoicing-features">
             <div className="feature">
-              <h3>🚀 Workflow Automation</h3>
-              <p>
-                Automate recurring tasks like invoice generation and reminders. 
-                <strong> Kuber Pays Invoice</strong> ensures you focus on growth while 
-                automation takes care of routine work.
-              </p>
+              <div className="feature-icon-c">
+                <Workflow size={32} strokeWidth={1.5} />
+              </div>
+              <div>
+                <h3>Workflow Automation</h3>
+                <p>
+                  Automate recurring tasks like invoice generation and reminders. 
+                  <strong> Kuber Pays Invoice</strong> lets you focus on growth while automation 
+                  handles the routine.
+                </p>
+              </div>
             </div>
+
             <div className="feature">
-              <h3>🤝 Easy Collaboration</h3>
-              <p>
-                Communicate with your clients in real-time. Share invoices, 
-                discuss prices, and finalize deals securely in the 
-                <strong> Client Portal of kuberpays.com</strong>.
-              </p>
+              <div className="feature-icon-c">
+                <Users size={32} strokeWidth={1.5} />
+              </div>
+              <div>
+                <h3>Seamless Collaboration</h3>
+                <p>
+                  Communicate with your clients in real-time. Share invoices,
+                  discuss pricing, and finalize deals securely inside the
+                  <strong> Client Portal</strong>.
+                </p>
+              </div>
             </div>
           </div>
 
           <a href="/signup" className="signup-button">
-            Sign Up Now
+            Get Started
           </a>
         </div>
 

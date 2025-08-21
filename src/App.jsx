@@ -26,11 +26,11 @@ import PrivacyPolicySection from './Screens/PrivacyPolicySection'
 import AcceptingPaymentSection from './Screens/AcceptingPaymentSection'
 
 import InvoiceSection from './Screens/InvoiceSection'
- import VirtualAccountSection from './Components/VirtualAccountSection'
+ import VirtualAccountSection from './Screens/VirtualAccountSection'
 import WhiteLabelSection from './Screens/WhiteLabelSection'
 import IntegrationSection from './Components/IntegrationSection'
 import { Developer } from './Screens/Developer'
-import SignUp from './Screens/SignUp'
+import SignupSection from './Screens/SignupSection'
 import {TermsandConditions} from './Screens/TermsandConditions'
 
 function App() {
@@ -44,7 +44,7 @@ function App() {
 <Routes>
 <Route path='/' element={<Home/>} />
 <Route path='/login' element={<SignIn/>} />
-<Route path= '/signUp' element={<SignUp/>} />
+<Route path= '/signUp' element={<SignupSection/>} />
 <Route path='/contact' element={<Contact/>} />
 <Route path="/company" element={<Company/>} />
 

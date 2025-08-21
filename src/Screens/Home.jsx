@@ -19,7 +19,6 @@ export const Home = () => {
 
     if (navbarRef.current) {
       navbarRef.current.style.width = "100vw";
-      console.log("Hellow")
     }
 
     const timer = setTimeout(() => setLoading(false), 1000);

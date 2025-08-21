@@ -84,7 +84,7 @@ const InnovationSection = () => {
       {/* Footer Text */}
       <p className="footer-text" data-aos="fade-up" data-aos-delay="600">
         Join thousands of businesses using KuberPays to simplify payments.{' '}
-        <Link to="/about" className="explore-link">
+        <Link to="/company" className="explore-link">
           Learn more about us
         </Link>
       </p>

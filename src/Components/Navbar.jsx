@@ -33,9 +33,9 @@ const Navbar = forwardRef((props, ref) => {
             onMouseEnter={() => setDropdownOpen("products")}
             onMouseLeave={() => setDropdownOpen(null)}
           >
-            <a href="#" onClick={() => toggleDropdown("products")}>
+            <Link to="/payment-gateway" onClick={() => toggleDropdown("products")}>
               Products ▾
-            </a>
+            </Link>
             <div
               className={`dropdown-menu ${
                 dropdownOpen === "products" ? "show" : ""
@@ -62,9 +62,9 @@ const Navbar = forwardRef((props, ref) => {
             onMouseEnter={() => setDropdownOpen("solutions")}
             onMouseLeave={() => setDropdownOpen(null)}
           >
-            <a href="#" onClick={() => toggleDropdown("solutions")}>
+            <Link to="/solution-and-features" onClick={() => toggleDropdown("solutions")}>
               Solutions ▾
-            </a>
+            </Link>
             <div
               className={`dropdown-menu ${
                 dropdownOpen === "solutions" ? "show" : ""
@@ -86,9 +86,9 @@ const Navbar = forwardRef((props, ref) => {
             onMouseEnter={() => setDropdownOpen("company")}
             onMouseLeave={() => setDropdownOpen(null)}
           >
-            <a href="#" onClick={() => toggleDropdown("company")}>
+            <Link to="/company" onClick={() => toggleDropdown("company")}>
               Company ▾
-            </a>
+            </Link>
             <div
               className={`dropdown-menu ${
                 dropdownOpen === "company" ? "show" : ""

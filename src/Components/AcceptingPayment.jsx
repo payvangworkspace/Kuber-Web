@@ -1,5 +1,6 @@
 import React from "react";
 import "../Styles/AcceptingPayment.css";
+import { Link } from "react-router-dom";
 
 const AcceptingPayment = () => {
   return (
@@ -42,9 +43,9 @@ const AcceptingPayment = () => {
           </ul>
 
           <div className="signup-container">
-            <a href="/signup" className="signup-button">
+            <Link to="/signup" className="signup-button">
               Sign Up Now
-            </a>
+            </Link>
           </div>
         </div>
 

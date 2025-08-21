@@ -1,6 +1,7 @@
 import React from "react";
 import "../Styles/InfoCards.css";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const cardData = [
   {
@@ -65,9 +66,9 @@ const InfoCards = () => {
             <div className="card-content">
               <h3>{card.title}</h3>
               <p>{card.description}</p>
-              <a href="#!" className="read-more">
+              <Link to="/contact" className="read-more">
                 {card.linkText} &rarr;
-              </a>
+              </Link>
             </div>
           </div>
         ))}
