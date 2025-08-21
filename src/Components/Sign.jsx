@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import "../Styles/Sign.css";
+import { Link } from "react-router-dom";
 
 const Sign = () => {
   const [username, setUsername] = useState("");
@@ -64,10 +65,10 @@ const Sign = () => {
 
         {/* Footer Links */}
         <div className="signin-footer">
-          <a href="/forgot-password" className="footer-link">Forgot Password?</a>
+          <a href="#" className="footer-link">Forgot Password?</a>
           <p>
             Don’t have an account?{" "}
-            <a href="/register" className="footer-link">Register</a>
+            <Link to="/signup" className="footer-link">Register</Link>
           </p>
         </div>
       </motion.div>
