@@ -145,7 +145,7 @@ const Navbar = forwardRef((props, ref) => {
                   }`}
                 >
                   <Link to="/developer">Technology Stack</Link>
-                  <Link to="/merchant-integration">Merchant Integration</Link>
+                  {/* <Link to="/merchant-integration">Merchant Integration</Link> */}
                 </div>
               </div>
             </div>

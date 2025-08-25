@@ -39,3 +39,10 @@
   border-color: #00dfd8;
   box-shadow: 0 0 12px rgba(0, 223, 216, 0.4);
 }
+.tick-parent{
+  /* border: 2px solid red; */
+  margin: 7px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

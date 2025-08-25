@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { motion, AnimatePresence } from "framer-motion";
+import { FiCheckCircle } from "react-icons/fi";
 import "../Styles/Signup.css";
 
 const SignUp = () => {
@@ -16,6 +18,8 @@ const SignUp = () => {
     confirmPassword: "",
   });
 
+  const [showPopup, setShowPopup] = useState(false);
+
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -23,6 +27,14 @@ const SignUp = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Signup Data:", formData);
+
+    // ✅ Show popup on successful submit
+    setShowPopup(true);
+
+    // Auto-close popup after 3 sec
+    setTimeout(() => {
+      setShowPopup(false);
+    }, 3000);
   };
 
   return (
@@ -160,6 +172,39 @@ const SignUp = () => {
           Already have an account? <Link to="/login">Login</Link>
         </p>
       </div>
+
+      {/* ✅ Success Popup */}
+      <AnimatePresence>
+        {showPopup && (
+          <motion.div
+            initial={{ opacity: 0, scale: 0.7 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.7 }}
+            transition={{ duration: 0.4 }}
+            className="fixed inset-0 flex items-center justify-center bg-black/50 z-50"
+          >
+            <motion.div
+              initial={{ y: -20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              exit={{ y: 20, opacity: 0 }}
+              className="bg-[#0f172a] p-8 rounded-2xl text-center shadow-xl border border-cyan-500/30 max-w-sm"
+            >
+              <div className="flex items-center justify-center mb-4">
+                <div className="w-20 h-20 rounded-full border-4 border-green-400 flex items-center justify-center">
+                  <FiCheckCircle className="text-5xl text-green-400" />
+                </div>
+              </div>
+              <h3 className="text-2xl font-bold text-white mb-2">
+                Registration Successful!
+              </h3>
+              <p className="text-gray-300">
+                Your account has been created successfully. Please login to
+                continue.
+              </p>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 };

@@ -282,3 +282,20 @@
 }
 
 
+.contact-sales-box {
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 500px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(0, 124, 240, 0.25);
+}
+
+.contact-sales-text {
+  font-size: 1.1rem;
+  color: #e2e8f0;
+  margin-bottom: 1.2rem;
+}
