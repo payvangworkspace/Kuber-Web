@@ -100,3 +100,108 @@
   transform: translateY(-3px);
   box-shadow: 0 6px 20px rgba(26, 115, 232, 0.4);
 }
+/* Tablet screens */
+@media screen and (max-width: 1024px) {
+  .invoicing-section {
+    padding: 60px 20px;
+  }
+
+  .invoicing-title {
+    font-size: 2.2rem;
+  }
+
+  .invoicing-intro {
+    font-size: 1.05rem;
+    margin-bottom: 25px;
+  }
+
+  .feature h3 {
+    font-size: 1.1rem;
+  }
+
+  .feature p {
+    font-size: 0.95rem;
+  }
+
+  .invoicing-image img {
+    max-width: 75%;
+  }
+}
+
+/* Mobile screens */
+@media screen and (max-width: 768px) {
+  .invoicing-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 35px;
+  }
+
+  .invoicing-text {
+    order: 2;
+  }
+
+  .invoicing-image {
+    order: 1;
+    margin-bottom: 25px;
+  }
+
+  .invoicing-title {
+    font-size: 1.9rem;
+    line-height: 1.4;
+  }
+
+  .invoicing-intro {
+    font-size: 0.95rem;
+  }
+
+  .feature {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .feature h3 {
+    font-size: 1rem;
+  }
+
+  .feature p {
+    font-size: 0.9rem;
+  }
+
+  .signup-button {
+    font-size: 0.9rem;
+    padding: 12px 26px;
+  }
+
+  .invoicing-image img {
+    max-width: 100%;
+  }
+}
+
+/* Small mobile screens */
+@media screen and (max-width: 480px) {
+  .invoicing-section {
+    padding: 40px 15px;
+  }
+
+  .invoicing-title {
+    font-size: 1.6rem;
+  }
+
+  .invoicing-intro {
+    font-size: 0.9rem;
+  }
+
+  .feature h3 {
+    font-size: 0.95rem;
+  }
+
+  .feature p {
+    font-size: 0.85rem;
+  }
+
+  .signup-button {
+    font-size: 0.85rem;
+    padding: 10px 22px;
+  }
+}

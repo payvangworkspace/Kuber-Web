@@ -7,7 +7,7 @@ const HeroSection = () => {
     <section className="hero">
       <div className="hero-content">
         <h1 className="hero-title">
-          Powering Payments in <span>Canadian</span>
+          Powering Payments in <span>Canada</span>
         </h1>
         <p className="hero-subtitle">
           From start-ups to large enterprises and everything in between, we’ve got the

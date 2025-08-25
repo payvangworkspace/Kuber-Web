@@ -18,7 +18,7 @@ export const Home = () => {
     document.title = "Home | KuberPays";
 
     if (navbarRef.current) {
-      navbarRef.current.style.width = "100vw";
+      // navbarRef.current.style.width = "100vw";
     }
 
     const timer = setTimeout(() => setLoading(false), 1000);

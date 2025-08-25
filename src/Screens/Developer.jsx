@@ -4,6 +4,7 @@ import IntegrationSection from "../Components/IntegrationSection";
 import Footer from "../Components/Footer";
 import BusinessCreateAccount from "../Components/BusinessCreateAccount";
 import "../Styles/Loader.css";
+import MerchantIntegration from "../Components/MerchantIntegration";
 
 export const Developer = () => {
   const [loading, setLoading] = useState(true);
@@ -27,7 +28,9 @@ export const Developer = () => {
   return (
     <>
       <Navbar />
+      
       <IntegrationSection />
+   
       <BusinessCreateAccount />
       <Footer />
     </>

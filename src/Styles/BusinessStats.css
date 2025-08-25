@@ -13,6 +13,7 @@
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
+  /* border: 2px solid pink; */
 }
 
 .stat-box {
@@ -167,5 +168,131 @@
 
   .stat-label {
     font-size: 1rem;
+  }
+}
+/* Existing styles remain unchanged above this line */
+
+/* Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .stats-title {
+    font-size: 2.4rem;
+  }
+
+  .stats-description {
+    font-size: 1.05rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .stat-box {
+    min-width: 180px;
+    padding: 1.8rem 2rem;
+  }
+
+  .stat-value {
+    font-size: 2.2rem;
+  }
+}
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  .business-stats-section {
+    padding: 4rem 4%;
+    min-height: auto;
+  }
+
+  .stats-title {
+    font-size: 2rem;
+  }
+
+  .stats-description {
+    font-size: 0.95rem;
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .stats-container {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .stat-box {
+    width: 90%;
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 1.5rem;
+  }
+
+  .stat-value {
+    font-size: 1.8rem;
+  }
+
+  .stat-label {
+    font-size: 0.95rem;
+  }
+}
+
+/* Small Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .stats-title {
+    font-size: 1.6rem;
+  }
+
+
+  .stats-description {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .stat-box {
+    padding: 1.2rem;
+  }
+
+  .stat-value {
+    font-size: 1.6rem;
+  }
+
+  .stat-label {
+    font-size: 0.85rem;
+  }
+}
+
+/* Fix for small screens where text is hidden */
+@media (max-width: 768px) {
+  .business-stats-section {
+    min-height: auto;   /* allow section to grow */
+    height: auto;       /* remove fixed height */
+    padding: 3rem 1.5rem; /* more breathing space */
+    background-position: top; /* adjust bg for better view */
+  }
+
+  .stats-content {
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  .stats-title {
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .stats-description {
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .business-stats-section {
+    padding: 2.5rem 1rem;
+    background-position: center top; /* crop better on very small screens */
+  }
+
+  .stats-title {
+    font-size: 1.5rem;
+  }
+
+  .stats-description {
+    font-size: 0.85rem;
+    line-height: 1.4;
   }
 }

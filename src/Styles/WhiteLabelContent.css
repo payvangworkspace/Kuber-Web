@@ -93,3 +93,111 @@
   border-radius: 12px;
   box-shadow: 0 6px 20px rgba(0,0,0,0.1);
 }
+/* Tablet screens */
+@media screen and (max-width: 1024px) {
+  .whitelabel-section {
+    padding: 50px 15px;
+  }
+
+  .whitelabel-text .title {
+    font-size: 2rem;
+  }
+
+  .whitelabel-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .whitelabel-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .whitelabel-text h3 {
+    font-size: 1.3rem;
+  }
+
+  .benefits-list li {
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobile screens */
+@media screen and (max-width: 768px) {
+  .whitelabel-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .whitelabel-text {
+    order: 2;
+  }
+
+  .whitelabel-image {
+    order: 1;
+  }
+
+  .whitelabel-text .title {
+    font-size: 1.8rem;
+    line-height: 1.3;
+  }
+
+  .whitelabel-text p {
+    font-size: 0.95rem;
+  }
+
+  .whitelabel-text h2 {
+    font-size: 1.3rem;
+  }
+
+  .whitelabel-text h3 {
+    font-size: 1.15rem;
+  }
+
+  .benefits-list {
+    padding-left: 18px;
+    text-align: left;
+  }
+
+  .signup-button {
+    font-size: 0.9rem;
+    padding: 10px 22px;
+  }
+
+  .whitelabel-image img {
+    max-width: 100%;
+  }
+}
+
+/* Small mobile screens */
+@media screen and (max-width: 480px) {
+  .whitelabel-section {
+    padding: 35px 12px;
+  }
+
+  .whitelabel-text .title {
+    font-size: 1.5rem;
+  }
+
+  .whitelabel-text p {
+    font-size: 0.9rem;
+  }
+
+  .whitelabel-text h2 {
+    font-size: 1.15rem;
+  }
+
+  .whitelabel-text h3 {
+    font-size: 1.05rem;
+  }
+
+  .benefits-list li {
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+
+  .signup-button {
+    font-size: 0.85rem;
+    padding: 9px 20px;
+  }
+}

@@ -32,6 +32,7 @@ import IntegrationSection from './Components/IntegrationSection'
 import { Developer } from './Screens/Developer'
 import SignupSection from './Screens/SignupSection'
 import {TermsandConditions} from './Screens/TermsandConditions'
+import Integration from './Screens/Integration'
 
 function App() {
 
@@ -59,7 +60,7 @@ function App() {
 <Route path="/virtual-account" element={<VirtualAccountSection/>}/>
 <Route path="/whitelabel" element={<WhiteLabelSection />} />
  <Route path="/developer" element={<Developer />} />
-
+ <Route path="/merchant-integration" element={<Integration />} />
 </Routes>
  
  

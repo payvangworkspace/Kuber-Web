@@ -110,3 +110,99 @@
     font-size: 26px;
   }
 }
+
+/* Tablet screens */
+@media screen and (max-width: 1024px) {
+  .payment-section {
+    padding: 50px 20px;
+  }
+
+  .payment-title {
+    font-size: 28px;
+  }
+
+  .payment-content p {
+    font-size: 15px;
+  }
+
+  .payment-list li {
+    font-size: 14.5px;
+  }
+
+  .payment-image img {
+    max-width: 420px;
+  }
+}
+
+/* Mobile screens */
+@media screen and (max-width: 768px) {
+  .payment-section {
+    padding: 40px 15px;
+    /* border: 2px solid red; */
+  }
+
+  .payment-title {
+    font-size: 22px;
+    line-height: 1.4;
+  }
+
+  .payment-content p {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  .payment-list {
+    margin: 15px 0;
+  }
+
+  .payment-list li {
+    font-size: 13.5px;
+    line-height: 1.5;
+    padding-left: 20px;
+  }
+
+  .signup-button {
+    font-size: 14px;
+    padding: 10px 22px;
+  }
+
+
+
+
+.payment-image{
+  /* border: 2px solid orange; */
+ min-height: none;
+ max-height: 23vh;
+  height: 10px;
+}
+
+
+  .payment-image img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+}
+
+/* Small mobile screens */
+@media screen and (max-width: 480px) {
+  .payment-section {
+    padding: 30px 12px;
+  }
+
+  .payment-title {
+    font-size: 20px;
+  }
+
+  .payment-content p {
+    font-size: 13px;
+  }
+
+  .payment-list li {
+    font-size: 13px;
+  }
+
+  .signup-button {
+    font-size: 13px;
+    padding: 9px 20px;
+  }
+}

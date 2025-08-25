@@ -82,3 +82,100 @@
 .signup-button:hover {
   background: #005fcc;
 }
+/* Tablet screens */
+@media screen and (max-width: 1024px) {
+  .virtual-account-section {
+    padding: 50px 6%;
+  }
+
+  .virtual-account-title {
+    font-size: 1.9rem;
+  }
+
+  .virtual-account-content {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .benefits-title {
+    font-size: 1.25rem;
+  }
+
+  .virtual-account-images {
+    width: 40vw;
+  }
+}
+
+/* Mobile screens */
+@media screen and (max-width: 768px) {
+  .virtual-account-section {
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .virtual-account-title {
+    font-size: 1.6rem;
+    line-height: 1.3;
+  }
+
+  .virtual-account-content {
+    text-align: left;
+    font-size: 0.9rem;
+  }
+
+  /* Cancel float, stack image full width */
+  .virtual-account-images {
+    float: none;
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .virtual-account-images img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .benefits-title {
+    font-size: 1.15rem;
+    text-align: center;
+  }
+
+  .virtual-account-benefits {
+    margin-left: 18px;
+  }
+
+  .signup-button {
+    font-size: 0.9rem;
+    padding: 10px 24px;
+  }
+}
+
+/* Small mobile screens */
+@media screen and (max-width: 480px) {
+  .virtual-account-section {
+    padding: 30px 15px;
+  }
+
+  .virtual-account-title {
+    font-size: 1.4rem;
+  }
+
+  .virtual-account-content {
+    font-size: 0.85rem;
+  }
+
+  .benefits-title {
+    font-size: 1.05rem;
+  }
+
+  .virtual-account-benefits li {
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+
+  .signup-button {
+    font-size: 0.85rem;
+    padding: 9px 20px;
+  }
+}

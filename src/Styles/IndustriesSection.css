@@ -126,3 +126,78 @@
     max-width: 300px;
   }
 }
+
+/* Tablet screens */
+@media (max-width: 1024px) {
+  .industries-section {
+    height: auto; /* allow content to expand */
+    padding: 4rem 2rem;
+  }
+
+  .industries-header h2 {
+    font-size: 2.2rem;
+  }
+
+  .industries-header p {
+    font-size: 0.95rem;
+    margin-bottom: 3rem;
+  }
+
+  .industry-card {
+    width: 45%; /* two cards per row */
+    max-width: none;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 768px) {
+  .industries-section {
+    height: auto; /* remove fixed vh */
+    padding: 3rem 1.5rem;
+  }
+
+  .industries-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .industries-header p {
+    font-size: 0.9rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .industries-grid {
+    gap: 1.5rem;
+  }
+
+  .industry-card {
+    width: 100%; /* one card per row */
+    max-width: 320px;
+  }
+}
+
+/* Small mobile screens */
+@media (max-width: 480px) {
+  .industries-section {
+    padding: 2.5rem 1rem;
+  }
+
+  .industries-header h5 {
+    font-size: 0.8rem;
+  }
+
+  .industries-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .industries-header p {
+    font-size: 0.85rem;
+  }
+
+  .industry-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .icon-wrapper {
+    font-size: 2.2rem;
+  }
+}

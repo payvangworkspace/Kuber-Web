@@ -129,7 +129,8 @@ const ContactUs = () => {
               whileHover={{ scale: 1.05, boxShadow: "0 0 20px rgba(0,223,216,0.6)" }}
               whileTap={{ scale: 0.98 }}
               transition={{ type: "spring", stiffness: 300 }}
-              className="w-full flex items-center justify-center gap-2 py-3 rounded-lg bg-gradient-to-r from-[#00dfd8] to-[#007cf0] hover:from-[#007cf0] hover:to-[#00dfd8] text-white font-semibold shadow-lg"
+              className="w-full flex items-center justify-center gap-2 py-3 rounded-lg bg-gradient-to-r from-[#00dfd8] to-[#007cf0] hover:from-[#007cf0] hover:to-[#00dfd8] text-white font-semibold shadow-lg btn-size"
+            
             >
               <FiSend /> Send Message
             </motion.button>

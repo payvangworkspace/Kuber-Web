@@ -77,3 +77,71 @@
   margin: 0 auto 2rem auto;
   line-height: 1.6;
 }
+/* Existing styles remain unchanged above this line */
+
+/* Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .card-container {
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .info-card {
+    width: 280px;
+  }
+
+  .intro-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .intro-text p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+
+  .info-card {
+    width: 90%;
+    max-width: 350px;
+  }
+
+  .intro-text h2 {
+    font-size: 1.6rem;
+  }
+
+  .intro-text p {
+    font-size: 0.9rem;
+    padding: 0 1rem;
+  }
+}
+
+/* Small Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .intro-text h2 {
+    font-size: 1.4rem;
+  }
+
+  .intro-text p {
+    font-size: 0.85rem;
+  }
+
+  .card-content h3 {
+    font-size: 1.1rem;
+  }
+
+  .card-content p {
+    font-size: 0.9rem;
+  }
+
+  .read-more {
+    font-size: 0.9rem;
+  }
+}

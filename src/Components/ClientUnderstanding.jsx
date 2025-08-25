@@ -149,6 +149,84 @@ const styles = `
     display: inline-block;
   }
 }
+
+/* Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .client-section {
+    height: auto; /* remove fixed height */
+    padding: 4rem 2rem;
+  }
+
+  .client-title {
+    font-size: 2.2rem;
+  }
+
+  .client-description {
+    font-size: 0.95rem;
+  }
+
+  .client-image img {
+    max-width: 400px;
+  }
+}
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  .client-section {
+    flex-direction: column;
+    height: auto; /* let content define height */
+    padding: 3rem 1.5rem;
+    text-align: center;
+  }
+
+  .client-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .client-title {
+    font-size: 1.8rem;
+  }
+
+  .client-description {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-top: 18px;
+  }
+
+  .client-btn {
+    margin-top: 1rem;
+  }
+
+  .client-image img {
+    max-width: 100%;
+    border-radius: 12px;
+  }
+}
+
+/* Small Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .client-section {
+    padding: 2.5rem 1rem;
+  }
+
+  .client-title {
+    font-size: 1.5rem;
+  }
+
+  .client-description {
+    font-size: 0.85rem;
+  }
+
+  .client-button {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+}
+
+
+
+
 `;
 
 document.head.insertAdjacentHTML("beforeend", `<style>${styles}</style>`);

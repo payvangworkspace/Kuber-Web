@@ -169,4 +169,107 @@
   text-decoration: underline;
   color: #0040aa;
 }
- 
+ /* ===== Responsive Design ===== */
+
+/* Tablets (<= 1024px) */
+@media (max-width: 1024px) {
+  .terms-main-title {
+    font-size: 36px;
+  }
+
+  .terms-tagline {
+    font-size: 16px;
+  }
+
+  .terms-card {
+    padding: 22px 18px;
+  }
+
+  .terms-card h3 {
+    font-size: 18px;
+  }
+
+  .terms-card p,
+  .terms-card ul li {
+    font-size: 14px;
+  }
+}
+
+/* Mobile Large (<= 768px) */
+@media (max-width: 768px) {
+  .terms-header {
+    margin-bottom: 35px;
+    padding: 0 10px;
+  }
+
+  .terms-main-title {
+    font-size: 30px;
+    line-height: 1.3;
+  }
+
+  .terms-tagline {
+    font-size: 15px;
+  }
+
+  .terms-grid {
+    gap: 20px;
+  }
+
+  .terms-card {
+    padding: 20px 16px;
+  }
+
+  .terms-card h3 {
+    font-size: 17px;
+  }
+
+  .terms-card p,
+  .terms-card ul li {
+    font-size: 13px;
+  }
+
+  .terms-footer {
+    font-size: 14px;
+    margin-top: 35px;
+  }
+}
+
+/* Mobile Small (<= 480px) */
+@media (max-width: 480px) {
+  .terms-page {
+    padding: 30px 15px;
+  }
+
+  .terms-main-title {
+    font-size: 24px;
+  }
+
+  .terms-tagline {
+    font-size: 14px;
+  }
+
+  .terms-grid {
+    grid-template-columns: 1fr; /* force single column */
+    gap: 18px;
+  }
+
+  .terms-card {
+    padding: 18px 14px;
+    border-radius: 14px;
+  }
+
+  .terms-card h3 {
+    font-size: 16px;
+  }
+
+  .terms-card p,
+  .terms-card ul li {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .terms-footer {
+    font-size: 13px;
+    margin-top: 25px;
+  }
+}

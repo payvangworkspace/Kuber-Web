@@ -1,0 +1,380 @@
+/* .merchant-docs {
+  display: flex;
+  font-family: "Segoe UI", sans-serif;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background: #102d50;
+  color: #fff;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.sidebar-section {
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.sidebar li:hover,
+.sidebar li.active {
+  background: #4fb2ff;
+  color: #fff;
+}
+
+.content {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+  background: #f8f9fa;
+}
+
+.code-block {
+  background: #1e1e1e;
+  color: #eee;
+  padding: 12px;
+  border-radius: 6px;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.copy-btn {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  padding: 4px 8px;
+  background: #4fb2ff;
+  border: none;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+  color: #fff;
+} */
+/* Gradient Background */
+.merchant-container {
+  display: flex;
+  height: 100vh;
+  background: linear-gradient(-45deg, #0a2f4f, #102d50, #1a4260, #4fb2ff);
+  background-size: 400% 400%;
+  animation: gradientMove 12s ease infinite;
+  font-family: "Segoe UI", sans-serif;
+  color: #fff;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Sidebar */
+.merchant-sidebar {
+  width: 260px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  overflow-y: auto;
+}
+
+.sidebar-title {
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #4fb2ff;
+}
+
+.sidebar-section {
+  margin-top: 20px;
+  font-size: 14px;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+.merchant-sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0;
+}
+
+.merchant-sidebar li {
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.merchant-sidebar li:hover,
+.merchant-sidebar li.active {
+  background: #4fb2ff;
+  color: white;
+}
+
+/* Main Content */
+.merchant-content {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+
+.endpoint {
+  margin: 15px 0;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.method {
+  background: #4fb2ff;
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.url {
+  font-family: monospace;
+  font-size: 14px;
+  color: #eee;
+}
+
+/* Code Block */
+.code-block {
+  background: #1e1e1e;
+  color: #dcdcdc;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  position: relative;
+  font-size: 14px;
+  white-space: pre-wrap;
+}
+
+.copy-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 4px 8px;
+  background: #4fb2ff;
+  border: none;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.copy-btn:hover {
+  background: #3498db;
+}
+.merchant-container {
+  display: flex;
+  height: 100vh;
+  background: linear-gradient(-45deg, #0a2f4f, #102d50, #1a4260, #4fb2ff);
+  background-size: 400% 400%;
+  animation: gradientMove 12s ease infinite;
+  font-family: "Segoe UI", sans-serif;
+  color: #fff;
+}
+
+/* Animation */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Sidebar */
+.merchant-sidebar {
+  width: 260px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  overflow-y: auto;
+  transition: all 0.3s ease;
+}
+
+.sidebar-title {
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #4fb2ff;
+}
+
+.sidebar-section {
+  margin-top: 20px;
+  font-size: 14px;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+.merchant-sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0;
+}
+
+.merchant-sidebar li {
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.merchant-sidebar li:hover,
+.merchant-sidebar li.active {
+  background: #4fb2ff;
+  color: white;
+}
+
+/* Main Content */
+.merchant-content {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+
+.endpoint {
+  margin: 15px 0;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.method {
+  background: #4fb2ff;
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.url {
+  font-family: monospace;
+  font-size: 14px;
+  color: #eee;
+  word-break: break-all;
+}
+
+/* Code Block */
+.code-block {
+  background: #1e1e1e;
+  color: #dcdcdc;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  position: relative;
+  font-size: 14px;
+  white-space: pre-wrap;
+}
+
+.copy-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 4px 8px;
+  background: #4fb2ff;
+  border: none;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.copy-btn:hover {
+  background: #3498db;
+}
+
+/* ============================= */
+/* 📱 Mobile (<=768px) */
+/* ============================= */
+@media (max-width: 768px) {
+  .merchant-container {
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .merchant-sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .merchant-sidebar h3 {
+    display: none; /* Hide section headers for compactness */
+  }
+
+  .merchant-sidebar ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .merchant-sidebar li {
+    margin: 5px;
+    font-size: 14px;
+  }
+
+  .merchant-content {
+    padding: 15px;
+  }
+
+  .glass-card {
+    padding: 15px;
+  }
+}
+
+/* ============================= */
+/* 📲 Tablet (769px - 1024px) */
+/* ============================= */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .merchant-sidebar {
+    width: 200px;
+    font-size: 14px;
+  }
+
+  .merchant-content {
+    padding: 20px;
+  }
+
+  .glass-card {
+    padding: 20px;
+  }
+}

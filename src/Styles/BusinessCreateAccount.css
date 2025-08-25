@@ -159,3 +159,179 @@
   }
 }
  
+/* -------------------- Tablet Screens -------------------- */
+@media (max-width: 1024px) {
+  .business-section {
+    padding: 4rem 2rem;
+  }
+
+  .business-title {
+    font-size: 2.4rem;
+  }
+
+  .business-description {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .feature-item {
+    font-size: 1.05rem;
+  }
+
+  .business-btn {
+    font-size: 1.1rem;
+    padding: 14px 28px;
+  }
+
+  .business-image-container {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+/* -------------------- Mobile Screens -------------------- */
+@media (max-width: 768px) {
+  .business-section {
+    padding: 3rem 1.5rem;
+    text-align: center;
+  }
+
+  .business-title {
+    font-size: 2rem;
+    line-height: 1.3;
+  }
+
+  .business-description {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+  }
+
+  .feature-item {
+    font-size: 1rem;
+    margin-bottom: 12px;
+  }
+
+  .business-btn {
+    font-size: 1rem;
+    padding: 12px 24px;
+    border-radius: 10px;
+  }
+
+  .business-image-container {
+    width: 240px;
+    height: 240px;
+  }
+}
+
+/* -------------------- Small Mobile Screens -------------------- */
+@media (max-width: 480px) {
+  .business-section {
+    padding: 2.5rem 1rem;
+  }
+
+  .business-title {
+    font-size: 1.6rem;
+  }
+
+  .business-description {
+    font-size: 0.9rem;
+  }
+
+  .feature-item {
+    font-size: 0.9rem;
+  }
+
+  .business-btn {
+  
+    /* border: 2px solid red; */
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+
+  .business-image-container {
+    width: 200px;
+    height: 200px;
+  }
+
+.business-image{
+  margin-top: 0px;
+  /* border: 2px solid pink; */
+}
+
+
+}
+/* -------------------- Mobile Screens -------------------- */
+@media (max-width: 768px) {
+  .business-section {
+    padding: 3rem 1.5rem;
+    text-align: center;
+  }
+
+  .business-title {
+    font-size: 2rem;
+    line-height: 1.3;
+  }
+
+  .business-description {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+  }
+
+  .feature-item {
+    font-size: 1rem;
+    margin-bottom: 12px;
+  }
+
+  /* ✅ Button Center Fix */
+  .business-btn {
+    font-size: 1rem;
+    padding: 12px 24px;
+    border-radius: 10px;
+    display: inline-flex;   /* keep icon + text aligned */
+    justify-content: center;
+    margin: 0 auto;         /* center horizontally */
+  }
+
+  .business-image-container {
+    width: 240px;
+    height: 240px;
+    margin: 1.5rem auto 0;  /* center image too */
+  }
+}
+
+/* -------------------- Small Mobile Screens -------------------- */
+@media (max-width: 480px) {
+  .business-section {
+    padding: 2.5rem 1rem;
+  }
+
+  .business-title {
+    font-size: 1.6rem;
+  }
+
+  .business-description {
+    font-size: 0.9rem;
+  }
+
+  .feature-item {
+    font-size: 0.9rem;
+  }
+
+  /* ✅ Button Center Fix for small screens */
+  .business-btn {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+    margin: 0 auto;        /* center horizontally */
+    display: inline-flex;
+    justify-content: center;
+  }
+
+  .business-image-container {
+    width: 200px;
+    height: 200px;
+    margin: 1.2rem auto 0; /* center image */
+  }
+}
+

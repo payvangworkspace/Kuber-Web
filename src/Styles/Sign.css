@@ -337,3 +337,96 @@ form input:focus {
   color: #36a2f0;
   text-decoration: underline;
 }
+
+/* --- Existing CSS (unchanged) --- */
+
+
+/* 📱 Small Mobile (up to 480px) */
+@media (max-width: 480px) {
+
+
+  .signin-bg{
+    /* border: 2px solid red; */
+    width: 100vw;
+  }
+
+
+  .signin-card {
+    padding: 1.5rem;
+    max-width: 320px;
+  }
+
+  .signin-title {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+
+  form input {
+    font-size: 0.9rem;
+    padding: 0.7rem;
+  }
+
+  .signin-btn {
+    font-size: 0.95rem;
+    padding: 0.75rem;
+  }
+
+  .main-logo {
+    height: 110px;
+    min-width: 120px;
+  }
+}
+
+/* 📲 Mobile Landscape (481px to 767px) */
+@media (max-width: 767px) and (min-width: 481px) {
+  .signin-card {
+    padding: 2rem;
+    max-width: 340px;
+  }
+
+  .signin-title {
+    font-size: 1.4rem;
+  }
+
+  form input {
+    font-size: 0.95rem;
+    padding: 0.8rem;
+  }
+
+  .signin-btn {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+
+  .main-logo {
+    height: 120px;
+    min-width: 130px;
+  }
+}
+
+/* 💻 Tablets (768px to 1024px) */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .signin-card {
+    padding: 2.2rem;
+    max-width: 360px;
+  }
+
+  .signin-title {
+    font-size: 1.5rem;
+  }
+
+  form input {
+    font-size: 1rem;
+    padding: 0.85rem;
+  }
+
+  .signin-btn {
+    font-size: 1.05rem;
+    padding: 0.85rem;
+  }
+
+  .main-logo {
+    height: 130px;
+    min-width: 140px;
+  }
+}
