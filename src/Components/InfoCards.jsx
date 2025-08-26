@@ -6,31 +6,31 @@ import { Link } from "react-router-dom";
 const cardData = [
   {
     image: `${import.meta.env.BASE_URL}remote.jpg`,
-    title: "Drag and Drop Functionality",
+    title: "Drag-and-Drop Functionality",
     description:
       "Effortlessly manage your workflow with intuitive drag-and-drop features, providing seamless control and efficiency for your business operations.",
-    linkText: "Read More",
+    linkText: "Learn More",
   },
   {
     image: `${import.meta.env.BASE_URL}split.jpg`,
     title: "Transparent Pricing",
     description:
-      "Enjoy a straightforward pricing model with no hidden fees. Our end-to-end payment gateway ensures cost-effectiveness with no monthly charges post-integration.",
-    linkText: "Read More",
+      "Enjoy a straightforward pricing model with no hidden fees. Our end-to-end payment gateway ensures cost-effective with no hidden or ongoing monthly fees.",
+    linkText: "Learn More",
   },
   {
     image: `${import.meta.env.BASE_URL}retail.jpg`,
-    title: "Optimized Performance",
+    title: "Enterprise-Grade Security & Speed.",
     description:
       "Enhance your payment process with advanced optimization, ensuring top-tier security, efficiency, and reliability for every transaction.",
-    linkText: "Read More",
+    linkText: "Learn More",
   },
   {
     image: `${import.meta.env.BASE_URL}dashboard.jpg`,
     title: "Advanced Dashboard",
     description:
       "Gain real-time insights and analytics to make informed decisions. Access key stats and generate customizable reports with ease.",
-    linkText: "Read More",
+    linkText: "Learn More",
   },
 ];
 

@@ -9,7 +9,7 @@ const InvoicingContent = () => {
         {/* Left Content */}
         <div className="invoicing-text">
           <h1 className="invoicing-title">
-            GST Invoicing Software for All Businesses
+           Smart GST Invoicing Software to Get Paid Faster
           </h1>
           <p className="invoicing-intro">
             <strong>Kuber Pays</strong> provides powerful invoicing software that
@@ -27,7 +27,7 @@ const InvoicingContent = () => {
                 <p>
                   Automate recurring tasks like invoice generation and reminders. 
                   <strong> Kuber Pays Invoice</strong> lets you focus on growth while automation 
-                  handles the routine.
+                  handles the manual tasks.
                 </p>
               </div>
             </div>

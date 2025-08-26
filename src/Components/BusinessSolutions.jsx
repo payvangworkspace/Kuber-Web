@@ -31,7 +31,7 @@ const BusinessSolutions = () => {
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
       >
-        <h2>Small to Medium-Sized Businesses</h2>
+        <h2>Small- to Medium-Sized Businesses</h2>
         <p>
           Our tailored solutions help small and medium-sized businesses simplify
           payments, enhance operations, and scale efficiently.

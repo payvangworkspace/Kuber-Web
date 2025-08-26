@@ -3,10 +3,10 @@ import { motion } from "framer-motion";
 import "../Styles/BusinessStats.css";
 
 const stats = [
-  { label: "Trusted by", value: 19, suffix: "+" },
+  { label: "Trusted by Countries", value: 19, suffix: "+" },
   { label: "Feedback", value: 4000, suffix: "k" },
   { label: "Branches", value: 12, suffix: "+" },
-  { label: "Workers", value: 65, suffix: "+" },
+  { label: "Experts", value: 65, suffix: "+" },
 ];
 
 const BusinessStats = () => {

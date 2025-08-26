@@ -29,7 +29,9 @@ const AcceptingPayment = () => {
               Mobile Wallet, UPI & EMI.
             </li>
             <li>
-              A high-speed, <strong>Fast & Fluid Checkout</strong> experience
+
+              
+              A high-speed, <strong>Fast, Seamless checkout </strong>
               with zero redirect.
             </li>
             <li>Pay via QR Code, SMS, Web Link.</li>

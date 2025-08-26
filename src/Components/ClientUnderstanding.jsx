@@ -31,7 +31,7 @@ const ClientUnderstanding = () => {
           </p>
           <div className="client-btn">
             <button className="client-button" onClick={redirectToAbout}>
-              Learn More
+              Explore Our Approach
             </button>
           </div>
         </div>

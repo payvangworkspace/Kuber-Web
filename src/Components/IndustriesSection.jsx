@@ -15,7 +15,7 @@ const industries = [
   },
   {
     icon: <FaMobileAlt />,
-    title: 'Telecom & Utility',
+    title: 'Telecom & Utilities',
     desc: 'Enable real-time bill payments and recharge with secure payment channels.'
   },
   {
@@ -26,7 +26,7 @@ const industries = [
   {
     icon: <FaShoppingCart />,
     title: 'E-commerce',
-    desc: 'Offer fast and secure checkout experiences to boost customer conversions.'
+    desc: 'Deliver fast, secure checkouts that increase customer conversions.'
   }
 ];
 
