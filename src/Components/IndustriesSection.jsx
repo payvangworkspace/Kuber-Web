@@ -1,33 +1,35 @@
 import React from 'react';
 import '../Styles/IndustriesSection.css';
-import { FaUniversity, FaMoneyBillWave, FaMobileAlt, FaHospitalAlt, FaShoppingCart } from 'react-icons/fa';
+import { FaUniversity, FaMoneyBillWave, FaMobileAlt, FaHospitalAlt, FaShoppingCart,FaCreditCard,FaTachometerAlt , FaShieldAlt, FaThLarge, FaChartLine, FaCode, FaBuilding, FaUserTie } from 'react-icons/fa';
 
 const industries = [
   {
-    icon: <FaUniversity />,
-    title: 'Banking & Finance',
-    desc: 'Streamlined digital payment solutions tailored for modern financial institutions.'
+    icon: <FaCreditCard />,
+    title: 'Accept All Payment Modes',
+    desc: 'Support domestic & international cards, EMIs (card-based & cardless), netbanking from 58 banks to offer the most extensive payment options.'
   },
   {
-    icon: <FaMoneyBillWave />,
-    title: 'Lending & Microfinance',
-    desc: 'Automate disbursements and collections with ease and transparency.'
+    icon: <FaTachometerAlt />,
+    title: 'All-in-One Dashboard',
+    desc: 'Gain valuable business insights with detailed reports on payments, settlements, refunds, and more, helping you make better decisions.'
   },
   {
-    icon: <FaMobileAlt />,
-    title: 'Telecom & Utilities',
-    desc: 'Enable real-time bill payments and recharge with secure payment channels.'
+    icon: <FaShieldAlt />,
+    title: 'Robust Security',
+    desc: 'Ensure total safety with PCI-DSS Level 1 compliance, regular third-party audits, and a dedicated internal security team.'
   },
   {
-    icon: <FaHospitalAlt />,
-    title: 'Healthcare',
-    desc: 'Simplify patient billing with seamless, multi-mode payment acceptance.'
+    icon: <FaThLarge />,
+    title: 'Multi-Channel Processing',
+    desc: 'Process payments in-store, online, and via mobile seamlessly, with the flexibility and scalability to support your growth.'
   },
+ 
   {
-    icon: <FaShoppingCart />,
-    title: 'E-commerce',
-    desc: 'Deliver fast, secure checkouts that increase customer conversions.'
-  }
+    icon: <FaCode />,
+    title: 'Built for Developers',
+    desc: 'Use clean, robust APIs, plugins, and libraries across major platforms and languages, so you can focus on building great products.'
+  },
+  
 ];
 
 const IndustriesSection = () => {
