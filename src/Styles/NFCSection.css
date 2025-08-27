@@ -327,6 +327,7 @@
   min-height:170px;
   box-shadow: 0 8px 22px var(--card-shadow);
   transition: transform .22s ease, border-color .22s ease, background .22s ease;
+  cursor: pointer;
 }
 .nfc-feature:hover{ transform: translateY(-6px); border-color: rgba(255,255,255,0.18); background: rgba(255,255,255,0.07); }
 
@@ -338,6 +339,18 @@
   font-size:18px;
   box-shadow: 0 8px 18px rgba(79,178,255,0.12);
 }
+li{
+  cursor: pointer;
+}
+.nfc-badge{
+  cursor: pointer;
+}
+
+.nfc-accepts-item{
+  cursor: pointer;
+}
+
+
 
 /* feature text */
 .nfc-feature h3{ margin:0; font-size:1rem; color:var(--white); font-weight:700; }
