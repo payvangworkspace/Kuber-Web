@@ -71,22 +71,29 @@ const NFCSection = () => {
             <li>
               <div className="step-index">1</div>
               <div className="step-body">
-                <strong>Create charge</strong>
-                <span> — Enter amount in the app or dashboard.</span>
+                <strong>Enter Amount</strong>
+                <span> — Merchant enters amount in the mobile app.</span>
               </div>
             </li>
             <li>
               <div className="step-index">2</div>
               <div className="step-body">
-                <strong>Customer taps</strong>
-                <span> — Contactless card or wallet (Apple/Google Pay).</span>
+                <strong>Customer taps card</strong>
+                <span> — NFC-enabled debit/credit card is tapped on merchant’s phone.</span>
               </div>
             </li>
             <li>
               <div className="step-index">3</div>
               <div className="step-body">
-                <strong>Finalize & receipt</strong>
-                <span> — Capture, receipt & real-time analytics.</span>
+                <strong>SDK processes securely</strong>
+                <span> — EMV transaction data is captured and sent to backend/acquirer.</span>
+              </div>
+            </li>
+            <li>
+              <div className="step-index">4</div>
+              <div className="step-body">
+                <strong>Receipt generated</strong>
+                <span> — Merchant and customer get instant confirmation.</span>
               </div>
             </li>
           </ol>
@@ -97,7 +104,7 @@ const NFCSection = () => {
           <div className="nfc-accepts-left">
             <div className="nfc-accepts-item"><FaCreditCard /> <span>Contactless EMV</span></div>
             <div className="nfc-accepts-item"><FaQrcode /> <span>QR fallback</span></div>
-            <div className="nfc-accepts-item"><FaMobileAlt /> <span>Apple Pay / Google Pay</span></div>
+            {/* <div className="nfc-accepts-item"><FaMobileAlt /> <span>Apple Pay / Google Pay</span></div> */}
           </div>
           <div className="nfc-accepts-right">
             <div className="nfc-badges">
