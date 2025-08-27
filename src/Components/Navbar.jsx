@@ -85,6 +85,7 @@ const Navbar = forwardRef((props, ref) => {
               }`}
             >
               <Link to="/solution-and-features">Solutions & Features</Link>
+                   <Link to="/NFC-Payment" >NFC Solution</Link>
               <Link to="/pricing">Pricing</Link>
               <Link to="/faqs">FAQ's</Link>
               <Link to="/terms-and-condition">Terms & Conditions</Link>

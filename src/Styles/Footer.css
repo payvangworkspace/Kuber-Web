@@ -61,3 +61,154 @@
     text-align: center;
   }
 }
+.footer {
+  background-color: #0C1E3C;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 15px 0; /* Reduced height */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-left {
+  flex: 1 1 300px;
+}
+
+.footer-logo {
+  max-width: 160px;
+  margin-bottom: 12px;
+}
+
+.footer-info p {
+  margin: 5px 0;
+  font-size: 14px;
+  line-height: 1.4;
+  display: flex;
+  align-items: center;
+}
+
+.footer-icon {
+  color: #F7B500;
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+.footer-link {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #F7B500;
+}
+
+/* Bottom section */
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 8px 0;
+  text-align: center;
+  font-size: 13px;
+  color: #ccc;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.footer-lei {
+  font-size: 12px;
+  /* color: #aaa; */
+  font-weight:600;
+  letter-spacing: 0.5px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-bottom {
+    font-size: 12px;
+  }
+}
+
+.icon-lei{
+  /* border: 2px solid red; */
+  margin: 3px;
+  margin-left: 0px;
+}
+.footer-info p {
+  margin: 5px 0;
+  font-size: 14px;
+  line-height: 1.5;
+  display: flex;
+  align-items: flex-start; /* let icon align at top if multiline */
+}
+
+.footer-info p span {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-info {
+    text-align: left; /* keep alignment clean */
+    margin: 0 auto;
+  }
+
+  .footer-info p {
+    justify-content: center; /* center icon + text */
+    text-align: left;
+  }
+}
+/* General footer text */
+.footer-info p {
+  margin: 5px 0;
+  font-size: 14px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+}
+
+/* Special style for address (multi-line) */
+.footer-address {
+  align-items: flex-start; /* icon top, text flows below */
+}
+
+.footer-address span {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+/* Responsive tweaks */
+@media screen and (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-info {
+    margin: 0 auto;
+    text-align: left; /* keep alignment clean */
+  }
+
+  .footer-info p {
+    justify-content: flex-start; /* no weird centering */
+  }
+
+  .footer-address {
+    justify-content: flex-start;
+  }
+}

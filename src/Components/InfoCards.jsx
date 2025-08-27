@@ -1,36 +1,74 @@
+// InfoCards.jsx
 import React from "react";
 import "../Styles/InfoCards.css";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { FaMousePointer, FaLock, FaBolt, FaChartBar } from "react-icons/fa";
 
 const cardData = [
   {
+    id: "drag-drop",
     image: `${import.meta.env.BASE_URL}remote.jpg`,
     title: "Drag-and-Drop Functionality",
     description:
-      "Effortlessly manage your workflow with intuitive drag-and-drop features, providing seamless control and efficiency for your business operations.",
-    linkText: "Learn More",
+      "Effortlessly manage your workflow with intuitive drag-and-drop features.",
+    longDescription:
+      "Our drag-and-drop interface ensures that managing payments, customers, and workflows is as easy as moving tiles. This saves time and boosts productivity across your teams.",
+    features: [
+      "Simple workflow automation",
+      "No coding required",
+      "Customizable UI elements",
+      "Seamless integrations",
+    ],
+    icon: <FaMousePointer className="card-feature-icon" />,
   },
   {
+    id: "transparent-pricing",
     image: `${import.meta.env.BASE_URL}split.jpg`,
     title: "Transparent Pricing",
     description:
-      "Enjoy a straightforward pricing model with no hidden fees. Our end-to-end payment gateway ensures cost-effective with no hidden or ongoing monthly fees.",
-    linkText: "Learn More",
+      "Straightforward pricing model with no hidden fees.",
+    longDescription:
+      "We believe in clarity. Our pricing is flat, with no hidden charges, so you can scale without surprises. You only pay for what you use, nothing more.",
+    features: [
+      "Flat transaction fees",
+      "No monthly charges",
+      "Volume-based discounts",
+      "Clear billing dashboard",
+    ],
+    icon: <FaLock className="card-feature-icon" />,
   },
   {
+    id: "enterprise-security",
     image: `${import.meta.env.BASE_URL}retail.jpg`,
-    title: "Enterprise-Grade Security & Speed.",
+    title: "Enterprise-Grade Security & Speed",
     description:
-      "Enhance your payment process with advanced optimization, ensuring top-tier security, efficiency, and reliability for every transaction.",
-    linkText: "Learn More",
+      "Top-tier security, efficiency, and reliability for every transaction.",
+    longDescription:
+      "With military-grade encryption and lightning-fast processing, your transactions are always safe and instant. Our systems handle high volume while ensuring compliance.",
+    features: [
+      "Bank-level security protocols",
+      "AI-powered fraud detection",
+      "99.99% uptime",
+      "Optimized for speed",
+    ],
+    icon: <FaBolt className="card-feature-icon" />,
   },
   {
+    id: "advanced-dashboard",
     image: `${import.meta.env.BASE_URL}dashboard.jpg`,
     title: "Advanced Dashboard",
     description:
-      "Gain real-time insights and analytics to make informed decisions. Access key stats and generate customizable reports with ease.",
-    linkText: "Learn More",
+      "Gain real-time insights and analytics to make informed decisions.",
+    longDescription:
+      "Our dashboard gives you the power of data. From transactions to settlements, everything is presented in real-time, helping you take strategic decisions.",
+    features: [
+      "Real-time analytics",
+      "Custom reports",
+      "Multi-user access",
+      "Export to CSV/Excel",
+    ],
+    icon: <FaChartBar className="card-feature-icon" />,
   },
 ];
 
@@ -53,21 +91,21 @@ const InfoCards = () => {
         transition={{ duration: 1.2, ease: "easeOut" }}
         viewport={{ once: true, amount: 0.4 }}
       >
-        {cardData.map((card, index) => (
-          <div className="info-card" key={index}>
+        {cardData.map((card) => (
+          <div className="info-card" key={card.id}>
             <img
               src={card.image}
               alt={card.title}
               onError={(e) => {
                 e.target.onerror = null;
-                e.target.src = `${import.meta.env.BASE_URL}fallback.jpg`; // optional fallback
+                e.target.src = `${import.meta.env.BASE_URL}fallback.jpg`;
               }}
             />
             <div className="card-content">
               <h3>{card.title}</h3>
               <p>{card.description}</p>
-              <Link to="/contact" className="read-more">
-                {card.linkText} &rarr;
+              <Link to={`/info/${card.id}`} className="read-more">
+                {card.linkText || "Learn More"} →
               </Link>
             </div>
           </div>
@@ -78,3 +116,4 @@ const InfoCards = () => {
 };
 
 export default InfoCards;
+export { cardData }; // 👈 export for detail page

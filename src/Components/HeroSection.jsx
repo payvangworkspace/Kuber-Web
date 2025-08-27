@@ -15,7 +15,7 @@ const HeroSection = () => {
           businesses of all sizes count on.
         </p>
         <div className="solution-btn">
-        <Link to="/contact" className="hero-button">Explore solutions</Link>
+        <Link to="/solution-and-features" className="hero-button">Explore solutions</Link>
         </div>
       </div>
 

@@ -6,7 +6,7 @@ const ClientUnderstanding = () => {
 
 
   const redirectToAbout = () => {
-    navigate("/company");
+    navigate("/client-approach");
   };
 
   return (

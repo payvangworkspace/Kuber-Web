@@ -15,25 +15,30 @@ const InnovationSection = () => {
 
   const cards = [
     {
-      img: 'online.jpg',
-      title: 'Secure Payments',
-      subtitle: 'PCI DSS Level 1 Compliant',
+      id: "secure-payments",
+      img: "online.jpg",
+      title: "Secure Payments",
+      subtitle: "PCI DSS Level 1 Compliant",
+      description:
+        "We ensure top-grade encryption and PCI DSS Level 1 compliance to keep your transactions safe and secure.",
     },
     {
-      img: 'flat.avif',
-      title: 'Multi-Channel Support',
-      subtitle: 'Online, In‑store & Mobile',
+      id: "multi-channel",
+      img: "flat.avif",
+      title: "Multi-Channel Support",
+      subtitle: "Online, In-store & Mobile",
+      description:
+        "Accept payments seamlessly across online stores, mobile apps, and in-store POS terminals.",
     },
     {
-      img: 'carry.avif',
-      title: 'Powerful Dashboard',
-      subtitle: 'Real-Time Analytics',
+      id: "dashboard",
+      img: "carry.avif",
+      title: "Powerful Dashboard",
+      subtitle: "Real-Time Analytics",
+      description:
+        "Track and manage payments with detailed analytics, reports, and real-time insights.",
     },
   ];
-
-  const redirectContact = () => {
-    navigate('/contact');
-  };
 
   return (
     <section className="innovation-section">
@@ -56,7 +61,7 @@ const InnovationSection = () => {
         {cards.map((card, idx) => (
           <div
             className="innovation-card"
-            key={idx}
+            key={card.id}
             data-aos="zoom-in"
             data-aos-delay={idx * 150}
           >
@@ -71,7 +76,10 @@ const InnovationSection = () => {
                 <h3 className="innovation-card-subtitle">{card.subtitle}</h3>
               </div>
               <div className="innovation-card-hover-footer">
-                <span onClick={redirectContact} style={{ cursor: 'pointer' }}>
+                <span
+                  onClick={() => navigate(`/card/${card.id}`)}
+                  style={{ cursor: "pointer" }}
+                >
                   Learn More
                 </span>
                 <FaArrowRight className="hover-icon" />
@@ -83,7 +91,7 @@ const InnovationSection = () => {
 
       {/* Footer Text */}
       <p className="footer-text" data-aos="fade-up" data-aos-delay="600">
-        Join thousands of businesses using KuberPays to simplify payments.{' '}
+        Join thousands of businesses using KuberPays to simplify payments.{" "}
         <Link to="/company" className="explore-link">
           Learn more about us
         </Link>
