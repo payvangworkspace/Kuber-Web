@@ -1,6 +1,7 @@
 import React from "react";
 import "../Styles/InvoicingContent.css";
 import { Workflow, Users } from "lucide-react"; // Professional icons
+import { Link } from "react-router-dom";
 
 const InvoicingContent = () => {
   return (
@@ -47,9 +48,9 @@ const InvoicingContent = () => {
             </div>
           </div>
 
-          <a href="/signup" className="signup-button">
+          <Link to="/signup" className="signup-button">
             Get Started
-          </a>
+          </Link>
         </div>
 
         {/* Right Image */}
