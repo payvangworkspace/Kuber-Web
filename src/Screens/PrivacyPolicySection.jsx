@@ -33,3 +33,4 @@ const PrivacyPolicySection = () => {
 };
 
 export default PrivacyPolicySection;
+  

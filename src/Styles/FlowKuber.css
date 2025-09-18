@@ -1,0 +1,178 @@
+.flowkuber-section {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #f8fafc;
+  padding: 80px 20px;
+  font-family: "Inter", sans-serif;
+}
+
+.flowkuber-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.flowkuber-heading {
+  font-size: 2.4rem;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 15px;
+  background: linear-gradient(90deg, #38bdf8, #4ade80);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.flowkuber-subhead {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #cbd5e1;
+  margin-bottom: 60px;
+}
+
+.flowkuber-body {
+  display: grid;
+  grid-template-columns: 300px 1fr 320px;
+  gap: 40px;
+  align-items: center;
+}
+
+.flowkuber-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.flowkuber-step {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 16px 18px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease, border 0.3s ease;
+}
+
+.step-icon {
+  color: #38bdf8;
+  flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: rgba(56, 189, 248, 0.1);
+}
+
+.step-title {
+  font-weight: 600;
+  font-size: 1.05rem;
+  margin-bottom: 4px;
+}
+
+.step-subtitle {
+  font-size: 0.88rem;
+  color: #94a3b8;
+}
+
+.flowkuber-step:hover,
+.flowkuber-step.active {
+  background: rgba(56, 189, 248, 0.15);
+  border-color: #38bdf8;
+  transform: translateX(6px);
+}
+
+.flowkuber-center {
+  position: relative;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pipeline-track {
+  position: relative;
+  width: 80%;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
+}
+
+.node {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 14px;
+  height: 14px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transition: background 0.3s;
+}
+
+.node.on {
+  background: linear-gradient(135deg, #38bdf8, #4ade80);
+  box-shadow: 0 0 10px rgba(56, 189, 248, 0.6);
+}
+
+.packet {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 18px;
+  height: 18px;
+  background: #38bdf8;
+  border-radius: 50%;
+  transition: left 0.8s ease;
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.8);
+}
+
+.flowkuber-right {
+  display: flex;
+  justify-content: center;
+}
+
+.flowkuber-detail {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 24px;
+  border-radius: 16px;
+  backdrop-filter: blur(12px);
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.detail-icon {
+  color: #4ade80;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  background: rgba(74, 222, 128, 0.1);
+  font-size: 1.8rem;
+}
+
+.detail-info h3 {
+  margin: 0 0 6px;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.detail-info p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #94a3b8;
+}
+
+@media (max-width: 1024px) {
+  .flowkuber-body {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .flowkuber-center {
+    height: 80px;
+    margin: 20px 0;
+  }
+}

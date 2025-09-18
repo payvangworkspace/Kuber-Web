@@ -9,6 +9,8 @@ import IndustriesSection from '../Components/IndustriesSection';
 import ClientUnderstanding from '../Components/ClientUnderstanding';
 import Footer from '../Components/Footer';
 import "../Styles/Loader.css";
+import OrchestrationLayer from "../Components/OrchestrationLayer";
+
 
 export const Home = () => {
   const [loading, setLoading] = useState(true);
@@ -41,6 +43,7 @@ export const Home = () => {
       <InnovationSection />
       <BusinessSolutions />
       <InfoCards />
+   
       <BusinessStats />
       <ClientUnderstanding />
       <IndustriesSection />

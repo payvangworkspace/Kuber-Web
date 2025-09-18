@@ -1,0 +1,891 @@
+/* ====== Flow Comparison Section ====== */
+.fc-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 4rem 1rem;
+  background: linear-gradient(180deg, #0f172a, #1e293b);
+  color: #fff;
+  font-family: "Inter", sans-serif;
+}
+
+/* container */
+.fc-container {
+  position: relative;
+  width: min(100%, 900px);
+  min-height: 600px;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+/* layer base */
+.fc-layer {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;  /* stack vertically */
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2.5rem;
+  padding: 3rem 1rem;
+  transition: clip-path 0.4s ease-in-out;
+}
+
+.fc-before {
+  background: transparent;
+}
+
+.fc-after {
+  background: transparent;
+}
+
+/* ====== Card ====== */
+.fc-card {
+  width: 260px;
+  background: rgba(31, 41, 55, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1rem;
+  padding: 1.5rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+}
+
+.fc-card:hover {
+  transform: translateY(-4px);
+  transition: all 0.3s ease;
+}
+
+.fc-card-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.fc-card-icon {
+  font-size: 1.8rem;
+  color: #60a5fa;
+}
+
+.fc-card-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #f1f5f9;
+}
+
+.fc-card-desc {
+  font-size: 0.85rem;
+  color: #cbd5e1;
+  margin-top: 0.5rem;
+  line-height: 1.4;
+}
+
+/* ====== Vertical Arrow ====== */
+.fc-card-arrow-vertical {
+  margin-top: 1.5rem;
+  animation: arrowPulse 1.5s infinite ease-in-out;
+}
+
+@keyframes arrowPulse {
+  0% { transform: translateY(0); opacity: 1; }
+  50% { transform: translateY(6px); opacity: 0.6; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+/* ====== Handle ====== */
+.fc-handle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: rgba(255, 255, 255, 0.2);
+  cursor: ew-resize;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fc-handle-line {
+  flex: 1;
+  width: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.fc-handle-ball {
+  width: 40px;
+  height: 40px;
+  background: #2563eb;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.fc-handle-ball .chevs {
+  display: flex;
+  gap: 2px;
+  color: white;
+  font-size: 0.85rem;
+}
+
+/* ====== Labels & Percent ====== */
+.fc-badge {
+  position: absolute;
+  top: 1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.35rem 0.75rem;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+}
+
+.fc-badge-left {
+  left: 1rem;
+  color: #22c55e;
+}
+
+.fc-badge-right {
+  right: 1rem;
+  color: #60a5fa;
+}
+
+.fc-percent {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: bold;
+  font-size: 0.9rem;
+  background: rgba(0, 0, 0, 0.55);
+  color: white;
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+/* Flow Wrappers: tighter spacing so 4 fit */
+.fc-layer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.2rem;       /* smaller gap between cards */
+  padding: 1.5rem;
+}
+
+/* Card smaller size */
+.fc-card {
+  width: 200px;      /* reduced width */
+  padding: 1rem;     /* less padding */
+  border-radius: 0.75rem;
+  background: rgba(31, 41, 55, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+/* Icon & text adjustments */
+.fc-card-icon {
+  font-size: 1.4rem;  /* smaller icon */
+}
+
+.fc-card-title {
+  font-size: 0.9rem;
+}
+
+.fc-card-desc {
+  font-size: 0.75rem;
+  margin-top: 0.3rem;
+  line-height: 1.3;
+}
+
+/* Vertical arrow between cards */
+.fc-card-arrow-vertical {
+  margin-top: 0.8rem;
+}
+/* ====== Flow Comparison Section ====== */
+.fc-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 3rem 1rem;
+  background: linear-gradient(180deg, #0f172a, #1e293b);
+  color: #fff;
+  font-family: "Inter", sans-serif;
+}
+
+/* container */
+.fc-container {
+  position: relative;
+  width: min(100%, 850px);
+  min-height: 700px; /* enough height for 4 compact cards */
+  overflow: hidden;
+  border-radius: 1.25rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+}
+
+/* layers */
+.fc-layer {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding: 1.5rem;
+  transition: clip-path 0.4s ease-in-out;
+}
+
+/* cards */
+.fc-card {
+  width: 200px;
+  padding: 1rem;
+  background: rgba(31, 41, 55, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.35);
+}
+
+.fc-card-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.fc-card-icon {
+  font-size: 1.4rem;
+  color: #60a5fa;
+}
+
+.fc-card-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #f1f5f9;
+}
+
+.fc-card-desc {
+  font-size: 0.75rem;
+  color: #cbd5e1;
+  margin-top: 0.3rem;
+  line-height: 1.3;
+}
+
+/* arrow between cards */
+.fc-connector {
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fc-connector svg {
+  width: 22px;
+  height: 40px;
+}
+
+.fc-connector path {
+  stroke-dasharray: 6 6;
+  animation: dashFlow 1.5s linear infinite;
+}
+
+@keyframes dashFlow {
+  to {
+    stroke-dashoffset: -12;
+  }
+}
+
+/* ====== Handle ====== */
+.fc-handle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: rgba(255, 255, 255, 0.2);
+  cursor: ew-resize;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fc-handle-line {
+  flex: 1;
+  width: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.fc-handle-ball {
+  width: 38px;
+  height: 38px;
+  background: #2563eb;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.fc-handle-ball .chevs {
+  display: flex;
+  gap: 2px;
+  color: white;
+  font-size: 0.8rem;
+}
+
+/* labels & percent */
+.fc-badge {
+  position: absolute;
+  top: 1rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.3rem 0.7rem;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+}
+
+.fc-badge-left {
+  left: 1rem;
+  color: #22c55e;
+}
+
+.fc-badge-right {
+  right: 1rem;
+  color: #60a5fa;
+}
+
+.fc-percent {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: bold;
+  font-size: 0.85rem;
+  background: rgba(0, 0, 0, 0.55);
+  color: white;
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+/* Wrapper: two-column layout */
+.fc-wrapper {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  align-items: flex-start;
+}
+
+/* Paytech Sidebar */
+.paytech-card {
+  flex: 0 0 280px;
+  background: rgba(31, 41, 55, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  color: #f8fafc;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+}
+
+.paytech-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+
+.paytech-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.paytech-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.6rem 0.8rem;
+  border-radius: 0.6rem;
+  background: rgba(255,255,255,0.05);
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.paytech-item:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+.paytech-icon {
+  font-size: 1.2rem;
+  color: #60a5fa;
+}
+.fc-section {
+  padding: 3rem 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.fc-container {
+  width: 100%;
+  max-width: 1200px;
+  background: #111827;
+  border-radius: 1rem;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+  color: white;
+}
+
+.fc-inner {
+  display: flex;
+  gap: 2rem;
+  padding: 1.5rem;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+/* Paytech Sidebar */
+.paytech-card {
+  flex: 0 0 260px;
+  background: rgba(31, 41, 55, 0.95);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  color: #f8fafc;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+}
+
+.paytech-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+
+.paytech-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.paytech-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.6rem 0.8rem;
+  border-radius: 0.6rem;
+  background: rgba(255,255,255,0.05);
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.paytech-item:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+.paytech-icon {
+  font-size: 1.2rem;
+  color: #60a5fa;
+}
+
+/* Flow Comparison */
+.fc-flow {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  background: #1f2937;
+  padding: 2rem;
+}
+
+.fc-layer {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.fc-card {
+  border: 2px solid;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.fc-card-index {
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  color: white;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: bold;
+}
+
+.fc-handle {
+  position: absolute;
+  top: 0; bottom: 0;
+  width: 0;
+  cursor: ew-resize;
+}
+
+.fc-handle-line {
+  position: absolute;
+  top: 0; bottom: 0; left: -1px;
+  width: 2px;
+  background: white;
+}
+
+.fc-handle-ball {
+  position: absolute;
+  top: 50%;
+  left: -16px;
+  transform: translateY(-50%);
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  background: white;
+  display: flex; align-items: center; justify-content: center;
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.fc-badge {
+  position: absolute;
+  top: 10px;
+  padding: 0.3rem 0.7rem;
+  background: rgba(0,0,0,0.5);
+  border-radius: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.fc-badge-left { left: 10px; }
+.fc-badge-right { right: 10px; }
+
+.fc-percent {
+  position: absolute;
+  bottom: 10px;
+  transform: translateX(-50%);
+  background: rgba(0,0,0,0.7);
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.5rem;
+  font-size: 0.8rem;
+}
+.fc-section {
+  padding: 3rem 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.fc-container {
+  width: 100%;
+  max-width: 1200px;
+  background: #111827;
+  border-radius: 1rem;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+  color: white;
+}
+
+.fc-flow {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  background: #1f2937;
+  min-height: 420px;
+}
+
+.fc-layer {
+  position: absolute;
+  inset: 0;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.fc-content {
+  display: flex;
+  gap: 1.5rem;
+  height: 100%;
+}
+
+.fc-steps {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Paytech sidebar */
+.paytech-card {
+  flex: 0 0 240px;
+  background: rgba(31,41,55,0.9);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 0.8rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.paytech-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.paytech-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.paytech-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.5rem 0.7rem;
+  border-radius: 0.6rem;
+  background: rgba(255,255,255,0.05);
+  font-size: 0.9rem;
+}
+
+.paytech-icon {
+  font-size: 1.1rem;
+  color: #60a5fa;
+}
+
+/* Step cards */
+.fc-card {
+  border: 2px solid;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 140px;
+}
+
+.fc-card-index {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.fc-handle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  cursor: ew-resize;
+}
+
+.fc-handle-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -1px;
+  width: 2px;
+  background: white;
+}
+
+.fc-handle-ball {
+  position: absolute;
+  top: 50%;
+  left: -16px;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.fc-badge {
+  position: absolute;
+  top: 10px;
+  padding: 0.3rem 0.7rem;
+  background: rgba(0,0,0,0.5);
+  border-radius: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.fc-badge-left {
+  left: 10px;
+}
+.fc-badge-right {
+  right: 10px;
+}
+
+.fc-percent {
+  position: absolute;
+  bottom: 10px;
+  transform: translateX(-50%);
+  background: rgba(0,0,0,0.7);
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.5rem;
+  font-size: 0.8rem;
+}
+.fc-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.paytech-card {
+  flex: 0 0 220px;       /* fixed width */
+  background: rgba(31,41,55,0.9);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 0.8rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.fc-steps {
+  flex: 1;               /* take remaining space */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  overflow: hidden;      /* prevent overflow */
+}
+.fc-section{
+  border: 3px solid white;
+}
+
+.fc-container{
+  border: 2px solid pink;
+  height: 100vh;
+
+}
+.fc-flow{
+  border: 2px solid white;
+  height: 100%;
+}
+.fc-layer{
+  border: 2px solid red;
+  display: flex;
+  flex-direction: row;
+}
+.fc-content{
+  border: 2px solid rgb(150, 135, 108);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+}
+
+.fc-steps{
+  border: 2px solid rgb(115, 112, 107);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 50vw;
+}
+
+.fc-extra-card{
+  display: flex;
+  /* border: 2px solid pink; */
+  width: 30vw;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* Connector line clean animation */
+.fc-connector {
+  width: 100%;
+  height: 40px;
+  margin: 10px 0;
+}
+
+.fc-connector-line {
+  stroke-dasharray: 6;
+  stroke-dashoffset: 0;
+  animation: dashmove 1.5s linear infinite;
+}
+
+@keyframes dashmove {
+  to {
+    stroke-dashoffset: -12;
+  }
+}
+
+.fc-card{
+  border: 2px solid pink;
+}
+
+.card-parent{
+  /* border: 2px solid green; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.cd-arrow{
+  /* border: 2px solid red; */
+  margin-right: 5px;
+}
+.fc-professional-arrow line {
+  stroke-dasharray: 6 6;
+  stroke-dashoffset: 0;
+  animation: fc-arrow-move 1s linear infinite;
+}
+
+@keyframes fc-arrow-move {
+  to {
+    stroke-dashoffset: 12;
+  }
+}
+.fc-animated-arrow {
+  stroke-dasharray: 6 6;
+  stroke-dashoffset: 0;
+  animation: fc-arrow-move 1s linear infinite;
+}
+
+@keyframes fc-arrow-move {
+  to {
+    stroke-dashoffset: 12;
+  }
+}
+
+
+
+

@@ -46,7 +46,6 @@ function App() {
   return (
     <>
       <BrowserRouter basename='/Kuber-Web'>
-        {/* ✅ Always scrolls to top on route change */}
         <ScrollToTop />  
 
         <Routes>
