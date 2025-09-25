@@ -1,23 +1,16 @@
 import React from "react";
 import "../Styles/ResellerShowcase.css";
 import { FaUserTie, FaMoneyBillWave, FaHandshake } from "react-icons/fa";
-import { useNavigate } from "react-router-dom";
-// import sampleImg from "../assets/reseller.jpg"; // replace with your image
 
+// No need for useNavigate here
 const ResellerShowcase = () => {
 
-  const navigate=useNavigate();
-
-
-
-
-  function redirectContact(){
-    navigate("/contact")
-
-  }
-
-
-
+  const handleScroll = () => {
+    const element = document.getElementById("signup-form");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <section className="reseller-container">
@@ -33,18 +26,25 @@ const ResellerShowcase = () => {
         <div className="reseller-icons">
           <div className="reseller-icon-card">
             <div className="containers">
-            <FaMoneyBillWave className="icon money" />
+              <FaMoneyBillWave className="icon money" />
             </div>
             <p>Earn Recurring Income</p>
           </div>
           <div className="reseller-icon-card">
-               <div className="containers">
-            <FaHandshake className="icon handshake" />
+            <div className="containers">
+              <FaHandshake className="icon handshake" />
             </div>
             <p>Partner with Us</p>
           </div>
         </div>
-        <button className="reseller-btn" onClick={redirectContact} style={{cursor:"pointer"}}>Get Started</button>
+        {/* 👇 Scroll to signup form */}
+        <button 
+          className="reseller-btn" 
+          onClick={handleScroll} 
+          style={{ cursor: "pointer" }}
+        >
+          Get Started
+        </button>
       </div>
 
       <div className="reseller-image-card">

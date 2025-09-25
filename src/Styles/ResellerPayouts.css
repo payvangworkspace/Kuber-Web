@@ -194,3 +194,72 @@
     margin-left: 0;
   }
 }
+
+/* Extra responsive tweaks */
+
+/* Tablet: 600px - 900px */
+@media (max-width: 900px) and (min-width: 600px) {
+  .payouts-container {
+    padding: 3rem 1rem;
+  }
+
+  .payouts-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .payouts-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .payouts-image img {
+    max-width: 80%;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+
+/* Mobile: below 600px */
+@media (max-width: 599px) {
+  .payouts-container {
+    padding: 2rem 1rem;
+    /* border: 2px solid orange; */
+    padding-top: 0px;
+    height: 120vh;
+  }
+
+  .payouts-wrapper {
+    flex-direction: column;
+    gap: 1.2rem;
+    text-align: center;
+  }
+
+  .payouts-card {
+    width: 100%;
+    padding: 1.5rem 1rem;
+  }
+
+  .payouts-title {
+    font-size: 1.4rem;
+  }
+
+  .payouts-text {
+    font-size: 0.9rem;
+  }
+
+  .payouts-note {
+    font-size: 0.85rem;
+  }
+
+  .payouts-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .payouts-image img {
+    max-width: 95%;
+    height: auto;
+    margin: 0 auto;
+  }
+}

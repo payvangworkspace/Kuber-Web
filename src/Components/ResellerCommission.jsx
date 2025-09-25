@@ -2,20 +2,14 @@ import React from "react";
 import "../Styles/ResellerCommission.css";
 import { FaUserPlus, FaDollarSign } from "react-icons/fa";
 import { motion } from "framer-motion";
-import { useNavigate } from "react-router-dom";
-// import sampleImg from "../assets/reseller-side.jpg"; // <- add your image here
 
 const ResellerCommission = () => {
-
-  const navigate=useNavigate();
-
-
-  function redirectContact(){
-    navigate("/contact")
-    
-  }
-
-
+  const handleScroll = () => {
+    const element = document.getElementById("signup-form");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <section className="commission-container">
@@ -39,7 +33,10 @@ const ResellerCommission = () => {
             <span>Kuber Payment</span> and receive a monthly revenue share on
             credit card payments for the merchant accounts you refer.
           </p>
-          <button className="commission-btn" onClick={redirectContact}>Get Started</button>
+          {/* 👇 Scroll to signup form */}
+          <button className="commission-btn" onClick={handleScroll}>
+            Get Started
+          </button>
         </motion.div>
 
         {/* Right: Image */}

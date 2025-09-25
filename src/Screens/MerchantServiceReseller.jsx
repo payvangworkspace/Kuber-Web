@@ -13,15 +13,19 @@ import Footer from '../Components/Footer'
 const MerchantServiceReseller = () => {
   return ( 
     <div>
-        <Navbar/>
-        <MerchantBanner/>
-        {/* <KuberResellerContent/> */}
+      <Navbar/>
+      <MerchantBanner/>
       <ResellerShowcase/>
-       <ResellerCommission/>
+      <ResellerCommission/>
       <ResellerPartnership/>
       <ResellerPayouts/>
       <WebDeveloperPartnership/>
-      <MerchantSignupForm/>
+
+      {/* 👇 Add ID here */}
+      <div id="signup-form">
+        <MerchantSignupForm/>
+      </div>
+
       <Footer/>
     </div>
   )

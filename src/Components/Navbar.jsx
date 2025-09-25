@@ -171,7 +171,7 @@ const Navbar = forwardRef((props, ref) => {
 
         {/* Buttons (desktop only) */}
         <div className="nav-actions desktop-actions">
-          <button className="t-btn t-btn-outline" onClick={redirectSignIn}>
+          <button className="t-btn t-btn-outline" onClick={redirectSignIn} style={{color:"white"}}>
             Sign In
           </button>
           <button

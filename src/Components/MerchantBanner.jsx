@@ -1,8 +1,14 @@
 import React from "react";
 import "../styles/MerchantBanner.css";
-import { Link } from "react-router-dom";
 
 const MerchantBanner = () => {
+  const handleScroll = () => {
+    const element = document.getElementById("signup-form");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <section className="merchant-banner">
       <div className="banner-overlay">
@@ -14,9 +20,9 @@ const MerchantBanner = () => {
             Partner with us to deliver secure, reliable, and scalable payment
             solutions while growing your business revenue.
           </p>
-          <Link to="/contact" className="banner-btn">
+          <button onClick={handleScroll} className="banner-btn">
             Get Started
-          </Link>
+          </button>
         </div>
 
         <div className="banner-image">

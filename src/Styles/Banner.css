@@ -554,3 +554,154 @@ height: 50vh;
 
 
 
+/* Tablet: 600px - 1024px */
+@media (max-width: 1024px) and (min-width: 600px) {
+  .mx-banner {
+    height: 45vh;
+    padding: 40px 20px;
+  }
+
+  .mx-banner-title {
+    font-size: 2.5rem;
+  }
+
+  .mx-banner-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .mx-banner-description {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .mx-banner-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .mx-banner-btn {
+    width: 100%;
+    max-width: 250px;
+  }
+}
+
+/* Mobile: below 600px */
+@media (max-width: 599px) {
+  .mx-banner {
+    height: 40vh;
+    padding: 25px 15px;
+  }
+
+  .mx-banner-title {
+    font-size: 2rem;
+  }
+
+  .mx-banner-subtitle {
+    font-size: 1rem;
+  }
+
+  .mx-banner-description {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  .mx-banner-buttons {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .mx-banner-btn {
+    width: 100%;
+    max-width: 200px;
+    font-size: 0.95rem;
+  }
+
+  .mx-banner-shapes .shape {
+    opacity: 0.1;
+  }
+
+  .shape1 {
+    width: 90px;
+    height: 90px;
+    top: 5%;
+    left: 10%;
+  }
+
+  .shape2 {
+    width: 60px;
+    height: 60px;
+    bottom: 15%;
+    right: 15%;
+  }
+
+  .shape3 {
+    width: 100px;
+    height: 100px;
+    bottom: 5%;
+    left: 20%;
+  }
+}
+/* Mobile: below 600px */
+@media (max-width: 599px) {
+  .mx-banner {
+    height: auto; /* let it grow based on content */
+    min-height: 50vh; /* maintain reasonable height */
+    padding: 30px 15px;
+    text-align: center;
+  }
+
+  .mx-banner-title {
+    font-size: 1.8rem; /* smaller to fit */
+    line-height: 1.2;
+    word-wrap: break-word;
+  }
+
+  .mx-banner-subtitle {
+    font-size: 1rem;
+    line-height: 1.2;
+    margin-bottom: 15px;
+  }
+
+  .mx-banner-description {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+
+  .mx-banner-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .mx-banner-btn {
+    width: 100%;
+    max-width: 220px;
+    font-size: 0.95rem;
+  }
+
+  /* Shapes adjustments */
+  .mx-banner-shapes .shape {
+    opacity: 0.1;
+  }
+
+  .shape1 {
+    width: 80px;
+    height: 80px;
+    top: 5%;
+    left: 10%;
+  }
+
+  .shape2 {
+    width: 60px;
+    height: 60px;
+    bottom: 15%;
+    right: 15%;
+  }
+
+  .shape3 {
+    width: 90px;
+    height: 90px;
+    bottom: 5%;
+    left: 20%;
+  }
+}

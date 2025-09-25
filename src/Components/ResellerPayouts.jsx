@@ -2,21 +2,15 @@ import React from "react";
 import "../Styles/ResellerPayouts.css";
 import { FaHandshake, FaMoneyBillWave } from "react-icons/fa";
 import { motion } from "framer-motion";
-import { useNavigate } from "react-router-dom";
-// import sampleImg from "../assets/reseller-payouts.jpg"; // replace with your image
 
 const ResellerPayouts = () => {
-
-  const navigate=useNavigate();
-  
-
-
-
-  function redirectContact(){
-    navigate("/contact")
-  }
-
-
+  // 👇 Smooth scroll to signup form
+  const handleScroll = () => {
+    const element = document.getElementById("signup-form");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <section className="payouts-container">
@@ -42,7 +36,11 @@ const ResellerPayouts = () => {
           <p className="payouts-note">
             <span>*</span> Ask About Our New Reseller Loyalty Offer
           </p>
-          <button className="payouts-btn" onClick={redirectContact}>Connect Us</button>
+
+          {/* 👇 Scroll to signup form */}
+          <button className="payouts-btn" onClick={handleScroll}>
+            Connect Us
+          </button>
         </motion.div>
 
         {/* Right: Image */}
