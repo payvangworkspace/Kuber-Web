@@ -1,54 +1,62 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
-import Banner from "./Banner";
-import { FaHandsHelping, FaShieldAlt, FaRocket, FaUsers } from "react-icons/fa";
-import "../Styles/CardDetail.css"; // reuse same styling
+import { FaGlobe, FaLock, FaMobileAlt, FaCreditCard } from "react-icons/fa";
+import "../Styles/CardDetail.css";
 
 const ClientDetail = () => {
   const navigate = useNavigate();
 
   return (
     <>
-      <Navbar />
-      <Banner title="Our Approach" subtitle="How We Understand Clients" />
-
       <div className="card-detail-container">
         <div className="card-detail">
           <img
-            src={`${import.meta.env.BASE_URL}home-facility-bg.jpg`}
-            alt="Our Approach"
+            src={`${import.meta.env.BASE_URL}webdev-partner.jpg`}
+            alt="Web Developer Partnership"
             className="card-detail-img"
             onError={(e) => {
               e.target.onerror = null;
-              e.target.src = `${import.meta.env.BASE_URL}fallback.jpg`;
+              e.target.src = `${import.meta.env.BASE_URL}client2.jpg`;
             }}
           />
 
           <div className="card-detail-content">
-            <h2 className="card-detail-title">Understanding Our Clients</h2>
+            <h2 className="card-detail-title">Web Developer Partnership</h2>
             <p className="card-detail-description">
-              At KuberPays, our approach is built on **deep client understanding**. 
-              We listen, learn, and adapt our payment solutions to match the unique needs 
-              of businesses across industries. With innovation and security at the core, 
-              we ensure our clients always stay ahead in the financial ecosystem.
+              You build top-notch e-commerce websites for your clients to help
+              their businesses flourish, and recommending our all-inclusive
+              payment platform will allow your clients to accept payments
+              securely from customers around the globe.
             </p>
 
             <div className="card-detail-subsection">
-              <h3>Our Core Pillars</h3>
+              <h3>Key Highlights</h3>
               <ul className="card-detail-features">
-                <li><FaHandsHelping className="feature-check-icon" /> Client-Centric Partnerships</li>
-                <li><FaShieldAlt className="feature-check-icon" /> Secure & Transparent Transactions</li>
-                <li><FaRocket className="feature-check-icon" /> Continuous Innovation & Agility</li>
-                <li><FaUsers className="feature-check-icon" /> Empowering Businesses Globally</li>
+                <li>
+                  <FaGlobe className="feature-check-icon" /> Global Payment
+                  Acceptance
+                </li>
+                <li>
+                  <FaLock className="feature-check-icon" /> Industry-Leading
+                  Security
+                </li>
+                <li>
+                  <FaCreditCard className="feature-check-icon" /> Alternative
+                  Payment Methods
+                </li>
+                <li>
+                  <FaMobileAlt className="feature-check-icon" /> Mobile-Friendly
+                  Checkout
+                </li>
               </ul>
             </div>
 
             <p className="card-detail-long">
-              We believe that success comes from a **long-term vision**. That’s why we 
-              invest in building strong client relationships, backed by world-class 
-              technology and unmatched reliability.
+              Put cutting-edge payment processing tools at your clients’
+              fingertips. Kuber Payment’s flexible payment services are designed
+              to offer an exceptional payment processing experience for
+              businesses worldwide, backed by 24/7 security, chargeback
+              mitigation, and fraud protection.
             </p>
 
             <button className="card-detail-btn" onClick={() => navigate(-1)}>
@@ -57,8 +65,6 @@ const ClientDetail = () => {
           </div>
         </div>
       </div>
-
-      <Footer />
     </>
   );
 };

@@ -1,0 +1,110 @@
+.payouts-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 1rem;
+  background: #0a0f1c; /* dark background matching your site */
+}
+
+.payouts-card {
+  background: linear-gradient(145deg, #1c2236, #121726);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  max-width: 750px;
+  text-align: center;
+  padding: 3rem 2rem;
+  border-radius: 18px;
+  box-shadow: 0 0 25px rgba(123, 97, 255, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 580px; 
+    /* border: 2px solid red; */
+}
+
+.payouts-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 40px rgba(123, 97, 255, 0.35);
+}
+
+.icon-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.payouts-icon {
+  font-size: 3rem;
+  color: #00d4ff; /* cyan accent like your theme */
+  filter: drop-shadow(0 0 6px rgba(0, 212, 255, 0.7));
+}
+
+.payouts-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.payouts-text {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: #d1d5db;
+  margin-bottom: 1.5rem;
+}
+
+.payouts-note {
+  font-size: 1rem;
+  color: #7b61ff; /* purple accent for note */
+  margin-bottom: 2rem;
+}
+
+.payouts-note span {
+  font-weight: bold;
+  margin-right: 0.3rem;
+}
+
+.payouts-btn {
+  background: linear-gradient(90deg, #7b61ff, #00d4ff);
+  color: #fff;
+  border: none;
+  padding: 1rem 2.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(123, 97, 255, 0.4);
+}
+
+.payouts-btn:hover {
+  background: linear-gradient(90deg, #00d4ff, #7b61ff);
+  box-shadow: 0 0 25px rgba(0, 212, 255, 0.6);
+}
+/* Wrapper to align card left & image right */
+.payouts-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  max-width: 1200px;
+  width: 100%;
+}
+
+
+.payouts-image{
+  /* border: 2px solid orange; */
+  width: 1080px;
+  height: 450px;
+}
+
+/* Right image styling */
+.payouts-image img {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 0 25px rgba(123, 97, 255, 0.25);
+  /* border: 2px solid red; */
+  margin-left: 40px;
+  height: 100%;
+  max-width:40vw ;
+  width: 30vw; 
+}

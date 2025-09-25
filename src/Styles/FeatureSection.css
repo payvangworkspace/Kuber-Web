@@ -1,4 +1,4 @@
-.feature-section {
+.fs-feature-section {
   padding: 5rem 10%;
   background: linear-gradient(135deg, #0f172a, #1e293b);
   color: white;
@@ -6,30 +6,30 @@
   height: 90vh;
 }
 
-.feature-header h2 {
+.fs-feature-header h2 {
   font-size: 2.5rem;
   font-weight: 700;
   color: #38bdf8;
   margin-bottom: 0.8rem;
 }
 
-.feature-header h2 span {
+.fs-feature-header h2 span {
   color: whitesmoke
 }
 
-.feature-header p {
+.fs-feature-header p {
   font-size: 1.1rem;
   color: #cbd5e1;
   margin-bottom: 3rem;
 }
 
-.feature-grid {
+.fs-feature-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 2rem;
 }
 
-.feature-card {
+.fs-feature-card {
   background: rgba(255, 255, 255, 0.05);
   border-radius: 1.2rem;
   padding: 2rem;
@@ -39,30 +39,30 @@
   opacity: 0;
 }
 
-.feature-card:hover {
+.fs-feature-card:hover {
   transform: translateY(-12px) scale(1.05);
   background: rgba(56, 189, 248, 0.1);
   box-shadow: 0 10px 25px rgba(56, 189, 248, 0.3);
 }
 
-.feature-icon {
+.fs-feature-icon {
   font-size: 2.8rem;
   color: #38bdf8;
   margin-bottom: 1.2rem;
   transition: color 0.3s ease;
 }
 
-.feature-card:hover .feature-icon {
+.fs-feature-card:hover .fs-feature-icon {
   color: #efefef;
 }
 
-.feature-card h3 {
+.fs-feature-card h3 {
   font-size: 1.4rem;
   margin-bottom: 0.8rem;
   color: #f1f5f9;
 }
 
-.feature-card p {
+.fs-feature-card p {
   font-size: 1rem;
   color: #cbd5e1;
   line-height: 1.5;
@@ -80,14 +80,14 @@
   }
 }
 
-.icon-p{
+.fs-icon-p{
     /* border: 2px solid red; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.feature-section {
+.fs-feature-section {
   padding: 5rem 4%;
   background: linear-gradient(135deg, #0f172a, #1e293b);
   color: white;
@@ -96,24 +96,24 @@
   width: 99vw;
 }
 
-.feature-header h2 {
+.fs-feature-header h2 {
   font-size: 2.5rem;
   font-weight: 700;
   color: #38bdf8;
   margin-bottom: 0.8rem;
 }
 
-.feature-header h2 span {
+.fs-feature-header h2 span {
   color: #facc15;
 }
 
-.feature-header p {
+.fs-feature-header p {
   font-size: 1.1rem;
   color: #cbd5e1;
   margin-bottom: 3rem;
 }
 
-.feature-slider {
+.fs-feature-slider {
   display: flex;
   gap: 1.5rem;
   overflow-x: auto;
@@ -122,11 +122,11 @@
   /* border: 2px solid orange; */
 }
 
-.feature-slider::-webkit-scrollbar {
+.fs-feature-slider::-webkit-scrollbar {
   display: none; /* Chrome/Safari */
 }
 
-.feature-card {
+.fs-feature-card {
   min-width: 260px;
   max-width: 280px;
   flex-shrink: 0;
@@ -139,31 +139,31 @@
   opacity: 0;
 }
 
-.feature-card:hover {
+.fs-feature-card:hover {
   transform: translateY(-12px) scale(1.05);
   background: rgba(56, 189, 248, 0.1);
   box-shadow: 0 10px 25px rgba(56, 189, 248, 0.3);
 }
 
-.feature-icon {
+.fs-feature-icon {
   font-size: 2.8rem;
   color: #38bdf8;
   margin-bottom: 1.2rem;
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.feature-card:hover .feature-icon {
+.fs-feature-card:hover .fs-feature-icon {
   color: #facc15;
   transform: rotate(8deg) scale(1.2);
 }
 
-.feature-card h3 {
+.fs-feature-card h3 {
   font-size: 1.3rem;
   margin-bottom: 0.8rem;
   color: #f1f5f9;
 }
 
-.feature-card p {
+.fs-feature-card p {
   font-size: 0.95rem;
   color: #cbd5e1;
   line-height: 1.5;
@@ -181,19 +181,19 @@
   }
 }
 
-.icon-p {
+.fs-icon-p {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.feature-slider-container {
+.fs-feature-slider-container {
   position: relative;
   display: flex;
   align-items: center;
 }
 
-.scroll-btn {
+.fs-scroll-btn {
   /* position: absolute;
   top: 50%; */
   transform: translateY(-50%);
@@ -209,21 +209,21 @@
   backdrop-filter: blur(6px);
 }
 
-.scroll-btn:hover {
+.fs-scroll-btn:hover {
   background: rgba(56, 189, 248, 0.4);
   transform: translateY(-50%) scale(1.1);
   color: #fff;
 }
 
-.scroll-btn.left {
+.fs-scroll-btn.left {
   /* left: -2rem; */
 }
 
-.scroll-btn.right {
+.fs-scroll-btn.right {
   /* right: -2rem; */
 }
 
-.button-placer{
+.fs-button-placer{
   margin-top: 40px;
   /* border: 2px solid red; */
   padding: 10px 0px;
@@ -231,7 +231,7 @@
   justify-content: center;
 
 }
-.left-right{
+.fs-left-right{
   /* margin-top: 10px; */
   /* border: 2px solid white; */
   width: 8vw;
@@ -243,35 +243,35 @@
 
 /* Tablet screens */
 @media screen and (max-width: 1024px) {
-  .feature-section {
+  .fs-feature-section {
     padding: 4rem 6%;
     height: auto; /* prevent cut-off */
   }
 
-  .feature-header h2 {
+  .fs-feature-header h2 {
     font-size: 2rem;
   }
 
-  .feature-header p {
+  .fs-feature-header p {
     font-size: 1rem;
     margin-bottom: 2rem;
   }
 
-  .feature-card {
+  .fs-feature-card {
     min-width: 240px;
     max-width: 260px;
     padding: 1.6rem;
   }
 
-  .feature-card h3 {
+  .fs-feature-card h3 {
     font-size: 1.2rem;
   }
 
-  .feature-card p {
+  .fs-feature-card p {
     font-size: 0.9rem;
   }
 
-  .scroll-btn {
+  .fs-scroll-btn {
     font-size: 1.3rem;
     padding: 0.7rem;
   }
@@ -279,7 +279,7 @@
 
 /* Mobile screens */
 @media screen and (max-width: 768px) {
-  .feature-section {
+  .fs-feature-section {
     padding: 3rem 5%;
     text-align: center;
     width: 100vw;
@@ -287,78 +287,78 @@
     height: auto; /* let content grow naturally */
   }
 
-  .feature-header h2 {
+  .fs-feature-header h2 {
     font-size: 1.8rem;
     line-height: 1.3;
   }
 
-  .feature-header p {
+  .fs-feature-header p {
     font-size: 0.95rem;
     margin-bottom: 1.8rem;
   }
 
-  .feature-slider {
+  .fs-feature-slider {
     gap: 1rem;
   }
 
-  .feature-card {
+  .fs-feature-card {
     min-width: 220px;
     max-width: 240px;
     padding: 1.4rem;
   }
 
-  .feature-card h3 {
+  .fs-feature-card h3 {
     font-size: 1.1rem;
   }
 
-  .feature-card p {
+  .fs-feature-card p {
     font-size: 0.85rem;
   }
 
-  .scroll-btn {
+  .fs-scroll-btn {
     font-size: 1.2rem;
     padding: 0.6rem;
   }
 
-  .left-right {
+  .fs-left-right {
     width: 30vw; /* give enough space for buttons */
   }
 }
 
 /* Small mobile screens */
 @media screen and (max-width: 480px) {
-  .feature-section {
+  .fs-feature-section {
     padding: 2.5rem 4%;
   }
 
-  .feature-header h2 {
+  .fs-feature-header h2 {
     font-size: 1.5rem;
   }
 
-  .feature-header p {
+  .fs-feature-header p {
     font-size: 0.85rem;
   }
 
-  .feature-card {
+  .fs-feature-card {
     min-width: 200px;
     max-width: 220px;
     padding: 1.2rem;
   }
 
-  .feature-card h3 {
+  .fs-feature-card h3 {
     font-size: 1rem;
   }
 
-  .feature-card p {
+  .fs-feature-card p {
     font-size: 0.8rem;
   }
 
-  .scroll-btn {
+  .fs-scroll-btn {
     font-size: 1rem;
     padding: 0.5rem;
   }
 
-  .left-right {
+  .fs-left-right {
     width: 50vw; /* buttons more spaced on tiny screens */
   }
 }

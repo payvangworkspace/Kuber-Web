@@ -99,8 +99,8 @@ const FeatureSection = () => {
   };
 
   return (
-    <section className="feature-section">
-      <div className="feature-header">
+    <section className="fs-feature-section">
+      <div className="fs-feature-header">
         <h2>
           Why Choose <span>Kuber ERP</span>?
         </h2>
@@ -109,17 +109,17 @@ const FeatureSection = () => {
         </p>
       </div>
 
-      <div className="feature-slider-container">
+      <div className="fs-feature-slider-container">
        
 
-        <div className="feature-slider" ref={sliderRef}>
+        <div className="fs-feature-slider" ref={sliderRef}>
           {features.map((feature, index) => (
             <div
               key={index}
-              className="feature-card"
+              className="fs-feature-card"
               style={{ animationDelay: `${index * 0.2}s` }}
             >
-              <div className="icon-p">
+              <div className="fs-icon-p">
                 <div className="feature-icon">{feature.icon}</div>
               </div>
               <h3>{feature.title}</h3>
@@ -130,14 +130,14 @@ const FeatureSection = () => {
 
         
       </div>
-      <div className="button-placer">
+      <div className="fs-button-placer">
        {/* Left Button */}
-       <div className="left-right">
-        <button className="scroll-btn left" onClick={scrollLeft}>
+       <div className="fs-left-right">
+        <button className="fs-scroll-btn left" onClick={scrollLeft}>
           <FaChevronLeft />
         </button>
         {/* Right Button */}
-        <button className="scroll-btn right" onClick={scrollRight}>
+        <button className="fs-scroll-btn right" onClick={scrollRight}>
           <FaChevronRight />
         </button>
         </div>

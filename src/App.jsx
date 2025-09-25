@@ -29,6 +29,8 @@ import NFCScreen from './Screens/NFCScreen'
 // ✅ ScrollToTop Component
 import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
+import MerchantServiceReseller from './Screens/MerchantServiceReseller'
+import Client from './Screens/Client'
 
 const ScrollToTop = () => {
   const { pathname } = useLocation()
@@ -69,6 +71,10 @@ function App() {
           <Route path="/info/:id" element={<InfoDetail />} />
           <Route path="/client-approach" element={<ClientDetail />} />
             <Route path="/NFC-Payment" element={<NFCScreen/>} />
+            <Route path="/merchant-service" element={<MerchantServiceReseller/>} />
+                 <Route path="/client" element={<Client />} />
+      
+
         </Routes>
       </BrowserRouter>
     </>

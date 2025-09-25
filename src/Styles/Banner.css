@@ -1,4 +1,4 @@
-.banner {
+.mx-banner {
   position: relative;
   width: 100%;
   height: 48vh;
@@ -7,18 +7,21 @@
   justify-content: center;
   align-items: center;
   color: white;
+  /* border: 2px solid white; */
   text-align: center;
   overflow: hidden;
+  /* height: 50vh; */
   animation: fadeIn 1.2s ease-in-out;
 }
 
 /* Content Center */
-.banner-content {
+.mx-banner-content {
   z-index: 2;
   padding: 0 20px;
+  /* border: 2px solid orange; */
 }
 
-.banner-title {
+.mx-banner-title {
   font-size: 3rem;
   font-weight: 700;
   margin: 0;
@@ -28,7 +31,7 @@
   animation: slideDown 1s ease forwards;
 }
 
-.banner-subtitle {
+.mx-banner-subtitle {
   font-size: 1.2rem;
   margin-top: 12px;
   opacity: 0;
@@ -37,7 +40,7 @@
 }
 
 /* Wave effect at bottom */
-.banner-wave {
+.mx-banner-wave {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -94,20 +97,20 @@
 
 /* Responsive */
 @media (max-width: 768px) {
-  .banner {
+  .mx-banner {
     height: 35vh;
     padding: 0 15px;
   }
 
-  .banner-title {
+  .mx-banner-title {
     font-size: 2rem;
   }
 
-  .banner-subtitle {
+  .mx-banner-subtitle {
     font-size: 1rem;
   }
 }
-.banner {
+.mx-banner {
   position: relative;
   height: 70vh;
   display: flex;
@@ -118,15 +121,17 @@
   background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
 }
 
-.banner-overlay {
+.mx-banner-overlay {
     /* height: 20vh;
     border: 2px solid red; */
+    /* height: 40vh; */
+    /* border: 2px solid blue; */
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.45);
 }
 
-.banner-content {
+.mx-banner-content {
   position: relative;
   text-align: center;
   z-index: 2;
@@ -135,7 +140,7 @@
   animation: fadeInUp 1.2s ease-in-out;
 }
 
-.banner-title {
+.mx-banner-title {
   font-size: 3rem;
   font-weight: 700;
   background: linear-gradient(90deg, #ff8a00, #e52e71);
@@ -145,21 +150,21 @@
   animation: textGlow 3s infinite alternate;
 }
 
-.banner-subtitle {
+.mx-banner-subtitle {
   font-size: 1.5rem;
   font-weight: 500;
   color: #f0f0f0;
   margin-bottom: 15px;
 }
 
-.banner-description {
+.mx-banner-description {
   font-size: 1rem;
   color: #ddd;
   margin-bottom: 25px;
   line-height: 1.6;
 }
 
-.banner-buttons {
+.mx-banner-buttons {
   display: flex;
   justify-content: center;
   gap: 15px;
@@ -200,7 +205,7 @@
 }
 
 /* Floating shapes animation */
-.banner-shapes .shape {
+.mx-banner-shapes .shape {
   position: absolute;
   border-radius: 50%;
   opacity: 0.3;
@@ -265,7 +270,7 @@
 }
 
 
-.banner-container {
+.mx-banner-container {
    
   width: 100%;
   min-height: 300px;
@@ -288,13 +293,13 @@
   100% { background-position: 0% 50%; }
 }
 
-.banner-content {
+.mx-banner-content {
   color: white;
   max-width: 800px;
   animation: fadeInUp 1.5s ease forwards;
 }
 
-.banner-title {
+.mx-banner-title {
   font-size: 3rem;
   font-weight: 700;
   background: white;
@@ -305,19 +310,19 @@
   margin-bottom: 15px;
 }
 
-.banner-subtitle {
+.mx-banner-subtitle {
   font-size: 1.2rem;
   color: #e0e0e0;
   margin-bottom: 25px;
 }
 
-.banner-buttons {
+.mx-banner-buttons {
   display: flex;
   justify-content: center;
   gap: 15px;
 }
 
-.banner-btn {
+.mx-banner-btn {
   padding: 12px 25px;
   border-radius: 30px;
   font-size: 1rem;
@@ -363,7 +368,8 @@
   }
 }
 
-.banner-container {
+.mx-banner-container {
+  /* border: 2px solid orange; */
   width: 100%;
   min-height: 70vh;
   display: flex;
@@ -386,7 +392,7 @@
 }
 
 /* Content */
-.banner-content {
+.mx-banner-content {
   color: white;
   max-width: 800px;
   animation: fadeInUp 1.5s ease forwards;
@@ -394,7 +400,7 @@
   z-index: 2;
 }
 
-.banner-title {
+.mx-banner-title {
   font-size: 3rem;
   font-weight: 700;
   /* background: linear-gradient(90deg, #4fb2ff, #ffffff); */
@@ -405,27 +411,27 @@
   animation: textGlow 3s infinite alternate;
 }
 
-.banner-subtitle {
+.mx-banner-subtitle {
   font-size: 1.3rem;
   color: #cfd8e3; /* softer white-blue tone */
   margin-bottom: 20px;
 }
 
-.banner-description {
+.mx-banner-description {
   font-size: 1rem;
   color: #b0bec5;
   margin-bottom: 30px;
   line-height: 1.6;
 }
 
-.banner-buttons {
+.mx-banner-buttons {
   display: flex;
   justify-content: center;
   gap: 15px;
 }
 
 /* Buttons */
-.banner-btn {
+.mx-banner-btn {
   padding: 12px 25px;
   border-radius: 30px;
   font-size: 1rem;
@@ -460,7 +466,7 @@
 }
 
 /* Floating Shapes */
-.banner-shapes .shape {
+.mx-banner-shapes .shape {
   position: absolute;
   border-radius: 50%;
   opacity: 0.15;
@@ -525,11 +531,11 @@
   }
 }
 
-.banner-title{
+.mx-banner-title{
     color: white;
     /* background: transparent; */
 }
-.banner-title {
+.mx-banner-title {
   font-size: 3rem;
   font-weight: 700;
   color: #ffffff;  /* Default white */
@@ -537,9 +543,14 @@
   margin-bottom: 15px;
   animation: textGlow 3s infinite alternate;
 }
+.mx-banner
+{
+/* border: 2px solid orange; */
+height: 50vh;
 
 
-.banner{
-       /* border: 2px solid red; */
-       height:49vh;
 }
+
+
+
+

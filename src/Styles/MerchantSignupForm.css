@@ -1,0 +1,264 @@
+.merchant-form-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 1.5rem;
+  background: #f5f7fa;
+}
+
+.merchant-form-card {
+  width: 100%;
+  max-width: 900px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.merchant-form-header {
+  background: linear-gradient(135deg, #0a2540, #1e3c72, #2a5298);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.merchant-form-header h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.merchant-form-header p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+.merchant-form {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+}
+
+.merchant-form input,
+.merchant-form select,
+.merchant-form textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #d0d7de;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  outline: none;
+  background: #fafafa;
+}
+
+.merchant-form input:focus,
+.merchant-form select:focus,
+.merchant-form textarea:focus {
+  border-color: #2a5298;
+  box-shadow: 0 0 6px rgba(42, 82, 152, 0.4);
+  background: #fff;
+}
+
+.merchant-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.merchant-submit-btn {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 12px rgba(30, 60, 114, 0.3);
+}
+
+.merchant-submit-btn:hover {
+  background: linear-gradient(135deg, #2a5298, #1a2f50);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(30, 60, 114, 0.4);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .merchant-form-header h2 {
+    font-size: 1.3rem;
+  }
+}
+.merchant-form-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 1.5rem;
+  background: #f7f9fc;
+}
+
+.merchant-form-card {
+  width: 100%;
+  max-width: 850px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  animation: fadeIn 1s ease-in-out;
+  transition: all 0.3s ease;
+}
+
+.merchant-form-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.12);
+}
+
+.merchant-form-header {
+  background: linear-gradient(135deg, #0a2540, #1e3c72, #2a5298);
+  color: #fff;
+  text-align: center;
+  padding: 2.5rem 2rem;
+}
+
+.merchant-form-header h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.merchant-form-header p {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.merchant-form {
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.merchant-form input,
+.merchant-form select,
+.merchant-form textarea {
+  width: 100%;
+  padding: 14px 18px;
+  color: black;
+  border: 1px solid #d0d7de;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  background: #fafafa;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.merchant-form input::placeholder,
+.merchant-form select::placeholder,
+.merchant-form textarea::placeholder {
+  color: #8a8a8a;
+}
+
+.merchant-form input:focus,
+.merchant-form select:focus,
+.merchant-form textarea:focus {
+  border-color: #2a5298;
+  box-shadow: 0 0 8px rgba(42, 82, 152, 0.3);
+  background: #fff;
+}
+
+.merchant-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.merchant-submit-btn {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 14px 0;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 6px 18px rgba(30, 60, 114, 0.35);
+}
+
+.merchant-submit-btn:hover {
+  background: linear-gradient(135deg, #2a5298, #1a2f50);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(30, 60, 114, 0.45);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .merchant-form-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .merchant-form-header p {
+    font-size: 0.95rem;
+  }
+}
+
+.merchant-success-msg {
+  margin-top: 1.5rem;
+  padding: 1rem 1.5rem;
+  background: linear-gradient(135deg, #28a745, #2ecc71);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(46, 204, 113, 0.4);
+  font-size: 1rem;
+}

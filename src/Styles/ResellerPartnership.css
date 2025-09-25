@@ -1,0 +1,105 @@
+.reseller-partnership-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  padding: 5rem 6%;
+  background: linear-gradient(
+      120deg,
+      rgba(10, 47, 92, 0.95),
+      rgba(16, 62, 115, 0.95)
+    ),
+    url("./bg-3.jpg") center/cover;
+  color: white;
+  min-height: 90vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Content styling */
+.reseller-partnership-content {
+  flex: 1;
+  max-width: 650px;
+}
+
+.reseller-partnership-content h2 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+  color: #4fb2ff;
+}
+
+.reseller-partnership-content h3 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+  color: #ffffff;
+}
+
+.reseller-partnership-content p {
+  font-size: 1.05rem;
+  color: #d1e4ff;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+/* Features */
+.reseller-partnership-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.2rem;
+  margin-top: 2rem;
+}
+
+.reseller-partnership-feature-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.reseller-partnership-feature-item:hover {
+  background: rgba(255, 255, 255, 0.12);
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(79, 178, 255, 0.25);
+}
+
+.reseller-partnership-icon {
+  font-size: 1.7rem;
+  color: #4fb2ff;
+}
+
+/* Image styling */
+.reseller-partnership-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.reseller-partnership-image img {
+  width: 100%;
+  max-width: 460px;
+  border-radius: 14px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .reseller-partnership-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 5%;
+  }
+
+  .reseller-partnership-features {
+    grid-template-columns: 1fr;
+  }
+
+  .reseller-partnership-image {
+    margin-top: 2rem;
+  }
+}
