@@ -140,3 +140,79 @@
   border-radius: 16px;
   box-shadow: 0 0 25px rgba(0, 128, 255, 0.25);
 }
+/* Tablet: 768px - 1024px */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .commission-wrapper {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .commission-card {
+    flex: 1;
+    max-width: 450px;
+    padding: 2.5rem 1.5rem;
+  }
+
+  .commission-title {
+    font-size: 1.8rem;
+  }
+
+  .commission-text {
+    font-size: 1rem;
+  }
+
+  .commission-image {
+    flex: 1;
+  }
+
+  .commission-image img {
+    max-width: 100%;
+  }
+}
+
+/* Mobile: below 768px */
+@media (max-width: 767px) {
+  .commission-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 1rem;
+  }
+
+  .commission-card {
+    flex: 1;
+    max-width: 100%;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  .icon-wrapper {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .commission-title {
+    font-size: 1.6rem;
+  }
+
+  .commission-text {
+    font-size: 0.95rem;
+  }
+
+  .commission-btn {
+    width: 100%;
+    padding: 0.9rem 1rem;
+    font-size: 0.95rem;
+  }
+
+  .commission-image {
+    flex: 1;
+    max-width: 90%;
+  }
+
+  .commission-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+  }
+}

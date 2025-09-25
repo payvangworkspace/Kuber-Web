@@ -262,3 +262,116 @@
   box-shadow: 0 6px 20px rgba(46, 204, 113, 0.4);
   font-size: 1rem;
 }
+/* Tablets: 769px - 1024px */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .merchant-form-section {
+    padding: 4rem 2rem;
+  }
+
+  .merchant-form-card {
+    max-width: 700px;
+    padding: 2rem;
+  }
+
+  .merchant-form-header h2 {
+    font-size: 1.6rem;
+  }
+
+  .merchant-form-header p {
+    font-size: 0.95rem;
+  }
+
+  .form-grid {
+    gap: 1rem;
+  }
+
+  .merchant-form input,
+  .merchant-form select,
+  .merchant-form textarea {
+    padding: 12px 14px;
+    font-size: 0.9rem;
+  }
+
+  .merchant-submit-btn {
+    padding: 12px 0;
+    font-size: 0.95rem;
+  }
+}
+
+/* Small tablets / large mobiles: 481px - 768px */
+@media (max-width: 768px) and (min-width: 481px) {
+  .merchant-form-section {
+    padding: 3rem 1.5rem;
+  }
+
+  .merchant-form-card {
+    max-width: 600px;
+    padding: 1.8rem;
+  }
+
+  .merchant-form-header h2 {
+    font-size: 1.4rem;
+  }
+
+  .merchant-form-header p {
+    font-size: 0.9rem;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .merchant-form input,
+  .merchant-form select,
+  .merchant-form textarea {
+    font-size: 0.9rem;
+    padding: 10px 12px;
+  }
+
+  .merchant-submit-btn {
+    font-size: 0.95rem;
+    padding: 12px 0;
+  }
+}
+
+/* Mobile: below 480px */
+@media (max-width: 480px) {
+  .merchant-form-section {
+    padding: 2rem 1rem;
+  }
+
+  .merchant-form-card {
+    max-width: 95%;
+    padding: 1.5rem;
+  }
+
+  .merchant-form-header h2 {
+    font-size: 1.2rem;
+  }
+
+  .merchant-form-header p {
+    font-size: 0.85rem;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+
+  .merchant-form input,
+  .merchant-form select,
+  .merchant-form textarea {
+    font-size: 0.85rem;
+    padding: 10px;
+  }
+
+  .merchant-submit-btn {
+    font-size: 0.9rem;
+    padding: 10px 0;
+  }
+
+  .merchant-form textarea {
+    min-height: 80px;
+  }
+}

@@ -108,3 +108,89 @@
   max-width:40vw ;
   width: 30vw; 
 }
+/* Tablet: 600px - 900px */
+@media (max-width: 900px) and (min-width: 600px) {
+  .payouts-wrapper {
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 5%;
+    gap: 2rem;
+  }
+
+  .payouts-card {
+    max-width: 90%;
+    padding: 2.5rem 1.5rem;
+  }
+
+  .payouts-title {
+    font-size: 1.8rem;
+  }
+
+  .payouts-text {
+    font-size: 1rem;
+  }
+
+  .payouts-note {
+    font-size: 0.95rem;
+  }
+
+  .payouts-btn {
+    padding: 0.9rem 2rem;
+    font-size: 0.95rem;
+  }
+
+  .payouts-image img {
+    max-width: 70%;
+    margin-left: 0;
+    width: auto;
+    height: auto;
+  }
+}
+
+/* Mobile: below 600px */
+@media (max-width: 599px) {
+  .payouts-wrapper {
+    flex-direction: column;
+    align-items: center;
+    height: 95vh;
+    /* border: 2px solid orange; */
+    padding: 2rem 3%;
+    gap: 1.5rem;
+  }
+
+  .payouts-card {
+    max-width: 100%;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .payouts-title {
+    font-size: 1.6rem;
+  }
+
+  .payouts-text {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  .payouts-note {
+    font-size: 0.9rem;
+  }
+
+  .payouts-btn {
+    padding: 0.8rem 1.8rem;
+    font-size: 0.9rem;
+  }
+
+  .payouts-image {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .payouts-image img {
+    width: 90%;
+    max-width: 90%;
+    height: auto;
+    margin-left: 0;
+  }
+}

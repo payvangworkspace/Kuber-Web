@@ -131,4 +131,113 @@
     font-size: 1.1rem;
   }
 }
+/* Existing styles remain unchanged */
 
+/* Tablet: 768px to 991px */
+@media (max-width: 991px) and (min-width: 768px) {
+  .banner-overlay {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .banner-content {
+    margin-bottom: 25px;
+  }
+
+  .banner-image img {
+    max-width: 350px;
+  }
+
+  .banner-btn {
+    padding: 12px 28px;
+    font-size: 0.95rem;
+  }
+
+  .banner-title {
+    font-size: 2.6rem;
+  }
+
+  .banner-subtitle {
+    font-size: 1.15rem;
+  }
+}
+
+/* Mobile: below 768px */
+@media (max-width: 767px) {
+  .banner-overlay {
+    flex-direction: column;
+    text-align: center;
+    width: 90%;
+  }
+
+  .banner-content {
+    margin-bottom: 20px;
+  }
+
+  .banner-image img {
+    max-width: 280px;
+  }
+
+  .banner-btn {
+    padding: 10px 24px;
+    font-size: 0.9rem;
+  }
+
+  .banner-title {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .banner-subtitle {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+}
+
+/* Mobile: below 768px */
+@media (max-width: 767px) {
+  .banner-overlay {
+    flex-direction: column;
+    text-align: center;
+    width: 95%;
+  }
+
+  .banner-content {
+    margin-bottom: 20px;
+    padding: 0 10px; /* reduce horizontal padding */
+  }
+
+  .banner-title {
+    font-size: 1.8rem;
+    line-height: 1.2;
+  }
+
+  .banner-subtitle {
+    font-size: 0.95rem;
+    max-width: 100%;
+  }
+
+  .banner-btn {
+    padding: 10px 22px;
+    font-size: 0.9rem;
+  }
+
+  .banner-image {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .banner-image img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .merchant-banner {
+    height: auto; /* allow banner to expand based on content */
+    padding: 3rem 1rem;
+  }
+
+  .image-glass {
+    padding: 6px;
+  }
+}
