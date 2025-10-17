@@ -11,9 +11,9 @@ const NFCScreen = () => {
     <div>
       <Navbar/>
       <NFCSection/>
-      {/* <OrchestrationLayer/> */}
-      {/* <FlowKuber/> */}
-      {/* <FlowComparison/> */}
+      <OrchestrationLayer/>
+      <FlowKuber/>
+      <FlowComparison/>
       <Footer/>
     </div>
   )
