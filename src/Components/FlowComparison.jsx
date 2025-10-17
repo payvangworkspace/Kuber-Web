@@ -16,6 +16,7 @@ import {
 } from "react-icons/fa";
 import "../Styles/FlowComparison.css";
 import MovingArrow from "./MovingArrow";
+import FlowBefore from "./FlowBefore";
 // import FlowComparisonBefore from "./FlowComparisonBefore"; // your Before component
 
 const features = [
@@ -52,7 +53,12 @@ const FlowComparison = () => {
        {/* Before last section here */}
      <div className="before-parent-container">
 
-<div className="inside-before-container">This is before section content</div>
+<div className="inside-before-container">
+<FlowBefore/>
+
+
+
+</div>
      </div>
         <section className="tx-after tx-slide-manual">
   <div className="tx-bg">
