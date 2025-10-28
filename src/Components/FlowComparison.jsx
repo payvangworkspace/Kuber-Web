@@ -10,7 +10,7 @@ import {
   FaStore,
   FaLaptop,
   FaCog,
-  FaUniversity,
+  FaUniversity, 
   FaChevronLeft,
   FaChevronRight,
 } from "react-icons/fa";
@@ -100,6 +100,7 @@ const FlowComparison = () => {
               <span className="mx-line-arrow"></span>
  
               {/* ===== Providers ===== */}
+               <div className="tx-contain">
               <div className="tx-providers" style={{ width: "18vw" }}>
                 {providers.map((p) => (
                   <div
@@ -117,8 +118,34 @@ const FlowComparison = () => {
                   </div>
                 ))}
               </div>
+             
+                  {/* <div className="fc-af-head">
+                    <h3>This is After</h3>
+
+
+                  </div> */}
+
+
+             </div>
+         
             </div>
+{/* <div style={{margin:"20px 0px"}}>This is website</div> */}
+{/* <div className="bottom-head-2">
+<h3 className="btm-head">After</h3>
+
+
+
+</div> */}
+
           </div>
+
+        <div className="af-head-cont">
+          <h3 className="af-head">Before</h3>
+          </div>  
+        
+{/* <h3 style={{marginBottom:"20px"}} >this is test</h3> */}
+
+
           </section>
       </div>
 

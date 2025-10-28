@@ -5,6 +5,10 @@
   gap: 2rem;
   padding: 2rem;
 }
+.card-container-wrapper{
+  /* border: 2px solid orange; */
+  background-color: white;
+}
 
 .info-card {
   background-color: #fff;
