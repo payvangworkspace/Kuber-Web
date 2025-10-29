@@ -28,13 +28,13 @@ const ResellerShowcase = () => {
             <div className="containers">
               <FaMoneyBillWave className="icon money" />
             </div>
-            <p>Earn Recurring Income</p>
+            <p className="p-info">Earn Recurring Income</p>
           </div>
           <div className="reseller-icon-card">
             <div className="containers">
               <FaHandshake className="icon handshake" />
             </div>
-            <p>Partner with Us</p>
+            <p className="p-info">Partner with Us</p>
           </div>
         </div>
         {/* 👇 Scroll to signup form */}

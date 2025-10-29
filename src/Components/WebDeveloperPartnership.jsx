@@ -40,25 +40,25 @@ const WebDeveloperPartnership = () => {
               <div className="icon-parent">
               <FaGlobe className="feature-icon" />
               </div>
-              <span>Global Payment Acceptance</span>
+              <span className="p-info">Global Payment Acceptance</span>
             </div>
             <div className="feature-card">
                <div className="icon-parent">
               <FaLock className="feature-icon" />
               </div>
-              <span>Industry-Leading Security</span>
+              <span className="p-info">Industry-Leading Security</span>
             </div>
             <div className="feature-card">
                <div className="icon-parent">
               <FaCreditCard className="feature-icon" />
               </div>
-              <span>Alternative Payment Methods</span>
+              <span className="p-info">Alternative Payment Methods</span>
             </div>
             <div className="feature-card">
                <div className="icon-parent">
               <FaMobileAlt className="feature-icon" />
               </div>
-              <span>Mobile-Friendly Checkout</span>
+              <span className="p-info">Mobile-Friendly Checkout</span>
             </div>
           </div>
 

@@ -140,7 +140,7 @@ const FlowComparison = () => {
           </div>
 
         <div className="af-head-cont">
-          <h3 className="af-head">Before</h3>
+          <h3 className="af-head">After</h3>
           </div>  
         
 {/* <h3 style={{marginBottom:"20px"}} >this is test</h3> */}
