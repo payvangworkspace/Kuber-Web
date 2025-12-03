@@ -48,7 +48,7 @@ const ResellerShowcase = () => {
       </div>
 
       <div className="reseller-image-card">
-        <img src={"./about-us.jpg"} alt="Reseller Program" className="reseller-img" />
+        <img src={"/home/about-us.jpg"} alt="Reseller Program" className="reseller-img" />
       </div>
     </section>
   );

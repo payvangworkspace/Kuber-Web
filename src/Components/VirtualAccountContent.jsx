@@ -33,7 +33,7 @@ const VirtualAccountContent = () => {
 
         {/* Inline image */}
         <div className="virtual-account-images">
-          <img src="./about-us.jpg" alt="Virtual Account Process" />
+          <img src="/home/about-us.jpg" alt="Virtual Account Process" />
         </div>
 
         {/* Benefits List */}
@@ -66,7 +66,7 @@ const VirtualAccountContent = () => {
 
       {/* Main Illustration */}
       <div className="virtual-account-image full-width">
-        <img src="./Virtual-Accounts.jpg" alt="VAM Dashboard" />
+        <img src="/home/Virtual-Accounts.jpg" alt="VAM Dashboard" />
       </div>
 
       {/* Signup Button */}

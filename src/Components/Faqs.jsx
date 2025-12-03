@@ -98,7 +98,7 @@ const Faqs = () => {
           transition={{ duration: 0.6 }}
         >
           <motion.img
-            src="./FA4.png"
+            src="/home/FA4.png"
             alt="FAQ Illustration"
             className="faq-image"
             animate={{

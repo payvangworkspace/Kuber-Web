@@ -32,7 +32,7 @@ const CompanyOverview = () => {
 
         {/* Animated Image */}
         <motion.img
-          src="./company.png" // put your image inside public/ folder
+          src="/home/company.png" // put your image inside public/ folder
           alt="About Kuber Pays"
           className="overview-image"
           initial={{ opacity: 0, x: -100 }}

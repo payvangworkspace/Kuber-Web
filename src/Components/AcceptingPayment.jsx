@@ -53,7 +53,7 @@ const AcceptingPayment = () => {
 
         {/* Right Side Image */}
         <div className="payment-image">
-          <img src="./paymentgate.jpg" alt="Payment Gateway" />
+          <img src="/home/paymentgate.jpg" alt="Payment Gateway" />
         </div>
       </div>
     </section>

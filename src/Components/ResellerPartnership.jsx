@@ -27,7 +27,7 @@ const ResellerPartnership = () => {
       className="reseller-partnership-section"
       style={{
         background: `linear-gradient(120deg, rgba(10, 47, 92, 0.95), rgba(16, 62, 115, 0.95)),
-              url("./bg-3.jpg") center/cover`,
+              url("/home/bg-3.jpg") center/cover`,
       }}
     >
       {/* Text content */}
@@ -81,7 +81,7 @@ const ResellerPartnership = () => {
         viewport={{ once: true }}
       >
         <img
-          src={`${import.meta.env.BASE_URL}paymentgate.jpg`}
+          src={`/home/paymentgate.jpg`}
           alt="Merchant Services Reseller"
         />
       </motion.div>

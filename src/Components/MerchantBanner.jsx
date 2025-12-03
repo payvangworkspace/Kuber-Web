@@ -27,7 +27,7 @@ const MerchantBanner = () => {
 
         <div className="banner-image">
           <div className="image-glass">
-            <img src={"./dashboard.jpg"} alt="Merchant Services" />
+            <img src={"/home/dashboard.jpg"} alt="Merchant Services" />
           </div>
         </div>
       </div>

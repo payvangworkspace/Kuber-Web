@@ -53,7 +53,7 @@ const WhiteLabelContent = () => {
 
         {/* Right Image Section */}
         <div className="whitelabel-image">
-          <img src={"./white-label.jpg"} alt="White Label Solutions" />
+          <img src={"/home/white-label.jpg"} alt="White Label Solutions" />
         </div>
       </div>
     </section>

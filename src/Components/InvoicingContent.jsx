@@ -55,7 +55,7 @@ const InvoicingContent = () => {
 
         {/* Right Image */}
         <div className="invoicing-image">
-          <img src={"./invoicing.jpg"} alt="Invoicing Process" />
+          <img src={"/home/invoicing.jpg"} alt="Invoicing Process" />
         </div>
       </div>
     </section>

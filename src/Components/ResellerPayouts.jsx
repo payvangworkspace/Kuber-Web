@@ -45,7 +45,7 @@ const ResellerPayouts = () => {
 
         {/* Right: Image */}
         <div className="payouts-image">
-          <img src={"./payout2.jpg"} alt="Reseller Payouts" />
+          <img src={"/home/payout2.jpg"} alt="Reseller Payouts" />
         </div>
       </div>
     </section>

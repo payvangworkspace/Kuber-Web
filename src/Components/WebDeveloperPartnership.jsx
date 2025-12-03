@@ -70,11 +70,11 @@ const WebDeveloperPartnership = () => {
         {/* Right Side Image */}
         <div className="webdev-image">
           <img
-            src={`${import.meta.env.BASE_URL}webdev-partner.jpg`}
+            src={`/home/webdev-partner.jpg`}
             alt="Developers partnership"
             onError={(e) => {
               e.target.onerror = null;
-              e.target.src = `${import.meta.env.BASE_URL}client2.jpg`;
+              e.target.src = `/home/client2.jpg`;
             }}
           />
         </div>
