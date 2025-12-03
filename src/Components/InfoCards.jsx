@@ -8,7 +8,7 @@ import { FaMousePointer, FaLock, FaBolt, FaChartBar } from "react-icons/fa";
 const cardData = [
   {
     id: "drag-drop",
-    image: `${import.meta.env.BASE_URL}remote.jpg`,
+    image: `/home/remote.jpg`,
     title: "Drag-and-Drop Functionality",
     description:
       "Effortlessly manage your workflow with intuitive drag-and-drop features.",
@@ -24,7 +24,7 @@ const cardData = [
   },
   {
     id: "transparent-pricing",
-    image: `${import.meta.env.BASE_URL}split.jpg`,
+    image: `/home/split.jpg`,
     title: "Transparent Pricing",
     description:
       "Straightforward pricing model with no hidden fees.",
@@ -40,7 +40,7 @@ const cardData = [
   },
   {
     id: "enterprise-security",
-    image: `${import.meta.env.BASE_URL}retail.jpg`,
+    image: `/home/retail.jpg`,
     title: "Enterprise-Grade Security & Speed",
     description:
       "Top-tier security, efficiency, and reliability for every transaction.",
@@ -56,7 +56,7 @@ const cardData = [
   },
   {
     id: "advanced-dashboard",
-    image: `${import.meta.env.BASE_URL}dashboard.jpg`,
+    image: `/home/dashboard.jpg`,
     title: "Advanced Dashboard",
     description:
       "Gain real-time insights and analytics to make informed decisions.",

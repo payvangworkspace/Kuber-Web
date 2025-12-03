@@ -37,7 +37,7 @@ const Navbar = forwardRef((props, ref) => {
         >
           <img
             className="logo-img"
-            src={`${import.meta.env.BASE_URL}logo2.png`}
+            src={`/logos/logo2.png`}
             alt="Not Found"
           />
         </div>

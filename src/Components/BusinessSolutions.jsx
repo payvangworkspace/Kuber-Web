@@ -61,7 +61,7 @@ const BusinessSolutions = () => {
         transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
         viewport={{ once: true }}
       >
-        <img src={`${import.meta.env.BASE_URL}IG.png`} alt="Business Solutions" />
+        <img src={`/home/IG.png`} alt="Business Solutions" />
       </motion.div>
     </section>
   );
