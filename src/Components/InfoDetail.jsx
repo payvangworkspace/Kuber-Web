@@ -22,7 +22,7 @@ const InfoDetail = () => {
       <div className="card-detail-container">
         <div className="card-detail">
           <img
-            src={card.image}
+            src={card.image} 
             alt={card.title}
             className="card-detail-img"
           />

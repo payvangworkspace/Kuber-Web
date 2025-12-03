@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/MerchantBanner.css";
+import "../Styles/MerchantBanner.css";
 
 const MerchantBanner = () => {
   const handleScroll = () => {

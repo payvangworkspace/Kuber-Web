@@ -16,7 +16,7 @@ const InnovationSection = () => {
   const cards = [
     {
       id: "secure-payments",
-      img: "online.jpg",
+      img: `${import.meta.env.BASE_URL}online.jpg`,
       title: "Secure Payments",
       subtitle: "PCI DSS Level 1 Compliant",
       description:
@@ -24,7 +24,7 @@ const InnovationSection = () => {
     },
     {
       id: "multi-channel",
-      img: "flat.avif",
+      img: `${import.meta.env.BASE_URL}flat.avif`,
       title: "Multi-Channel Support",
       subtitle: "Online, In-store & Mobile",
       description:
@@ -32,7 +32,7 @@ const InnovationSection = () => {
     },
     {
       id: "dashboard",
-      img: "carry.avif",
+      img: `${import.meta.env.BASE_URL}carry.avif`,
       title: "Powerful Dashboard",
       subtitle: "Real-Time Analytics",
       description:
@@ -66,7 +66,7 @@ const InnovationSection = () => {
             data-aos-delay={idx * 150}
           >
             <img
-              src={`${import.meta.env.BASE_URL}${card.img}`}
+              src={`${card.img}`}
               alt={card.subtitle}
               className="innovation-card-image"
             />
@@ -77,7 +77,7 @@ const InnovationSection = () => {
               </div>
               <div className="innovation-card-hover-footer">
                 <span
-                  onClick={() => navigate(`/card/${card.id}`)}
+                  onClick={() => navigate(`/card/${card.id}/`)}
                   style={{ cursor: "pointer" }}
                 >
                   Learn More
