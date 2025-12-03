@@ -8,7 +8,6 @@ import '../Styles/InnovationSection.css';
 const InnovationSection = () => {
   const navigate = useNavigate();
 
-  // Initialize AOS animations
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
   }, []);
@@ -16,7 +15,7 @@ const InnovationSection = () => {
   const cards = [
     {
       id: "secure-payments",
-      img: `${import.meta.env.BASE_URL}online.jpg`,
+      img: "/card/online.jpg",
       title: "Secure Payments",
       subtitle: "PCI DSS Level 1 Compliant",
       description:
@@ -24,7 +23,7 @@ const InnovationSection = () => {
     },
     {
       id: "multi-channel",
-      img: `${import.meta.env.BASE_URL}flat.avif`,
+      img: "/card/flat.avif",
       title: "Multi-Channel Support",
       subtitle: "Online, In-store & Mobile",
       description:
@@ -32,7 +31,7 @@ const InnovationSection = () => {
     },
     {
       id: "dashboard",
-      img: `${import.meta.env.BASE_URL}carry.avif`,
+      img: "/card/carry.avif",
       title: "Powerful Dashboard",
       subtitle: "Real-Time Analytics",
       description:
@@ -66,7 +65,7 @@ const InnovationSection = () => {
             data-aos-delay={idx * 150}
           >
             <img
-              src={`${card.img}`}
+              src={card.img}
               alt={card.subtitle}
               className="innovation-card-image"
             />
@@ -75,6 +74,7 @@ const InnovationSection = () => {
                 <h4 className="innovation-card-title">{card.title}</h4>
                 <h3 className="innovation-card-subtitle">{card.subtitle}</h3>
               </div>
+
               <div className="innovation-card-hover-footer">
                 <span
                   onClick={() => navigate(`/card/${card.id}/`)}

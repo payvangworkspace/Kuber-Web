@@ -9,7 +9,7 @@ import {
 import "../Styles/CardDetail.css";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import  Banner  from "./Banner";
+import Banner from "./Banner";
 
 const cards = [
   {
@@ -19,7 +19,7 @@ const cards = [
     description:
       "We ensure top-grade encryption and PCI DSS Level 1 compliance to keep your transactions safe and secure.",
     longDescription:
-      "Our payment gateway uses advanced fraud detection, tokenization, and end-to-end encryption. Trusted by enterprises and startups alike, KuberPays ensures zero compromise on your customers' sensitive data.",
+      "Our payment gateway uses advanced fraud detection, tokenization, and end-to-end encryption. Trusted by enterprises and startups alike, KuberPays ensures zero compromise with customer data.",
     features: [
       "End-to-end encryption",
       "PCI DSS Level 1 certified",
@@ -36,7 +36,7 @@ const cards = [
     description:
       "Accept payments seamlessly across online stores, mobile apps, and in-store POS terminals.",
     longDescription:
-      "KuberPays enables omnichannel payments, so your business never misses a customer. Whether online, offline, or hybrid, manage all transactions under one platform with real-time sync.",
+      "KuberPays enables omnichannel payments for your business. Manage all transactions in real-time across all customer touchpoints.",
     features: [
       "Supports web, mobile & POS",
       "Unified dashboard for all channels",
@@ -53,7 +53,7 @@ const cards = [
     description:
       "Track and manage payments with detailed analytics, reports, and real-time insights.",
     longDescription:
-      "With our intelligent dashboard, gain instant access to transaction reports, settlement history, and customer insights. Make data-driven decisions to boost sales and improve operations.",
+      "Our intelligent dashboard provides insights into transactions, settlements, and customer behavior. Make data-driven decisions with ease.",
     features: [
       "Real-time analytics",
       "Customizable reports",
@@ -76,16 +76,17 @@ const CardDetail = () => {
   return (
     <>
       <Navbar />
-      <Banner/>
+      <Banner />
+
       <div className="card-detail-container">
         <div className="card-detail">
           <img
-            src={`${import.meta.env.BASE_URL}${card.img}`}
+            src={`/card/${card.img}`}
             alt={card.title}
             className="card-detail-img"
           />
+
           <div className="card-detail-content">
-            {/* Top section with card-specific icon */}
             <div className="card-detail-header">
               {card.icon}
               <div>
@@ -97,11 +98,11 @@ const CardDetail = () => {
             <p className="card-detail-description">{card.description}</p>
             <p className="card-detail-long">{card.longDescription}</p>
 
-            {/* Features Section with check icons */}
             <ul className="card-detail-features">
               {card.features.map((feature, idx) => (
                 <li key={idx}>
-                  <FaCheckCircle className="feature-check-icon" /> {feature}
+                  <FaCheckCircle className="feature-check-icon" />
+                  {feature}
                 </li>
               ))}
             </ul>
@@ -112,6 +113,7 @@ const CardDetail = () => {
           </div>
         </div>
       </div>
+
       <Footer />
     </>
   );
