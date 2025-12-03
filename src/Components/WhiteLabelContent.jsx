@@ -32,7 +32,7 @@ const WhiteLabelContent = () => {
           </p>
 
           <h3>Benefits of White-Label Solutions</h3>
-          <ul className="benefits-list">
+          <ul className="benefits-list" style={{color:"black"}}>
             <li><strong>Scale your offering:</strong> Add new services instantly.</li>
             <li><strong>Scale your costs:</strong> No IT setup or development overhead.</li>
             <li><strong>Boost revenue:</strong> Adopt a proven ROI-driven model.</li>

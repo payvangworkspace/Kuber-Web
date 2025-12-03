@@ -45,7 +45,7 @@ const AcceptingPayment = () => {
           </ul>
 
           <div className="signup-container">
-            <Link to="/signup" className="signup-button">
+            <Link to="https://dashboard.kuberpays.com/signup" className="signup-button">
               Sign Up Now
             </Link>
           </div>

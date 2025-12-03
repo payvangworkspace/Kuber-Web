@@ -47,7 +47,7 @@ function App() {
 
   return (
     <>
-      <BrowserRouter basename='/Kuber-Web'>
+      <BrowserRouter>
         <ScrollToTop />  
 
         <Routes>

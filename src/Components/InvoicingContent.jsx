@@ -48,7 +48,7 @@ const InvoicingContent = () => {
             </div>
           </div>
 
-          <Link to="/signup" className="signup-button">
+          <Link to="https://dashboard.kuberpays.com/signup" className="signup-button">
             Get Started
           </Link>
         </div>

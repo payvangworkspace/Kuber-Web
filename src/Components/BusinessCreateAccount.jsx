@@ -7,7 +7,7 @@ const BusinessCreateAccount = () => {
   const navigate = useNavigate();
  
   const redirectToSignUp = () => {
-    navigate("/signup");
+    window.location.href="https://dashboard.kuberpays.com/signup"
   };
  
   return (

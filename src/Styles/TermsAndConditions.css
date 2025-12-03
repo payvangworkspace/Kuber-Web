@@ -66,6 +66,20 @@
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 28px;
 }
+
+
+.contact-link {
+  color: #005eff;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer; /* Pointer on hover */
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+  color: #0040aa;
+}
+
  
 /* ===== Card ===== */
 .terms-card {
