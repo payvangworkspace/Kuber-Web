@@ -11,12 +11,12 @@ const ClientDetail = () => {
       <div className="card-detail-container">
         <div className="card-detail">
           <img
-            src={`${import.meta.env.BASE_URL}webdev-partner.jpg`}
+            src={`/home/webdev-partner.jpg`}
             alt="Web Developer Partnership"
             className="card-detail-img"
             onError={(e) => {
               e.target.onerror = null;
-              e.target.src = `${import.meta.env.BASE_URL}client2.jpg`;
+              e.target.src = `/home/client2.jpg`;
             }}
           />
 

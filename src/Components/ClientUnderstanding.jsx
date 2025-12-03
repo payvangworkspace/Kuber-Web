@@ -37,11 +37,11 @@ const ClientUnderstanding = () => {
         </div>
         <div className="client-image">
           <img
-            src={`${import.meta.env.BASE_URL}home-facility-bg.jpg`}
+            src={`/home/home-facility-bg.jpg`}
             alt="Client engaging with technology"
             onError={(e) => {
               e.target.onerror = null;
-              e.target.src = `${import.meta.env.BASE_URL}fallback.jpg`;
+              e.target.src = `/home/fallback.jpg`;
             }}
           />
         </div>
