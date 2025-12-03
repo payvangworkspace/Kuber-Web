@@ -4,7 +4,7 @@ import {
   FaApple, FaPython, FaGem, FaCodeBranch, 
   FaJs, FaJava, FaAndroid, FaPhp 
 } from "react-icons/fa";
-import "../styles/IntegrationSection.css";
+import "../Styles/IntegrationSection.css";
 
 const techItems = [
   { name: "iOS", icon: <FaApple className="icon" /> },

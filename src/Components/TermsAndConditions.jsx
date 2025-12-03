@@ -8,7 +8,7 @@ import {
   Lock,
   Gavel
 } from "lucide-react";
-import "../styles/TermsAndConditions.css";
+import "../Styles/TermsAndConditions.css";
 import { Link, useNavigate } from "react-router-dom";
 
 const TermsAndConditions = () => {

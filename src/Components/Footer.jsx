@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="footer-left">
           <img
             className="footer-logo"
-            src={`${import.meta.env.BASE_URL}/logo2.png`}
+            src={`${import.meta.env.BASE_URL}logo2.png`}
             alt="Kuberpays Logo"
           />
           <div className="footer-info">

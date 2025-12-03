@@ -7,7 +7,7 @@ import {
   FaLaptopCode, 
   FaCheckCircle 
 } from "react-icons/fa";
-import "../styles/UnicornResellerContent.css";
+import "../Styles/UnicornResellerContent.css";
 
 const features = [
   "98% Merchant Account Approval Rate",

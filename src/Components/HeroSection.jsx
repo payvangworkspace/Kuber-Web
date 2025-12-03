@@ -23,7 +23,7 @@ const HeroSection = () => {
         <div className="visual-wrapper">
           <img
             className="hero-main-image float-in"
-            src={`${import.meta.env.BASE_URL}/CN.png`}
+            src={`${import.meta.env.BASE_URL}CN.png`}
             alt="Ecommerce Business Illustration"
           />
         </div>
