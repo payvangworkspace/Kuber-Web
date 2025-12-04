@@ -160,10 +160,10 @@ const Navbar = forwardRef((props, ref) => {
           </div>
 
           <Link to="/contact">Contact</Link>
-           <Link to="https://dashboard.kuberpays.com/signup">Get Started</Link>
+           {/* <Link to="https://dashboard.kuberpays.com/signup">Get Started</Link> */}
 
           {/* ✅ Buttons will also appear inside menu on mobile */}
-          <div className="nav-actions mobile-actions">
+          {/* <div className="nav-actions mobile-actions">
             <button className="btn btn-outline" onClick={redirectSignIn}>
               Sign In
             </button>
@@ -173,7 +173,7 @@ const Navbar = forwardRef((props, ref) => {
             >
               Get Started
             </button>
-          </div>
+          </div> */}
         </nav>
 
         {/* Buttons (desktop only) */}
