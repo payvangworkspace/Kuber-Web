@@ -150,11 +150,17 @@ const Navbar = forwardRef((props, ref) => {
                   <Link to="/developer">Technology Stack</Link>
                   {/* <Link to="/merchant-integration">Merchant Integration</Link> */}
                 </div>
+
+                
+
+
+
               </div>
             </div>
           </div>
 
           <Link to="/contact">Contact</Link>
+           <Link to="https://dashboard.kuberpays.com/signup">Get Started</Link>
 
           {/* ✅ Buttons will also appear inside menu on mobile */}
           <div className="nav-actions mobile-actions">
