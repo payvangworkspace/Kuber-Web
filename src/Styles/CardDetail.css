@@ -6,6 +6,7 @@
   align-items: center;
   padding: 40px 20px;
   font-family: 'Segoe UI', sans-serif;
+  /* border: 2px solid orange; */
 }
 
 .card-detail {
@@ -18,12 +19,26 @@
   flex-direction: row;
   overflow: hidden;
   animation: fadeInUp 0.6s ease;
+  /* border: 2px solid red; */
 }
 
 .card-detail-img {
-  width: 45%;
-  object-fit: cover;
+  /* width: 45%; */
+  /* object-fit: cover; */
+
+  /* border: 2px solid blue; */
+  height: 40vh;
+  margin-top: 23vh;
+  border-radius: 10px;
+
 }
+
+
+
+
+
+
+
 
 .card-detail-content {
   padding: 30px;
