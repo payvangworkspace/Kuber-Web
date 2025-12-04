@@ -41,7 +41,7 @@ const ResellerCommission = () => {
 
         {/* Right: Image */}
         <div className="commission-image">
-          <img src={"./IN-2.jpg"} alt="Reseller" />
+          <img src={"/home/IN-2.jpg"} alt="Reseller" />
         </div>
       </div>
     </section>

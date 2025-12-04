@@ -71,7 +71,7 @@ const ContactUs = () => {
             initial={{ x: -30, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ delay: 0.2 }}
-            className="text-4xl font-bold mb-4 bg-gradient-to-r from-[#00dfd8] to-[#007cf0] bg-clip-text text-transparent"
+            className="text-4xl font-bold mb-4 bg-gradient-to-r from-[#00dfd8] to-[#007cf0] bg-clip-text text-transparent gc-heading"
           >
             Get in Touch
           </motion.h2>
@@ -79,7 +79,7 @@ const ContactUs = () => {
             initial={{ x: -30, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ delay: 0.4 }}
-            className="text-lg text-gray-300 mb-6"
+            className="text-lg text-gray-300 mb-6 c-desc"
           >
             We’re here to answer your questions, discuss partnership
             opportunities, or provide support. Let’s make something great
@@ -90,9 +90,9 @@ const ContactUs = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6 }}
-            className="space-y-4"
+            className="space-y-4 c-address"
           >
-            <p className="flex items-center gap-3">
+            <p className="flex items-center gap-3 c-ind-d">
               <FiMapPin className="text-cyan-400 text-xl" />
               <span className="text-gray-300">
                 113 Lakeshore Rd, West, Suite-163,
@@ -101,14 +101,14 @@ const ContactUs = () => {
               </span>
             </p>
             <p
-              className="flex items-center gap-3 cursor-pointer hover:text-cyan-300"
+              className="flex items-center gap-3 cursor-pointer hover:text-cyan-300 c-ind-d"
               onClick={() => (window.location.href = "tel:+1-647-619-0777")}
             >
               <FiPhone className="text-cyan-400 text-xl" />
               <span className="text-gray-300">+1-647-619-0777</span>
             </p>
             <p
-              className="flex items-center gap-3 cursor-pointer hover:text-cyan-300"
+              className="flex items-center gap-3 cursor-pointer hover:text-cyan-300 c-ind-d"
               onClick={() =>
                 (window.location.href = "mailto:info@kuberpayment.com")
               }

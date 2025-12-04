@@ -36,7 +36,7 @@ const AcceptingPayment = () => {
             </li>
             <li>Pay via QR Code, SMS, Web Link.</li>
             <li>
-              Transparent and timely <strong>KuberPays Settlement</strong> and
+              Transparent and timely <strong>Kuber Pays Settlement</strong> and
               payouts.
             </li>
             <li>

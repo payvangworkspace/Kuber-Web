@@ -24,7 +24,7 @@
 }
 
 .footer-info p {
-  margin: 5px 0;
+  margin: 14px 0;
   font-size: 14px;
   line-height: 1.4;
   display: flex;
@@ -54,6 +54,9 @@
   font-size: 13px;
   color: #ccc;
 }
+
+
+
 
 @media screen and (max-width: 768px) {
   .footer-container {
@@ -211,4 +214,10 @@
   .footer-address {
     justify-content: flex-start;
   }
+}
+
+
+
+.footer-info p{
+  margin: 14px 0px;
 }

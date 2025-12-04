@@ -19,7 +19,7 @@ const cards = [
     description:
       "We ensure top-grade encryption and PCI DSS Level 1 compliance to keep your transactions safe and secure.",
     longDescription:
-      "Our payment gateway uses advanced fraud detection, tokenization, and end-to-end encryption. Trusted by enterprises and startups alike, KuberPays ensures zero compromise with customer data.",
+      "Our payment gateway uses advanced fraud detection, tokenization, and end-to-end encryption. Trusted by enterprises and startups alike, Kuber Pays ensures zero compromise with customer data.",
     features: [
       "End-to-end encryption",
       "PCI DSS Level 1 certified",
@@ -36,7 +36,7 @@ const cards = [
     description:
       "Accept payments seamlessly across online stores, mobile apps, and in-store POS terminals.",
     longDescription:
-      "KuberPays enables omnichannel payments for your business. Manage all transactions in real-time across all customer touchpoints.",
+      "Kuber Pays enables omnichannel payments for your business. Manage all transactions in real-time across all customer touchpoints.",
     features: [
       "Supports web, mobile & POS",
       "Unified dashboard for all channels",
