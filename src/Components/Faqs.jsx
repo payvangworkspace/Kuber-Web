@@ -4,22 +4,22 @@ import "../Styles/Faqs.css";
 
 const faqs = [
   {
-    question: "What is Kuber Pays?",
+    question: "What is Kuber Payss?",
     answer:
-      "Kuber Pays is a secure Canadian payment solution designed for businesses of all sizes. We support Interac®, Visa, Mastercard, and offer advanced fraud protection with Canadian data residency.",
+      "Kuber Payss is a secure Canadian payment solution designed for businesses of all sizes. We support Interac®, Visa, Mastercard, and offer advanced fraud protection with Canadian data residency.",
   },
   {
-    question: "Is Kuber Pays available only in Canada?",
+    question: "Is Kuber Payss available only in Canada?",
     answer:
-      "Yes, Kuber Pays is tailored for the Canadian market. All transactions and sensitive data are stored within Canadian servers, ensuring compliance with Canadian privacy laws.",
+      "Yes, Kuber Payss is tailored for the Canadian market. All transactions and sensitive data are stored within Canadian servers, ensuring compliance with Canadian privacy laws.",
   },
   {
-    question: "Does Kuber Pays support recurring billing?",
+    question: "Does Kuber Payss support recurring billing?",
     answer:
       "Absolutely. You can set up recurring billing, subscriptions, and automated invoicing with just a few clicks.",
   },
   {
-    question: "How secure is Kuber Pays?",
+    question: "How secure is Kuber Payss?",
     answer:
       "We are PCI-DSS compliant, use bank-grade encryption, and include advanced fraud monitoring tools for every transaction.",
   },
@@ -49,7 +49,7 @@ const Faqs = () => {
         >
           <h2 className="faq-title">Frequently Asked Questions</h2>
           <p className="faq-subtitle">
-            Everything you need to know about Kuber Pays in Canada.
+            Everything you need to know about Kuber Payss in Canada.
           </p>
 
           <div className="faq-list">

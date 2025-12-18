@@ -17,7 +17,7 @@ export const Home = () => {
   const navbarRef = useRef(null);
 
   useEffect(() => {
-    document.title = "Home | Kuber Pays";
+    document.title = "Home | Kuber Payss";
 
     if (navbarRef.current) {
       // navbarRef.current.style.width = "100vw";

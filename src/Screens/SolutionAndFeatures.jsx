@@ -9,7 +9,7 @@ const SolutionAndFeatures = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    document.title = "Solutions & Features | KuberPays";
+    document.title = "Solutions & Features | KuberPayss";
 
     const timer = setTimeout(() => setLoading(false), 1000);
     return () => clearTimeout(timer);

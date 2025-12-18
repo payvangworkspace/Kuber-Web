@@ -12,7 +12,7 @@ const Footer = () => {
           <img
             className="footer-logo"
             src={`/logos/logo2.png`}
-            alt="Kuber Pays Logo"
+            alt="Kuber Payss Logo"
           />
 
           <div className="footer-info">
@@ -50,13 +50,13 @@ const Footer = () => {
 
       {/* Bottom Section */}
       <div className="footer-bottom">
-        <p>© {new Date().getFullYear()} Kuber Pays. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} Kuber Payss. All rights reserved.</p>
 
         {/* NEW — Company Registration Number */}
         {/* <p>Company Registration No: XXXXXXXXXX</p> */}
 
         {/* NEW — Trademark Statement */}
-        <p>Kuber Pays is a trademark of Kuber Pay Inc.</p>
+        <p>Kuber Payss is a trademark of Kuber Pay Inc.</p>
       </div>
     </footer>
   );

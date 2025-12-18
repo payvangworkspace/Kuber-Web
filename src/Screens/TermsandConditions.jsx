@@ -9,7 +9,7 @@ export const TermsandConditions = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    document.title = "Terms & Conditions | KuberPays";
+    document.title = "Terms & Conditions | Kubers";
 
     const timer = setTimeout(() => setLoading(false), 1000);
     return () => clearTimeout(timer);

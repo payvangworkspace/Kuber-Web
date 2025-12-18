@@ -9,7 +9,7 @@ const apiDocs = [
         name: "Create Order",
         description: "Create a new order and generate a payment link.",
         method: "POST",
-        url: "https://pg.kuberpays.in/v1/newOrder",
+        url: "https://pg.kuberpayss.in/v1/newOrder",
         headers: [
           "merchantAppId: AppId",
           "merchantSecretId: SecretKey",
@@ -32,7 +32,7 @@ const apiDocs = [
         name: "Order Status",
         description: "Check the current status of an order.",
         method: "POST",
-        url: "https://pg.kuberpays.in/v1/orderStatus",
+        url: "https://pg.kuberpayss.in/v1/orderStatus",
         headers: [
           "merchantAppId: AppId",
           "merchantSecretId: SecretKey",
@@ -52,7 +52,7 @@ const apiDocs = [
         name: "NEFT Transfer",
         description: "Send money to beneficiary via NEFT.",
         method: "POST",
-        url: "https://pg.kuberpays.in/transferMoney/singleTransfer",
+        url: "https://pg.kuberpayss.in/transferMoney/singleTransfer",
         headers: ["Content-Type: application/json"],
         body: `{
   "appKey": "merchant@example.com",
@@ -74,7 +74,7 @@ const apiDocs = [
         name: "RTGS Transfer",
         description: "Transfer high-value funds via RTGS.",
         method: "POST",
-        url: "https://pg.kuberpays.in/transferMoney/singleTransfer",
+        url: "https://pg.kuberpayss.in/transferMoney/singleTransfer",
         headers: ["Content-Type: application/json"],
         body: `{
   "appKey": "merchant@bizbank.in",
@@ -96,7 +96,7 @@ const apiDocs = [
         name: "MOM Transfer",
         description: "Mobile money transfer (Uganda).",
         method: "POST",
-        url: "https://pg.kuberpays.in/transferMoney/singleTransfer",
+        url: "https://pg.kuberpayss.in/transferMoney/singleTransfer",
         headers: ["Content-Type: application/json"],
         body: `{
   "appKey": "diana.k@mobilefinance.co.ug",
@@ -116,7 +116,7 @@ const apiDocs = [
         name: "EFT Transfer",
         description: "Electronic Funds Transfer in India.",
         method: "POST",
-        url: "https://pg.kuberpays.in/transferMoney/singleTransfer",
+        url: "https://pg.kuberpayss.in/transferMoney/singleTransfer",
         headers: ["Content-Type: application/json"],
         body: `{
   "appKey": "ananya.verma@fincloud.in",
@@ -138,7 +138,7 @@ const apiDocs = [
         name: "IFT Transfer",
         description: "Internal Fund Transfer within same bank.",
         method: "POST",
-        url: "https://pg.kuberpays.in/transferMoney/singleTransfer",
+        url: "https://pg.kuberpayss.in/transferMoney/singleTransfer",
         headers: ["Content-Type: application/json"],
         body: `{
   "appKey": "deepak.singh@swifttech.in",
@@ -319,7 +319,7 @@ const MerchantIntegration = () => {
     <div className="merchant-container">
       {/* Sidebar */}
       <aside className="merchant-sidebar">
-        <h2 className="sidebar-title">Kuber Pays API Docs</h2>
+        <h2 className="sidebar-title">Kuber Payss API Docs</h2>
         {apiDocs.map((section) => (
           <div key={section.section}>
             <h3 className="sidebar-section">{section.section}</h3>

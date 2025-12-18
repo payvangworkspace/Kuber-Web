@@ -11,7 +11,7 @@ const VirtualAccountSection = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    document.title = "Virtual Account | KuberPays";
+    document.title = "Virtual Account | KuberPayss";
 
     const timer = setTimeout(() => setLoading(false), 1000);
     return () => clearTimeout(timer);

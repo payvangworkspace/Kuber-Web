@@ -10,7 +10,7 @@ export const Developer = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    document.title = "Developer | KuberPays";
+    document.title = "Developer | KuberPayss";
 
     const timer = setTimeout(() => setLoading(false), 1000);
     return () => clearTimeout(timer);

@@ -15,7 +15,7 @@ const MerchantServiceReseller = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    document.title = "Merchant Service Reseller | KuberPays";
+    document.title = "Merchant Service Reseller | KuberPayss";
 
     const timer = setTimeout(() => setLoading(false), 1000);
     return () => clearTimeout(timer);

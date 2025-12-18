@@ -20,7 +20,7 @@ const Navbar = forwardRef((props, ref) => {
 
   function redirectSignIn() {
     // navigate("/login");
-    window.location.href="https://dashboard.kuberpays.com/login";
+    window.location.href="https://dashboard.kuberpayss.com/login";
   }
   function redirectHome() {
     navigate("/");
@@ -183,7 +183,7 @@ const Navbar = forwardRef((props, ref) => {
           </button>
           <button
             className="btn btn-primary"
-            onClick={() => window.location.href="https://dashboard.kuberpays.com/signup"}
+            onClick={() => window.location.href="https://dashboard.kuberpayss.com/signup"}
           >
             Get Started
           </button>

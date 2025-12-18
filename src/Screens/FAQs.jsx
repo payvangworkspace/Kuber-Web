@@ -8,7 +8,7 @@ const FAQs = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    document.title = "FAQs | KuberPays";
+    document.title = "FAQs | KuberPayss";
 
     const timer = setTimeout(() => setLoading(false), 1000);
     return () => clearTimeout(timer);

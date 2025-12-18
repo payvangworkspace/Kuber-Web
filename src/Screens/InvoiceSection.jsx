@@ -11,7 +11,7 @@ const InvoiceSection = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    document.title = "Invoice | KuberPays";
+    document.title = "Invoice | KuberPayss";
 
     const timer = setTimeout(() => setLoading(false), 1000);
     return () => clearTimeout(timer);
