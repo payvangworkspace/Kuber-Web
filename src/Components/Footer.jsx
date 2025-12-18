@@ -56,7 +56,7 @@ const Footer = () => {
         {/* <p>Company Registration No: XXXXXXXXXX</p> */}
 
         {/* NEW — Trademark Statement */}
-        <p>Kuber Payss is a trademark of Kuber Pay Inc.</p>
+        <p>Kuber Payss is a trademark of Kuber Payss Inc.</p>
       </div>
     </footer>
   );
