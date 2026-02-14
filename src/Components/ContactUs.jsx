@@ -12,6 +12,7 @@ import {
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import "../Styles/ContactUs.css";
+import axios from "axios";
 
 const ContactUs = () => {
   const [showPopup, setShowPopup] = useState(false);
@@ -20,19 +21,40 @@ const ContactUs = () => {
     await loadFull(main);
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // here you can send the form data (API call, email service, etc.)
-    setShowPopup(true);
+ const handleSubmit = async (e) => {
+  e.preventDefault();
 
-    // auto close after 3 seconds
+  const form = e.target;
+  const data = {
+    name: form[0].value,
+    email: form[1].value,
+    message: form[2].value,
+    ipAddress: "",
+  };
+
+  // try {
+  //   const response = await axios.post(
+  //     "http://localhost:8000/api/query/send",
+  //     data
+  //   );
+
+  //   console.log(response.data);
+    setShowPopup(true);
+    form.reset();
+
     setTimeout(() => {
       setShowPopup(false);
     }, 3000);
-  };
+
+  // } catch (err) {
+  //   console.log("Something went wrong. Try again later.");
+  // }
+};
+
 
   return (
     <div className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-[#0a0f1f] via-[#0d1a2b] to-[#0a0f1f] py-16 px-6 overflow-hidden">
+      
       {/* Particle Background */}
       <Particles
         id="tsparticles"
@@ -62,6 +84,7 @@ const ContactUs = () => {
         className="w-full max-w-6xl grid md:grid-cols-2 gap-8 backdrop-blur-xl bg-white/5 rounded-2xl shadow-[0_0_30px_rgba(0,124,240,0.3)] border border-white/10 overflow-hidden py-10"
         style={{ padding: "20px 0" }}
       >
+        
         {/* Left Side */}
         <div
           className="p-8 flex flex-col justify-center text-white"
@@ -75,6 +98,7 @@ const ContactUs = () => {
           >
             Get in Touch
           </motion.h2>
+
           <motion.p
             initial={{ x: -30, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
@@ -100,6 +124,7 @@ const ContactUs = () => {
                 Mississauga ON L5H 1E9, Bifro House, Canada
               </span>
             </p>
+
             <p
               className="flex items-center gap-3 cursor-pointer hover:text-cyan-300 c-ind-d"
               onClick={() => (window.location.href = "tel:+1-647-619-0777")}
@@ -107,14 +132,15 @@ const ContactUs = () => {
               <FiPhone className="text-cyan-400 text-xl" />
               <span className="text-gray-300">+1-647-619-0777</span>
             </p>
+
             <p
               className="flex items-center gap-3 cursor-pointer hover:text-cyan-300 c-ind-d"
               onClick={() =>
-                (window.location.href = "mailto:info@kuberpayment.com")
+                (window.location.href = "mailto:info@kuberpayss.com")
               }
             >
               <FiMail className="text-cyan-400 text-xl" />
-              <span className="text-gray-300">info@kuberpayment.com</span>
+              <span className="text-gray-300">info@kuberpayss.com</span>
             </p>
           </motion.div>
         </div>
@@ -131,6 +157,7 @@ const ContactUs = () => {
             transition={{ delay: 0.2 }}
             className="space-y-6 mt-4"
           >
+            
             {/* Name */}
             <div className="contact-input">
               <FiUser />
@@ -186,7 +213,7 @@ const ContactUs = () => {
               className="bg-[#0f172a] p-8 rounded-2xl text-center shadow-xl border border-cyan-500/30 max-w-sm"
             >
               <div className="tick-parent">
-              <FiCheckCircle className="text-5xl text-green-400 mx-auto mb-4 " />
+                <FiCheckCircle className="text-5xl text-green-400 mx-auto mb-4" />
               </div>
               <h3 className="text-2xl font-bold text-white mb-2">
                 Thank You!

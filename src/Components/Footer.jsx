@@ -34,9 +34,9 @@ const Footer = () => {
 
             <p 
               className="footer-link ft-email" 
-              onClick={() => (window.location.href = "mailto:info@kuberpayment.com")}
+              onClick={() => (window.location.href = "mailto:info@kuberpayss.com")}
             >
-              <FaEnvelope className="footer-icon" /> info@kuberpayment.com
+              <FaEnvelope className="footer-icon" /> info@kuberpayss.com
             </p>
 
             <p className="footer-lei ft-lei-n">
