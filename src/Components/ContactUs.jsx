@@ -16,46 +16,62 @@ import axios from "axios";
 
 const ContactUs = () => {
   const [showPopup, setShowPopup] = useState(false);
+  const [showErrorPopup, setShowErrorPopup] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   const particlesInit = async (main) => {
     await loadFull(main);
   };
 
- const handleSubmit = async (e) => {
-  e.preventDefault();
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
-  const form = e.target;
-  const data = {
-    name: form[0].value,
-    email: form[1].value,
-    message: form[2].value,
-    ipAddress: "",
+    if (isLoading) return;
+
+    const form = e.target;
+
+    const data = {
+      name: form[0].value,
+      email: form[1].value,
+      message: form[2].value
+    };
+
+    try {
+      setIsLoading(true);
+
+      const response = await axios.post(
+        "https://pg.kuberpayss.com/contact",
+        data
+      );
+
+      if (response && response.status === 200 && response.data) {
+        console.log(response.data);
+        setShowPopup(true);
+        form.reset();
+
+        setTimeout(() => {
+          setShowPopup(false);
+        }, 3000);
+      } else {
+        throw new Error("Invalid response from server");
+      }
+
+    } catch (err) {
+      console.error("API Error:", err);
+
+      setShowErrorPopup(true);
+
+      setTimeout(() => {
+        setShowErrorPopup(false);
+      }, 3000);
+    } finally {
+      setIsLoading(false);
+    }
   };
-
-  // try {
-  //   const response = await axios.post(
-  //     "http://localhost:8000/api/query/send",
-  //     data
-  //   );
-
-  //   console.log(response.data);
-    setShowPopup(true);
-    form.reset();
-
-    setTimeout(() => {
-      setShowPopup(false);
-    }, 3000);
-
-  // } catch (err) {
-  //   console.log("Something went wrong. Try again later.");
-  // }
-};
-
 
   return (
     <div className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-[#0a0f1f] via-[#0d1a2b] to-[#0a0f1f] py-16 px-6 overflow-hidden">
       
-      {/* Particle Background */}
       <Particles
         id="tsparticles"
         init={particlesInit}
@@ -76,7 +92,6 @@ const ContactUs = () => {
         className="absolute top-0 left-0 w-full h-full -z-10"
       />
 
-      {/* Main Card */}
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
@@ -157,31 +172,24 @@ const ContactUs = () => {
             transition={{ delay: 0.2 }}
             className="space-y-6 mt-4"
           >
-            
-            {/* Name */}
             <div className="contact-input">
               <FiUser />
               <input type="text" placeholder="Enter your name" required />
             </div>
 
-            {/* Email */}
             <div className="contact-input">
               <FiMail />
               <input type="email" placeholder="Enter your email" required />
             </div>
 
-            {/* Message */}
-            <div
-              className="contact-input"
-              style={{ alignItems: "flex-start" }}
-            >
+            <div className="contact-input" style={{ alignItems: "flex-start" }}>
               <FiMessageSquare style={{ marginTop: "4px" }} />
               <textarea rows="4" placeholder="Write your message..." required />
             </div>
 
-            {/* Button */}
             <motion.button
               type="submit"
+              disabled={isLoading}
               whileHover={{
                 scale: 1.05,
                 boxShadow: "0 0 20px rgba(0,223,216,0.6)",
@@ -190,13 +198,23 @@ const ContactUs = () => {
               transition={{ type: "spring", stiffness: 300 }}
               className="w-full flex items-center justify-center gap-2 py-3 rounded-lg bg-gradient-to-r from-[#00dfd8] to-[#007cf0] hover:from-[#007cf0] hover:to-[#00dfd8] text-white font-semibold shadow-lg btn-size"
             >
-              <FiSend /> Send Message
+              {isLoading ? (
+                <>
+                  <div className="h-4 w-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                  Sending...
+                </>
+              ) : (
+                <>
+                  <FiSend /> Send Message
+                </>
+              )}
             </motion.button>
+
           </motion.form>
         </div>
       </motion.div>
 
-      {/* Success Popup */}
+      {/* SUCCESS POPUP */}
       <AnimatePresence>
         {showPopup && (
           <motion.div
@@ -206,14 +224,9 @@ const ContactUs = () => {
             transition={{ duration: 0.4 }}
             className="fixed inset-0 flex items-center justify-center bg-black/50 z-50"
           >
-            <motion.div
-              initial={{ y: -20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              exit={{ y: 20, opacity: 0 }}
-              className="bg-[#0f172a] p-8 rounded-2xl text-center shadow-xl border border-cyan-500/30 max-w-sm"
-            >
-              <div className="tick-parent">
-                <FiCheckCircle className="text-5xl text-green-400 mx-auto mb-4" />
+            <motion.div className="bg-[#0f172a] p-8 rounded-2xl text-center shadow-xl border border-cyan-500/30 max-w-sm success-popup" >
+             <div className="ic-text-center">
+              <FiCheckCircle className="text-5xl text-green-400 mx-auto mb-4" />
               </div>
               <h3 className="text-2xl font-bold text-white mb-2">
                 Thank You!
@@ -225,6 +238,29 @@ const ContactUs = () => {
           </motion.div>
         )}
       </AnimatePresence>
+
+      {/* ERROR POPUP */}
+      <AnimatePresence>
+        {showErrorPopup && (
+          <motion.div
+            initial={{ opacity: 0, scale: 0.7 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.7 }}
+            transition={{ duration: 0.4 }}
+            className="fixed inset-0 flex items-center justify-center bg-black/50 z-50"
+          >
+            <motion.div className="bg-[#0f172a] p-8 rounded-2xl text-center shadow-xl border border-red-500/30 max-w-sm err-box" >
+              <h3 className="text-2xl font-bold text-red-400 mb-2">
+                Something Went Wrong
+              </h3>
+              <p className="text-gray-300">
+                Please try again later.
+              </p>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
     </div>
   );
 };

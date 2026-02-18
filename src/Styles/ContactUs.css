@@ -15,7 +15,21 @@
   /* border: 2px solid white; */
 }
 
+.ic-text-center{
+  /* border: 2px solid orange; */
+  display: flex;
+  margin: 10px 0px;
+  justify-content: center;
+}
+.err-box{
+  /* border: 2px solid red; */
+  padding: 10px 12px;
+}
 
+.success-popup{
+  /* border: 2px solid white; */
+  padding: 4px 10px;
+}
 
 
 
