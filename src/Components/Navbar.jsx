@@ -185,7 +185,7 @@ const Navbar = forwardRef((props, ref) => {
             className="btn btn-primary"
             onClick={() => window.location.href="https://dashboard.kuberpayss.com/signup"}
           >
-            Get Started
+            Sign Up
           </button>
         </div>
 
