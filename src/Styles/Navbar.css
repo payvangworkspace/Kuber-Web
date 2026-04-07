@@ -196,6 +196,15 @@
   visibility: visible;
   transform: translateY(0);
 }
+
+.get-btn{
+  border: 2px solid white;
+  padding: 8px 25px;
+  border-radius: 10px;
+  background-color: transparent;
+  
+ 
+}
 /* Hamburger + mobile */
 @media (max-width: 900px) {
   .nav-links {

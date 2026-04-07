@@ -160,9 +160,12 @@ const Navbar = forwardRef((props, ref) => {
           </div>
 
           <Link to="/contact">Contact</Link>
-           {/* <Link to="https://dashboard.kuberpays.com/signup">Get Started</Link> */}
+            <Link to="https://dashboard.kuberpayss.com/login">Login</Link>
+     <Link to="https://dashboard.kuberpayss.com/signup" className="get-btn">Get Started</Link>
+         
 
           {/* ✅ Buttons will also appear inside menu on mobile */}
+          
           {/* <div className="nav-actions mobile-actions">
             <button className="btn btn-outline" onClick={redirectSignIn}>
               Sign In
