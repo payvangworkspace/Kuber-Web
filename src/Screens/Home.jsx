@@ -41,7 +41,7 @@ export const Home = () => {
       <Navbar ref={navbarRef} />
       <HeroSection />
       <InnovationSection />
-      {/* <BusinessSolutions /> */}
+      <BusinessSolutions />
       <InfoCards />
    
       <BusinessStats />

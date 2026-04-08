@@ -9,7 +9,7 @@ const Navbar = forwardRef((props, ref) => {
 
   const toggleDropdown = (menu) => {
     setDropdownOpen(dropdownOpen === menu ? null : menu);
-    setSubDropdownOpen(null); // close nested dropdowns when switching
+    setSubDropdownOpen(null);
   };
 
   const toggleSubDropdown = (submenu) => {
@@ -19,9 +19,9 @@ const Navbar = forwardRef((props, ref) => {
   const navigate = useNavigate();
 
   function redirectSignIn() {
-    // navigate("/login");
-    window.location.href="https://dashboard.kuberpayss.com/login";
+    window.location.href = "https://dashboard.kuberpayss.com/login";
   }
+
   function redirectHome() {
     navigate("/");
   }
@@ -29,38 +29,25 @@ const Navbar = forwardRef((props, ref) => {
   return (
     <header className="navbar" id="navbar" ref={ref} style={props.customStyle}>
       <div className="nav-container">
+
         {/* Logo */}
-        <div
-          className="logo"
-          onClick={redirectHome}
-          style={{ cursor: "pointer" }}
-        >
-          <img
-            className="logo-img"
-            src={`/logos/logo2.png`}
-            alt="Not Found"
-          />
+        <div className="logo" onClick={redirectHome} style={{ cursor: "pointer" }}>
+          <img className="logo-img" src={`/logos/logo2.png`} alt="logo" />
         </div>
 
         {/* Links */}
         <nav className={`nav-links ${isOpen ? "open" : ""}`}>
-          {/* Products Dropdown */}
+
+          {/* Products */}
           <div
             className="dropdown"
             onMouseEnter={() => setDropdownOpen("products")}
             onMouseLeave={() => setDropdownOpen(null)}
           >
-            <Link
-              to="/payment-gateway"
-              onClick={() => toggleDropdown("products")}
-            >
+            <Link to="/payment-gateway" onClick={() => toggleDropdown("products")}>
               Products ▾
             </Link>
-            <div
-              className={`dropdown-menu ${
-                dropdownOpen === "products" ? "show" : ""
-              }`}
-            >
+            <div className={`dropdown-menu ${dropdownOpen === "products" ? "show" : ""}`}>
               <Link to="/payment-gateway">Payment Gateway</Link>
               <Link to="/invoice">Invoice</Link>
               <Link to="/virtual-account">Virtual Account</Link>
@@ -68,26 +55,19 @@ const Navbar = forwardRef((props, ref) => {
             </div>
           </div>
 
-          {/* Solutions Dropdown */}
+          {/* Solutions */}
           <div
             className="dropdown"
             onMouseEnter={() => setDropdownOpen("solutions")}
             onMouseLeave={() => setDropdownOpen(null)}
           >
-            <Link
-              to="/solution-and-features"
-              onClick={() => toggleDropdown("solutions")}
-            >
+            <Link to="/solution-and-features" onClick={() => toggleDropdown("solutions")}>
               Solutions ▾
             </Link>
-            <div
-              className={`dropdown-menu ${
-                dropdownOpen === "solutions" ? "show" : ""
-              }`}
-            >
+            <div className={`dropdown-menu ${dropdownOpen === "solutions" ? "show" : ""}`}>
               <Link to="/solution-and-features">Solutions & Features</Link>
-                   <Link to="/NFC-Payment" >NFC Solution</Link>
-                        <Link to="/merchant-service" >Merchant Service Reseller</Link>
+              <Link to="/NFC-Payment">NFC Solution</Link>
+              <Link to="/merchant-service">Merchant Service Reseller</Link>
               <Link to="/pricing">Pricing</Link>
               <Link to="/faqs">FAQ's</Link>
               <Link to="/terms-and-condition">Terms & Conditions</Link>
@@ -95,7 +75,7 @@ const Navbar = forwardRef((props, ref) => {
             </div>
           </div>
 
-          {/* Company Dropdown */}
+          {/* Company */}
           <div
             className="dropdown"
             onMouseEnter={() => setDropdownOpen("company")}
@@ -104,16 +84,12 @@ const Navbar = forwardRef((props, ref) => {
             <Link to="/company" onClick={() => toggleDropdown("company")}>
               Company ▾
             </Link>
-            <div
-              className={`dropdown-menu ${
-                dropdownOpen === "company" ? "show" : ""
-              }`}
-            >
+            <div className={`dropdown-menu ${dropdownOpen === "company" ? "show" : ""}`}>
               <Link to="/company">Company Overview</Link>
             </div>
           </div>
 
-          {/* Developers Dropdown with Nested Integration */}
+          {/* Developers */}
           <div
             className="dropdown"
             onMouseEnter={() => setDropdownOpen("developers")}
@@ -125,74 +101,51 @@ const Navbar = forwardRef((props, ref) => {
             <Link to="#" onClick={() => toggleDropdown("developers")}>
               Developers ▾
             </Link>
-            <div
-              className={`dropdown-menu ${
-                dropdownOpen === "developers" ? "show" : ""
-              }`}
-            >
-              {/* Integration Sub-dropdown */}
+            <div className={`dropdown-menu ${dropdownOpen === "developers" ? "show" : ""}`}>
               <div
                 className="sub-dropdown"
                 onMouseEnter={() => setSubDropdownOpen("integration")}
                 onMouseLeave={() => setSubDropdownOpen(null)}
               >
-                <span
-                  className="sub-dropdown-link"
-                  onClick={() => toggleSubDropdown("integration")}
-                >
-              
-                </span>
-                <div
-                  className={`sub-dropdown-menu ${
-                    subDropdownOpen === "integration" ? "show" : ""
-                  }`}
-                >
+                <div className={`sub-dropdown-menu ${subDropdownOpen === "integration" ? "show" : ""}`}>
                   <Link to="/developer">Technology Stack</Link>
-                  {/* <Link to="/merchant-integration">Merchant Integration</Link> */}
                 </div>
-
-                
-
-
-
               </div>
             </div>
           </div>
 
           <Link to="/contact">Contact</Link>
-            <Link to="https://dashboard.kuberpayss.com/login">Login</Link>
-     <Link to="https://dashboard.kuberpayss.com/signup" className="get-btn">Get Started</Link>
-         
 
-          {/* ✅ Buttons will also appear inside menu on mobile */}
-          
-          {/* <div className="nav-actions mobile-actions">
-            <button className="btn btn-outline" onClick={redirectSignIn}>
-              Sign In
-            </button>
-            <button
-              className="btn btn-primary"
-              onClick={() => navigate("/signup")}
+          {/* ✅ Mobile Buttons */}
+          <div className="mobile-nav">
+            <Link to="https://dashboard.kuberpayss.com/login" onClick={() => setIsOpen(false)}>
+              Login
+            </Link>
+            <Link
+              to="https://dashboard.kuberpayss.com/signup"
+              className="get-btn"
+              onClick={() => setIsOpen(false)}
             >
               Get Started
-            </button>
-          </div> */}
+            </Link>
+          </div>
+
         </nav>
 
-        {/* Buttons (desktop only) */}
+        {/* Desktop Buttons */}
         <div className="nav-actions desktop-actions">
-          <button className="t-btn t-btn-outline" onClick={redirectSignIn} style={{color:"white"}}>
+          <button className="t-btn t-btn-outline" onClick={redirectSignIn} style={{ color: "white" }}>
             Sign In
           </button>
           <button
             className="btn btn-primary"
-            onClick={() => window.location.href="https://dashboard.kuberpayss.com/signup"}
+            onClick={() => window.location.href = "https://dashboard.kuberpayss.com/signup"}
           >
             Sign Up
           </button>
         </div>
 
-        {/* Hamburger Menu */}
+        {/* Hamburger */}
         <div
           className={`hamburger ${isOpen ? "active" : ""}`}
           onClick={() => setIsOpen(!isOpen)}
@@ -201,6 +154,7 @@ const Navbar = forwardRef((props, ref) => {
           <span></span>
           <span></span>
         </div>
+
       </div>
     </header>
   );

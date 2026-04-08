@@ -19,16 +19,16 @@
 }
 
 .business-content h2 {
-  font-size: 2.4rem;
+  font-size: 2.5rem; /* slightly improved */
   font-weight: 700;
   margin-bottom: 1rem;
   color: #4fb2ff;
 }
 
 .business-content p {
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   color: #d1e4ff;
-  line-height: 1.6;
+  line-height: 1.7;
   margin-bottom: 2rem;
 }
 
@@ -44,16 +44,16 @@
   align-items: center;
   gap: 0.8rem;
   padding: 1rem;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.06); /* slightly better contrast */
   border-radius: 10px;
   transition: all 0.3s ease;
   cursor: pointer;
 }
 
 .feature-item:hover {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.12);
   transform: translateY(-4px);
-  box-shadow: 0 6px 15px rgba(79, 178, 255, 0.2);
+  box-shadow: 0 6px 15px rgba(79, 178, 255, 0.25);
 }
 
 .feature-item .icon {
@@ -66,16 +66,13 @@
   flex: 1;
   display: flex;
   justify-content: center;
-
+  align-items: center;
 }
 
 .business-image img {
   width: 100%;
-  /* max-width: 450px; */
-  /* border-radius: 12px; */
-  /* box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4); */
-    /* border: 2px solid orange; */
-    /* background-color: rgb(233, 228, 228); */
+  max-width: 500px; /* ✅ controlled size */
+  object-fit: contain;
 }
 
 /* Responsive */
@@ -92,5 +89,13 @@
 
   .business-image {
     margin-top: 2rem;
+  }
+
+  .business-content h2 {
+    font-size: 2rem;
+  }
+
+  .business-content p {
+    font-size: 1rem;
   }
 }
