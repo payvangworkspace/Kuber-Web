@@ -8,7 +8,7 @@ const PrivacyPolicy = () => {
         <h1 className="privacy-title">Privacy Policy</h1>
         <div className="privacy-content">
           <p>
-            At <strong>Kuber Payss</strong>, we value your privacy and are committed to protecting your personal information. 
+            At <strong>Kuber Pays</strong>, we value your privacy and are committed to protecting your personal information. 
             This Privacy Policy explains how we collect, use, and safeguard your data when you use our services.
           </p>
 
@@ -50,7 +50,7 @@ const PrivacyPolicy = () => {
 
           <h2>7. Updates to this Policy</h2>
           <p>
-            Kuber Payss may update this Privacy Policy from time to time. 
+            Kuber Pays may update this Privacy Policy from time to time. 
             Changes will be posted on this page with the updated date.
           </p>
 

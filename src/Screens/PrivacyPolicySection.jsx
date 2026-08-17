@@ -8,7 +8,7 @@ const PrivacyPolicySection = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    document.title = "Privacy Policy | KuberPayss";
+    document.title = "Privacy Policy | KuberPays";
 
     const timer = setTimeout(() => setLoading(false), 1000);
     return () => clearTimeout(timer);

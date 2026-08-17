@@ -36,7 +36,7 @@ const AcceptingPayment = () => {
             </li>
             <li>Pay via QR Code, SMS, Web Link.</li>
             <li>
-              Transparent and timely <strong>Kuber Payss Settlement</strong> and
+              Transparent and timely <strong>Kuber Pays Settlement</strong> and
               payouts.
             </li>
             <li>
@@ -45,7 +45,7 @@ const AcceptingPayment = () => {
           </ul>
 
           <div className="signup-container">
-            <Link to="https://dashboard.kuberpayss.com/signup" className="signup-button">
+            <Link to="https://dashboard.kuberpays.com/signup" className="signup-button">
               Sign Up Now
             </Link>
           </div>

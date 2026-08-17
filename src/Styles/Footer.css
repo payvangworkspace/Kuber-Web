@@ -19,7 +19,11 @@
 }
 
 .footer-logo {
-  max-width: 160px;
+  max-width: 220px;
+  width: auto;
+  height: auto;
+  display: block;
+  object-fit: contain;
   margin-bottom: 12px;
 }
 
@@ -85,7 +89,11 @@
 }
 
 .footer-logo {
-  max-width: 160px;
+  max-width: 220px;
+  width: auto;
+  height: auto;
+  display: block;
+  object-fit: contain;
   margin-bottom: 12px;
 }
 

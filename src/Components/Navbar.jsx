@@ -19,7 +19,7 @@ const Navbar = forwardRef((props, ref) => {
   const navigate = useNavigate();
 
   function redirectSignIn() {
-    window.location.href = "https://dashboard.kuberpayss.com/login";
+    window.location.href = "https://dashboard.kuberpays.com/login";
   }
 
   function redirectHome() {
@@ -32,7 +32,7 @@ const Navbar = forwardRef((props, ref) => {
 
         {/* Logo */}
         <div className="logo" onClick={redirectHome} style={{ cursor: "pointer" }}>
-          <img className="logo-img" src={`/logos/logo2.png`} alt="logo" />
+          <img className="logo-img" src="/logos/logo2.png?v=3" alt="Kuber Pays" />
         </div>
 
         {/* Links */}
@@ -118,11 +118,11 @@ const Navbar = forwardRef((props, ref) => {
 
           {/* ✅ Mobile Buttons */}
           <div className="mobile-nav">
-            <Link to="https://dashboard.kuberpayss.com/login" onClick={() => setIsOpen(false)}>
+            <Link to="https://dashboard.kuberpays.com/login" onClick={() => setIsOpen(false)}>
               Login
             </Link>
             <Link
-              to="https://dashboard.kuberpayss.com/signup"
+              to="https://dashboard.kuberpays.com/signup"
               className="get-btn"
               onClick={() => setIsOpen(false)}
             >
@@ -139,7 +139,7 @@ const Navbar = forwardRef((props, ref) => {
           </button>
           <button
             className="btn btn-primary"
-            onClick={() => window.location.href = "https://dashboard.kuberpayss.com/signup"}
+            onClick={() => window.location.href = "https://dashboard.kuberpays.com/signup"}
           >
             Sign Up
           </button>

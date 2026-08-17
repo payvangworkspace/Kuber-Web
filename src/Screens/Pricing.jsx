@@ -8,7 +8,7 @@ export default function Pricing() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    document.title = "Pricing | KuberPayss";
+    document.title = "Pricing | KuberPays";
 
     const timer = setTimeout(() => setLoading(false), 1000);
     return () => clearTimeout(timer);

@@ -151,11 +151,11 @@ const ContactUs = () => {
             <p
               className="flex items-center gap-3 cursor-pointer hover:text-cyan-300 c-ind-d"
               onClick={() =>
-                (window.location.href = "mailto:info@kuberpayss.com")
+                (window.location.href = "mailto:info@kuberpays.com")
               }
             >
               <FiMail className="text-cyan-400 text-xl" />
-              <span className="text-gray-300">info@kuberpayss.com</span>
+              <span className="text-gray-300">info@kuberpays.com</span>
             </p>
           </motion.div>
         </div>

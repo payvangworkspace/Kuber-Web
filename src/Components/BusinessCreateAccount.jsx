@@ -7,7 +7,7 @@ const BusinessCreateAccount = () => {
   const navigate = useNavigate();
  
   const redirectToSignUp = () => {
-    window.location.href="https://dashboard.kuberpayss.com/signup"
+    window.location.href="https://dashboard.kuberpays.com/signup"
   };
  
   return (
@@ -17,7 +17,7 @@ const BusinessCreateAccount = () => {
         <div className="business-content">
           <h2 className="business-title">Join 493+ Businesses Today!</h2>
           <p className="business-description">
-            Scale faster with <span className="highlight">Kuber Payss</span>.
+            Scale faster with <span className="highlight">Kuber Pays</span>.
             Unlock secure, seamless, and smart payment solutions designed for modern businesses.
           </p>
  

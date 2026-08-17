@@ -319,7 +319,7 @@ const MerchantIntegration = () => {
     <div className="merchant-container">
       {/* Sidebar */}
       <aside className="merchant-sidebar">
-        <h2 className="sidebar-title">Kuber Payss API Docs</h2>
+        <h2 className="sidebar-title">Kuber Pays API Docs</h2>
         {apiDocs.map((section) => (
           <div key={section.section}>
             <h3 className="sidebar-section">{section.section}</h3>

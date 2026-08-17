@@ -47,12 +47,12 @@ const InnovationSection = () => {
       {/* 🔹 Top Section */}
       <div className="top-content" data-aos="fade-up">
         <div className="headline">
-          <h5>KUBER PAYSS</h5>
+          <h5>KUBER PAYS</h5>
           <h2>"Smarter Payments, Trusted by Thousands"</h2>
         </div>
 
         <p className="description">
-          At Kuber Payss, we empower your business with secure, fast, and seamless
+          At Kuber Pays, we empower your business with secure, fast, and seamless
           payment solutions. Whether you're scaling up or just starting out,
           our platform is designed to support your growth.
         </p>
@@ -96,7 +96,7 @@ const InnovationSection = () => {
 
       {/* 🔹 Footer */}
       <p className="footer-text" data-aos="fade-up" data-aos-delay="600">
-        Join thousands of businesses using Kuber Payss to simplify payments.{" "}
+        Join thousands of businesses using Kuber Pays to simplify payments.{" "}
         <Link to="/company" className="explore-link">
           Learn more about us
         </Link>

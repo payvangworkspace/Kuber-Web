@@ -11,8 +11,8 @@ const Footer = () => {
         <div className="footer-left">
           <img
             className="footer-logo"
-            src={`/logos/logo2.png`}
-            alt="Kuber Payss Logo"
+            src="/logos/logo2.png?v=3"
+            alt="Kuber Pays Logo"
           />
 
           <div className="footer-info">
@@ -34,9 +34,9 @@ const Footer = () => {
 
             <p 
               className="footer-link ft-email" 
-              onClick={() => (window.location.href = "mailto:info@kuberpayss.com")}
+              onClick={() => (window.location.href = "mailto:info@kuberpays.com")}
             >
-              <FaEnvelope className="footer-icon" /> info@kuberpayss.com
+              <FaEnvelope className="footer-icon" /> info@kuberpays.com
             </p>
 
             <p className="footer-lei ft-lei-n">
@@ -50,13 +50,13 @@ const Footer = () => {
 
       {/* Bottom Section */}
       <div className="footer-bottom">
-        <p>© {new Date().getFullYear()} Kuber Payss. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} Kuber Pays. All rights reserved.</p>
 
         {/* NEW — Company Registration Number */}
         {/* <p>Company Registration No: XXXXXXXXXX</p> */}
 
         {/* NEW — Trademark Statement */}
-        <p>Kuber Payss is a trademark of Kuber Payss Inc.</p>
+        <p>Kuber Pays is a trademark of Kuber Pays Inc.</p>
       </div>
     </footer>
   );

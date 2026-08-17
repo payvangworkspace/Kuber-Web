@@ -31,18 +31,18 @@
 }
 
 /* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  height: 75px;
+}
+
 .logo-img {
-  /* height: 50px;        
+  height: 52px;
   width: auto;
-  position: static;    
-  margin-top: 0;       */
-
-  position: absolute;
-    height: 155px;
-    margin-top: -78px;
-    width: 160px;
-
-
+  display: block;
+  object-fit: contain;
 }
 
 /* Nav Links */
@@ -146,6 +146,9 @@
 
 /* Responsive */
 @media (max-width: 900px) {
+  .logo-img {
+    height: 44px;
+  }
 
   .nav-links {
     position: absolute;

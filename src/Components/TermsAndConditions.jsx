@@ -29,7 +29,7 @@ const TermsAndConditions = () => {
       <header className="terms-header">
         <h1 className="terms-main-title">📜 Terms & Conditions</h1>
         <p className="terms-tagline">
-          Welcome to <strong>Kuber Payss</strong>. Please read these terms carefully.
+          Welcome to <strong>Kuber Pays</strong>. Please read these terms carefully.
         </p>
       </header>
 
@@ -72,7 +72,7 @@ const TermsAndConditions = () => {
             <AlertCircle className="terms-icon" />
             <h3>Limitation of Liability</h3>
             <p>
-              Kuber Payss shall not be liable for losses or damages arising from
+              Kuber Pays shall not be liable for losses or damages arising from
               unauthorized access or use of our services.
             </p>
           </div>

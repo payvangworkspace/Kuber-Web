@@ -10,7 +10,7 @@ export const Contact = () => {
   const navbarRef = useRef(null);
 
   useEffect(() => {
-    document.title = "Contact | KuberPayss";
+    document.title = "Contact | KuberPays";
 
     if (navbarRef.current) {
       navbarRef.current.style.width = "100vw";

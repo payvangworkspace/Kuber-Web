@@ -8,7 +8,7 @@ const SignupSection = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    document.title = "Sign Up | KuberPayss";
+    document.title = "Sign Up | KuberPays";
 
     const timer = setTimeout(() => setLoading(false), 1000);
     return () => clearTimeout(timer);

@@ -27,13 +27,13 @@ const CompanyOverview = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
         >
-          About <span>Kuber Payss</span>
+          About <span>Kuber Pays</span>
         </motion.h2>
 
         {/* Animated Image */}
         <motion.img
           src="/home/company.png" // put your image inside public/ folder
-          alt="About Kuber Payss"
+          alt="About Kuber Pays"
           className="overview-image"
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -48,7 +48,7 @@ const CompanyOverview = () => {
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.35 }}
         >
-          <strong>Kuber Payss</strong> is a next-generation digital payments platform
+          <strong>Kuber Pays</strong> is a next-generation digital payments platform
           designed to empower businesses of all sizes. We make accepting, routing,
           and reconciling payments seamless with intelligent automation, real-time
           analytics, and unmatched reliability—helping businesses scale faster while

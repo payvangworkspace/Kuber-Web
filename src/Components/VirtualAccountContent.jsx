@@ -27,7 +27,7 @@ const VirtualAccountContent = () => {
         <p>
           They also provide the ability to{" "}
           <strong>reconcile payments in real time</strong>.{" "}
-          <strong>Kuber Payss</strong> offers on-demand Virtual Accounts to its
+          <strong>Kuber Pays</strong> offers on-demand Virtual Accounts to its
           corporate clients for seamless transactions.
         </p>
 
@@ -71,7 +71,7 @@ const VirtualAccountContent = () => {
 
       {/* Signup Button */}
       <div className="signup-container">
-        <Link to="https://dashboard.kuberpayss.com/signup" className="signup-button">
+        <Link to="https://dashboard.kuberpays.com/signup" className="signup-button">
           Sign Up Now
         </Link>
       </div>

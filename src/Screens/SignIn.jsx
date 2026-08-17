@@ -9,7 +9,7 @@ export const SignIn = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    document.title = "Sign In | KuberPayss";
+    document.title = "Sign In | KuberPays";
 
     const timer = setTimeout(() => setLoading(false), 1000);
     return () => clearTimeout(timer);

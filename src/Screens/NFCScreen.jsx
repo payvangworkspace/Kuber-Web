@@ -11,7 +11,7 @@ const NFCScreen = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    document.title = "NFC Screen | KuberPayss";
+    document.title = "NFC Screen | KuberPays";
 
     const timer = setTimeout(() => setLoading(false), 1000);
     return () => clearTimeout(timer);

@@ -18,7 +18,7 @@ const WhiteLabelContent = () => {
           </p>
 
           <p>
-            <strong>Kuber Payss</strong> offers white-label solutions that allow easy
+            <strong>Kuber Pays</strong> offers white-label solutions that allow easy
             customization of checkout look-and-feel with your business logo and brand
             color. Focus on your customers while we handle the technology.
           </p>

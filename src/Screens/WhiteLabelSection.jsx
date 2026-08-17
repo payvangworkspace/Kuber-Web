@@ -11,7 +11,7 @@ const WhiteLabelSection = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    document.title = "White Label | KuberPayss";
+    document.title = "White Label | KuberPays";
 
     const timer = setTimeout(() => setLoading(false), 1000);
     return () => clearTimeout(timer);

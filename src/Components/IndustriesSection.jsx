@@ -40,7 +40,7 @@ const IndustriesSection = () => {
           <h5>Industries We Empower</h5>
           <h2>Future-Ready Payment Solutions<br />for Every Sector</h2>
           <p>
-            Kuber Payss provides tailored payment infrastructure that adapts to your industry’s specific needs—
+            Kuber Pays provides tailored payment infrastructure that adapts to your industry’s specific needs—
             secure, scalable, and globally connected.
           </p>
         </div>

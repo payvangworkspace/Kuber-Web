@@ -30,7 +30,7 @@ const IntegrationSection = () => {
         <div className="integration-content">
           <h2 className="title">Seamless Integration</h2>
           <p className="description">
-            Integrating payments with <span className="highlight">Kuber Payss </span> 
+            Integrating payments with <span className="highlight">Kuber Pays </span> 
             is effortless. Use SDKs, REST APIs, and plugins across major platforms with 
             <span className="highlight"> real-time performance</span>.
           </p>

@@ -11,7 +11,7 @@ const AcceptingPaymentSection = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    document.title = "Payment Gateway| KuberPayss";
+    document.title = "Payment Gateway| KuberPays";
 
     const timer = setTimeout(() => setLoading(false), 1000);
     return () => clearTimeout(timer);

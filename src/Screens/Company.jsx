@@ -9,7 +9,7 @@ const Company = () => {
   const navbarRef = useRef(null);
 
   useEffect(() => {
-    document.title = "Company | KuberPayss";
+    document.title = "Company | KuberPays";
 
     if (navbarRef.current) {
       navbarRef.current.style.width = "100vw";

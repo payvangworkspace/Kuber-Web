@@ -13,7 +13,7 @@ const InvoicingContent = () => {
            Smart GST Invoicing Software to Get Paid Faster
           </h1>
           <p className="invoicing-intro">
-            <strong>Kuber Payss</strong> provides powerful invoicing software that
+            <strong>Kuber Pays</strong> provides powerful invoicing software that
             helps you create professional invoices, automate payment reminders,
             and get paid faster online. Manage everything from anywhere, anytime.
           </p>
@@ -27,7 +27,7 @@ const InvoicingContent = () => {
                 <h3>Workflow Automation</h3>
                 <p>
                   Automate recurring tasks like invoice generation and reminders. 
-                  <strong> Kuber Payss Invoice</strong> lets you focus on growth while automation 
+                  <strong> Kuber Pays Invoice</strong> lets you focus on growth while automation 
                   handles the manual tasks.
                 </p>
               </div>
@@ -48,7 +48,7 @@ const InvoicingContent = () => {
             </div>
           </div>
 
-          <Link to="https://dashboard.kuberpayss.com/signup" className="signup-button">
+          <Link to="https://dashboard.kuberpays.com/signup" className="signup-button">
             Get Started
           </Link>
         </div>
